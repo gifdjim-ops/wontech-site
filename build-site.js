@@ -949,7 +949,7 @@ function homePage() {
     </section>
     <section class="section">
       <div class="container">
-        ${sectionHead("Популярные позиции", "Позиции для первого запуска каталога", "Все характеристики, наличие и сроки поставки уточняются перед заказом.")}
+        ${sectionHead("Популярные позиции", "Популярные позиции", "Все характеристики, наличие и сроки поставки уточняются перед заказом.")}
         <div class="product-grid">${featured}</div>
         <div class="center-line"><a class="btn btn-secondary" href="/catalog.html">Смотреть весь каталог</a></div>
       </div>
