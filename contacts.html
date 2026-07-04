@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Контакты WONTECH - расчет бурового инструмента</title>
+  <meta name="description" content="Контакт для расчета бурового инструмента WONTECH. Телефон +7 963 180 09 99.">
+  <link rel="stylesheet" href="/assets/css/site.css">
+</head>
+<body>
+  
+    <header class="site-header">
+      <div class="container header-grid">
+        <a class="brand" href="/index.html" aria-label="WONTECH">
+          <img src="/assets/images/local/wontech-mark.png" alt="">
+          <span>
+            <strong>WONTECH</strong>
+            <small>буровой инструмент</small>
+          </span>
+        </a>
+        <button class="menu-toggle" type="button" data-menu-toggle aria-label="Открыть меню">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="main-nav" data-main-nav aria-label="Главное меню">
+          <a class="" href="/catalog.html">Каталог</a>
+          <a class="" href="/logistics.html">Поставки</a>
+          <a class="" href="/articles.html">Статьи</a>
+          <a class="" href="/specification.html">Спецификация</a>
+          <a class="is-active" href="/contacts.html">Контакты</a>
+        </nav>
+        <button class="header-request" type="button" data-open-request>
+          Заявка <span data-request-count>0</span>
+        </button>
+      </div>
+    </header>
+  
+  <main>
+    <section class="hero hero-premium"><div class="container">
+      <div class="contacts-hero">
+        <div>
+          <p class="eyebrow">Контакты</p>
+          <h1>Контакт для расчета и подбора</h1>
+          <p class="lead">Отправьте список позиций, спецификацию или описание задачи. После проверки наличия и совместимости будет подготовлен расчет.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="tel:+79631800999">Позвонить</a>
+            <button class="btn btn-secondary" type="button" data-open-request>Получить расчет</button>
+          </div>
+        </div>
+        <article class="contact-person">
+          <img src="/assets/images/local/yuri-kozlovsky.jpg" alt="Юрий Козловский">
+          <h2>Юрий Козловский</h2>
+          <a href="tel:+79631800999">+7 963 180 09 99</a>
+          <span>Расчет бурового инструмента и обработка спецификаций</span>
+        </article>
+      </div>
+    </div></section>
+    <section class="section">
+      <div class="container content-grid">
+        <article class="text-card">
+          <h2>Что отправить для расчета</h2>
+          <p>Можно отправить позиции из каталога, текстовую спецификацию, фото старого инструмента или краткое описание задачи.</p>
+          <ul>
+            <li>система и диаметр;</li>
+            <li>количество;</li>
+            <li>регион доставки;</li>
+            <li>оборудование и условия работы;</li>
+            <li>сроки и комментарии.</li>
+          </ul>
+        </article>
+        <article class="text-card accent-card">
+          <h2>Быстрая заявка</h2>
+          <p>Если нет готовой спецификации, откройте форму и напишите задачу своими словами.</p>
+          <button class="btn btn-primary" type="button" data-open-request>Открыть форму</button>
+        </article>
+      </div>
+    </section>
+  </main>
+  
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand brand-footer" href="/index.html" aria-label="WONTECH">
+            <img src="/assets/images/local/wontech-mark.png" alt="">
+            <span>
+              <strong>WONTECH</strong>
+              <small>буровой инструмент</small>
+            </span>
+          </a>
+          <p>Многостраничный B2B-каталог бурового инструмента. Наличие, сроки, совместимость и цена подтверждаются перед заказом.</p>
+        </div>
+        <div>
+          <h3>Каталог</h3>
+          <a href="/category-hammers.html">Пневмоударники</a><a href="/category-bits.html">Коронки</a><a href="/category-pdc.html">PDC</a><a href="/category-rc.html">RC</a><a href="/category-accessories.html">Комплектующие</a>
+        </div>
+        <div>
+          <h3>Документы</h3>
+          <a href="/specification.html">Отправить спецификацию</a>
+          <a href="/assets/docs/beto-inkam-wontech.pdf" target="_blank" rel="noreferrer">PDF-каталог</a>
+          <a href="/articles.html">Справочник</a>
+        </div>
+        <div>
+          <h3>Контакт</h3>
+          <a href="tel:+79631800999">+7 963 180 09 99</a>
+          <button class="footer-button" type="button" data-open-request>Получить расчет</button>
+        </div>
+      </div>
+    </footer>
+  
+  
+    <a class="floating-call" href="tel:+79631800999" aria-label="Позвонить">
+      <span>Позвонить</span>
+      <strong>+7 963 180 09 99</strong>
+    </a>
+
+    <div class="request-panel" id="requestPanel" aria-hidden="true">
+      <div class="request-backdrop" data-close-request></div>
+      <aside class="request-drawer" aria-label="Заявка на расчет">
+        <div class="drawer-head">
+          <div>
+            <p class="eyebrow">Заявка</p>
+            <h2>Получить расчет</h2>
+          </div>
+          <button class="icon-button" type="button" data-close-request aria-label="Закрыть">×</button>
+        </div>
+        <div class="telegram-status" id="telegramStatus">Проверяем подключение Telegram...</div>
+        <div class="request-items" id="requestItems"></div>
+        <form class="request-form" id="requestForm">
+          <label>Имя<input name="name" type="text" placeholder="Как к вам обращаться"></label>
+          <label>Компания<input name="company" type="text" placeholder="Название компании"></label>
+          <label>Телефон / Telegram / e-mail<input name="contact" type="text" placeholder="+7... или @username" required></label>
+          <label>Регион доставки<input name="region" type="text" placeholder="Город или регион"></label>
+          <label>Комментарий / спецификация<textarea name="comment" rows="5" placeholder="Позиции, количество, оборудование, сроки, условия работы"></textarea></label>
+          <div class="drawer-actions">
+            <button class="btn btn-primary full" type="submit">Отправить заявку</button>
+            <button class="btn btn-light full" type="button" id="copyRequest">Скопировать текст заявки</button>
+          </div>
+          <p class="form-status" id="formStatus" role="status"></p>
+        </form>
+      </aside>
+    </div>
+  
+  <script src="/assets/js/data.js"></script>
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>
