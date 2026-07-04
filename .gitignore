@@ -3,3 +3,5 @@ qa-screenshots/
 node_modules/
 *.zip
 _package_wontech-b2b-shop/
+
+.vercel
