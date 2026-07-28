@@ -65,6 +65,26 @@ const categories = [
     cta: "Подобрать резьбу"
   },
   {
+    id: "large-diameter",
+    nav: "Большой диаметр",
+    title: "Инструмент большого диаметра WONTECH",
+    page: "/category-large-diameter.html",
+    image: "/assets/images/official/official-wt370.png",
+    intro:
+      "Пневмоударники, коронки и комплектующие большого диаметра из каталогов WONTECH. Конкретная система, диаметр и комплектность уточняются по проекту и буровой установке.",
+    cta: "Запросить большой диаметр"
+  },
+  {
+    id: "cluster",
+    nav: "Кластерные молоты",
+    title: "Кластерные пневмоударники WONTECH",
+    page: "/category-cluster.html",
+    image: "/assets/images/official/official-cluster-wtc380.png",
+    intro:
+      "Кластерные DTH-системы для задач большого диаметра. Модельный ряд и конфигурация подбираются по требуемому диаметру, оборудованию и условиям бурения.",
+    cta: "Запросить кластерный молот"
+  },
+  {
     id: "casing",
     nav: "Обсадные системы",
     title: "Обсадные системы WONTECH",
@@ -507,6 +527,537 @@ const products = [
   }
 ];
 
+const extendedProducts = [
+  {
+    id: "hammers-2-3-inch",
+    slug: "hammers-2-3-inch",
+    title: "Пневмоударники 2-3 дюйма WONTECH",
+    category: "hammers",
+    label: "DTH-пневмоударники",
+    system: "2-3 inch",
+    image: "/assets/images/official/official-wd-hammers.png",
+    summary:
+      "Малая размерная группа DTH-пневмоударников для заявок, где требуется компактная система. Точная модель, присоединение и рабочие параметры уточняются при подборе.",
+    positions: "2-3 inch DTH hammers",
+    specs: [
+      ["Поставщик", "Бето Инкам"],
+      ["Бренд инструмента", "WONTECH"],
+      ["Группа", "2-3 inch DTH hammers"],
+      ["Подбор", "по оборудованию, диаметру и условиям бурения"],
+      ["Цена", "по расчету"]
+    ]
+  },
+  {
+    id: "hammers-10-12-inch",
+    slug: "hammers-10-12-inch",
+    title: "Пневмоударники 10-12+ дюймов WONTECH",
+    category: "hammers",
+    label: "DTH-пневмоударники",
+    system: "10 / 12+ inch",
+    image: "/assets/images/official/official-wmsd-hammers.png",
+    summary:
+      "Крупная размерная группа DTH-пневмоударников для промышленных заявок. Конкретная модель и комплектность согласуются по спецификации заказчика.",
+    positions: "10 inch / 12+ inch DTH hammers",
+    specs: [
+      ["Поставщик", "Бето Инкам"],
+      ["Бренд инструмента", "WONTECH"],
+      ["Группа", "10 inch / 12+ inch DTH hammers"],
+      ["Наличие и сроки", "уточняются перед заказом"],
+      ["Цена", "рассчитывается индивидуально"]
+    ]
+  },
+  {
+    id: "wbr-series-hammers",
+    slug: "wbr-series-hammers",
+    title: "Пневмоударники WBR-серии WONTECH",
+    category: "hammers",
+    label: "DTH-пневмоударники",
+    system: "WBR series",
+    image: "/assets/images/official/official-wbr-hammers.png",
+    summary:
+      "WBR-серия вынесена отдельной карточкой, чтобы не смешивать ее с WT, WQL и другими системами. Совместимость и параметры подтверждаются при подборе.",
+    positions: "WBR series DTH hammers",
+    specs: [
+      ["Поставщик", "Бето Инкам"],
+      ["Бренд инструмента", "WONTECH"],
+      ["Серия", "WBR"],
+      ["Подбор", "по системе, оборудованию и задаче"],
+      ["Цена", "по расчету"]
+    ]
+  },
+  {
+    id: "wql-series-hammers",
+    slug: "wql-series-hammers",
+    title: "Пневмоударники WQL-серии WONTECH",
+    category: "hammers",
+    label: "DTH-пневмоударники",
+    system: "WQL series",
+    image: "/assets/images/official/official-wql-hammers.png",
+    summary:
+      "WQL-серия DTH-пневмоударников. Для расчета нужны система, требуемый диаметр, буровая установка, регион доставки и количество.",
+    positions: "WQL series DTH hammers",
+    specs: [
+      ["Поставщик", "Бето Инкам"],
+      ["Бренд инструмента", "WONTECH"],
+      ["Серия", "WQL"],
+      ["Характеристики", "уточняются при подборе"],
+      ["Цена", "рассчитывается индивидуально"]
+    ]
+  },
+  {
+    id: "wd-series-hammers",
+    slug: "wd-series-hammers",
+    title: "Пневмоударники WD-серии WONTECH",
+    category: "hammers",
+    label: "DTH-пневмоударники",
+    system: "WD series",
+    image: "/assets/images/official/official-wd-hammers.png",
+    summary:
+      "WD-серия добавлена как отдельное направление из каталога. Модель, присоединение и комплект поставки подтверждаются перед заказом.",
+    positions: "WD series DTH hammers",
+    specs: [
+      ["Поставщик", "Бето Инкам"],
+      ["Бренд инструмента", "WONTECH"],
+      ["Серия", "WD"],
+      ["Наличие и сроки", "уточняются перед заказом"],
+      ["Цена", "по расчету"]
+    ]
+  },
+  {
+    id: "wmsd-series-hammers",
+    slug: "wmsd-series-hammers",
+    title: "Пневмоударники WMSD-серии WONTECH",
+    category: "hammers",
+    label: "DTH-пневмоударники",
+    system: "WMSD series",
+    image: "/assets/images/official/official-wmsd-hammers.png",
+    summary:
+      "WMSD-серия DTH-пневмоударников. Карточка нужна для заявок, где клиент указывает именно эту серию или подбирает замену по системе.",
+    positions: "WMSD series DTH hammers",
+    specs: [
+      ["Поставщик", "Бето Инкам"],
+      ["Бренд инструмента", "WONTECH"],
+      ["Серия", "WMSD"],
+      ["Подбор", "по спецификации заказчика"],
+      ["Цена", "по расчету"]
+    ]
+  },
+  {
+    id: "large-diameter-hammers",
+    slug: "large-diameter-hammers",
+    title: "Пневмоударники большого диаметра WONTECH",
+    category: "large-diameter",
+    label: "Большой диаметр",
+    system: "WT320 / WT370 / WSD12AR / WNM125",
+    image: "/assets/images/official/official-wt370.png",
+    summary:
+      "Большие DTH-пневмоударники из каталогов WONTECH. Подбор выполняется по требуемому диаметру скважины, буровой установке и условиям работы.",
+    positions: "WT320 / WT370 / WSD12AR / WNM125",
+    specs: [
+      ["Поставщик", "Бето Инкам"],
+      ["Бренд инструмента", "WONTECH"],
+      ["Модели из каталогов", "WT320 / WT370 / WSD12AR / WNM125"],
+      ["Подбор", "по проекту и буровому оборудованию"],
+      ["Цена", "рассчитывается индивидуально"]
+    ],
+    gallery: [
+      "/assets/images/official/official-wt320.png",
+      "/assets/images/official/official-wt370.png",
+      "/assets/images/official/official-wsd12ar.png",
+      "/assets/images/official/official-wnm125.png"
+    ]
+  },
+  {
+    id: "large-diameter-bits",
+    slug: "large-diameter-bits",
+    title: "Коронки большого диаметра WONTECH",
+    category: "large-diameter",
+    label: "Большой диаметр",
+    system: "Large size DTH bits",
+    image: "/assets/images/QL80_bits_203_219_254_279_305.jpg",
+    summary:
+      "Коронки большого диаметра для DTH-систем. Диаметр, хвостовик, форма забоя и исполнение уточняются по спецификации и условиям бурения.",
+    positions: "203 / 219 / 254 / 279 / 305 / 311 / 315 / 330 / 356 / 381 мм по запросу",
+    specs: [
+      ["Поставщик", "Бето Инкам"],
+      ["Бренд инструмента", "WONTECH"],
+      ["Группа", "Large size DTH bits"],
+      ["Диаметры", "уточняются перед расчетом"],
+      ["Цена", "по расчету"]
+    ]
+  },
+  {
+    id: "cluster-drill-wtc",
+    slug: "cluster-drill-wtc",
+    title: "Кластерные пневмоударники WTC WONTECH",
+    category: "cluster",
+    label: "Кластерные молоты",
+    system: "WTC380 / WTC445 / WTC465 / WTC525 / WTC800",
+    image: "/assets/images/official/official-cluster-wtc380.png",
+    summary:
+      "Кластерные DTH-системы WTC для задач большого диаметра. Конфигурация подбирается по требуемому диаметру, оборудованию и проектной задаче.",
+    positions: "WTC380 / WTC445 / WTC465 / WTC525 / WTC800",
+    specs: [
+      ["Поставщик", "Бето Инкам"],
+      ["Бренд инструмента", "WONTECH"],
+      ["Серия", "WTC"],
+      ["Подбор", "по диаметру, установке и условиям бурения"],
+      ["Цена", "рассчитывается индивидуально"]
+    ],
+    gallery: [
+      "/assets/images/official/official-cluster-wtc380.png",
+      "/assets/images/official/official-cluster-wtc445.png",
+      "/assets/images/official/official-cluster-wtc465.png",
+      "/assets/images/official/official-cluster-wtc525.png",
+      "/assets/images/official/official-cluster-wtc800.png"
+    ]
+  },
+  {
+    id: "bits-dhd-series",
+    slug: "bits-dhd-series",
+    title: "Коронки DHD-серии WONTECH",
+    category: "bits",
+    label: "DTH-коронки",
+    system: "DHD series",
+    image: "/assets/images/official/official-bit-dhd.png",
+    summary:
+      "DHD-серия DTH-коронок выделена отдельно от уже добавленных QL/COP-групп. Диаметр и исполнение подтверждаются по заявке.",
+    positions: "DHD series DTH bits",
+    specs: [
+      ["Поставщик", "Бето Инкам"],
+      ["Бренд инструмента", "WONTECH"],
+      ["Серия", "DHD"],
+      ["Подбор", "по системе и диаметру"],
+      ["Цена", "по расчету"]
+    ]
+  },
+  {
+    id: "bits-sd-series",
+    slug: "bits-sd-series",
+    title: "Коронки SD-серии WONTECH",
+    category: "bits",
+    label: "DTH-коронки",
+    system: "SD series",
+    image: "/assets/images/official/official-bit-sd.png",
+    summary:
+      "SD-серия DTH-коронок. Карточка используется для заявок по системе SD без выдумывания неподтвержденных размеров и параметров.",
+    positions: "SD series DTH bits",
+    specs: [
+      ["Поставщик", "Бето Инкам"],
+      ["Бренд инструмента", "WONTECH"],
+      ["Серия", "SD"],
+      ["Характеристики", "уточняются при подборе"],
+      ["Цена", "по расчету"]
+    ]
+  },
+  {
+    id: "bits-mission-series",
+    slug: "bits-mission-series",
+    title: "Коронки MISSION-серии WONTECH",
+    category: "bits",
+    label: "DTH-коронки",
+    system: "MISSION series",
+    image: "/assets/images/official/official-bit-mission.png",
+    summary:
+      "MISSION-серия DTH-коронок. Совместимость, диаметр и форма рабочей части подтверждаются перед расчетом.",
+    positions: "MISSION series DTH bits",
+    specs: [
+      ["Поставщик", "Бето Инкам"],
+      ["Бренд инструмента", "WONTECH"],
+      ["Серия", "MISSION"],
+      ["Наличие и сроки", "уточняются перед заказом"],
+      ["Цена", "по расчету"]
+    ]
+  },
+  {
+    id: "bits-numa-series",
+    slug: "bits-numa-series",
+    title: "Коронки NUMA-серии WONTECH",
+    category: "bits",
+    label: "DTH-коронки",
+    system: "NUMA series",
+    image: "/assets/images/official/official-bit-numa.png",
+    summary:
+      "NUMA-серия DTH-коронок для заявок, где важна совместимость с соответствующей системой. Параметры уточняются при подборе.",
+    positions: "NUMA series DTH bits",
+    specs: [
+      ["Поставщик", "Бето Инкам"],
+      ["Бренд инструмента", "WONTECH"],
+      ["Серия", "NUMA"],
+      ["Подбор", "по спецификации заказчика"],
+      ["Цена", "рассчитывается индивидуально"]
+    ]
+  },
+  {
+    id: "bits-br-series",
+    slug: "bits-br-series",
+    title: "Коронки BR-серии WONTECH",
+    category: "bits",
+    label: "DTH-коронки",
+    system: "BR series",
+    image: "/assets/images/official/official-bit-br.png",
+    summary:
+      "BR-серия DTH-коронок из каталога. Карточка не пересекается с QL/COP-группами и используется для отдельного запроса по BR.",
+    positions: "BR series DTH bits",
+    specs: [
+      ["Поставщик", "Бето Инкам"],
+      ["Бренд инструмента", "WONTECH"],
+      ["Серия", "BR"],
+      ["Наличие", "уточняется перед заказом"],
+      ["Цена", "по расчету"]
+    ]
+  },
+  {
+    id: "rc-hammers",
+    slug: "rc-hammers",
+    title: "RC-молоты WONTECH",
+    category: "rc",
+    label: "RC",
+    system: "CIR / RE по спецификации",
+    image: "/assets/images/local/warehouse-wide.jpg",
+    summary:
+      "RC-молоты для бурения с обратной циркуляцией. Серия, хвостовик, диаметр и комплект поставки уточняются по спецификации заказчика.",
+    positions: "RC hammers: CIR50 / CIR60 / CIR65 / CIR70 / CIR90 / CIR110 / CIR130 / CIR150 / CIR170 по запросу",
+    specs: [
+      ["Поставщик", "Бето Инкам"],
+      ["Бренд инструмента", "WONTECH"],
+      ["Тип", "RC-молоты"],
+      ["Подбор", "по системе и оборудованию"],
+      ["Цена", "рассчитывается индивидуально"]
+    ]
+  },
+  {
+    id: "rc-bits",
+    slug: "rc-bits",
+    title: "RC-коронки WONTECH",
+    category: "rc",
+    label: "RC",
+    system: "RE543 / RE040 / RE052 / RE054 / RE140",
+    image: "/assets/images/local/stock-grey-bits.jpg",
+    summary:
+      "RC-коронки выделены отдельно от DTH-коронок, чтобы не смешивать разные системы бурения. Диаметр и хвостовик уточняются перед расчетом.",
+    positions: "RE543 / RE040 / RE052 / RE054 / RE140 по запросу",
+    specs: [
+      ["Поставщик", "Бето Инкам"],
+      ["Бренд инструмента", "WONTECH"],
+      ["Тип", "RC-коронки"],
+      ["Подбор", "по хвостовику, диаметру и системе"],
+      ["Цена", "по расчету"]
+    ]
+  },
+  {
+    id: "rc-accessories",
+    slug: "rc-accessories",
+    title: "Комплектующие для RC-бурения",
+    category: "rc",
+    label: "RC",
+    system: "по спецификации",
+    image: "/assets/images/local/stock-small-bits-box.jpg",
+    summary:
+      "Комплектующие для RC-направления: переходники, элементы сборки и сопутствующие позиции по спецификации заказчика.",
+    positions: "комплектующие RC по запросу",
+    specs: [
+      ["Поставщик", "Бето Инкам"],
+      ["Тип", "комплектующие RC"],
+      ["Подбор", "по спецификации заказчика"],
+      ["Наличие и сроки", "уточняются перед заказом"],
+      ["Цена", "по расчету"]
+    ]
+  },
+  {
+    id: "casing-odex-system",
+    slug: "casing-odex-system",
+    title: "ODEX-системы WONTECH",
+    category: "casing",
+    label: "Обсадные системы",
+    system: "ODEX",
+    image: "/assets/images/local/casing-system-front.jpg",
+    summary:
+      "ODEX-системы для бурения с обсадной колонной. Размер, комплектность и совместимость подбираются по наружному диаметру трубы и условиям работы.",
+    positions: "ODEX85 / ODEX90 / ODEX115 / ODEX140 / ODEX165 / ODEX190 / ODEX240 / ODEX280 по запросу",
+    specs: [
+      ["Поставщик", "Бето Инкам"],
+      ["Бренд инструмента", "WONTECH"],
+      ["Система", "ODEX"],
+      ["Подбор", "по трубе, диаметру и задаче"],
+      ["Цена", "по расчету"]
+    ]
+  },
+  {
+    id: "casing-wing-system",
+    slug: "casing-wing-system",
+    title: "Крыльевые обсадные системы WONTECH",
+    category: "casing",
+    label: "Обсадные системы",
+    system: "Wing system",
+    image: "/assets/images/official/official-casing-wing.png",
+    summary:
+      "Крыльевые системы для бурения с обсадкой. Подбор выполняется по диаметру обсадной трубы, грунтам и требуемой схеме бурения.",
+    positions: "Wing system W90 / W117 / W136 / W142 / W160 по запросу",
+    specs: [
+      ["Поставщик", "Бето Инкам"],
+      ["Бренд инструмента", "WONTECH"],
+      ["Система", "Wing system"],
+      ["Подбор", "по обсадной трубе и проекту"],
+      ["Цена", "рассчитывается индивидуально"]
+    ]
+  },
+  {
+    id: "casing-block-system",
+    slug: "casing-block-system",
+    title: "Блочные обсадные системы WONTECH",
+    category: "casing",
+    label: "Обсадные системы",
+    system: "Block system",
+    image: "/assets/images/official/official-casing-block.png",
+    summary:
+      "Блочные обсадные системы из каталога. Комплектность, диаметр и совместимость уточняются перед расчетом.",
+    positions: "Block system по запросу",
+    specs: [
+      ["Поставщик", "Бето Инкам"],
+      ["Бренд инструмента", "WONTECH"],
+      ["Система", "Block system"],
+      ["Наличие", "уточняется перед заказом"],
+      ["Цена", "по расчету"]
+    ]
+  },
+  {
+    id: "casing-eccentric-system",
+    slug: "casing-eccentric-system",
+    title: "Эксцентриковые обсадные системы WONTECH",
+    category: "casing",
+    label: "Обсадные системы",
+    system: "Eccentric casing system",
+    image: "/assets/images/official/official-casing-eccentric.png",
+    summary:
+      "Эксцентриковые системы для продвижения обсадной колонны. Диаметр и состав комплекта подтверждаются по спецификации.",
+    positions: "эксцентриковые обсадные системы по запросу",
+    specs: [
+      ["Поставщик", "Бето Инкам"],
+      ["Бренд инструмента", "WONTECH"],
+      ["Система", "Eccentric casing system"],
+      ["Подбор", "по обсадной трубе и задаче"],
+      ["Цена", "по расчету"]
+    ]
+  },
+  {
+    id: "casing-concentric-system",
+    slug: "casing-concentric-system",
+    title: "Концентрические обсадные системы WONTECH",
+    category: "casing",
+    label: "Обсадные системы",
+    system: "Concentric casing system",
+    image: "/assets/images/official/official-casing-concentric.png",
+    summary:
+      "Концентрические системы бурения с обсадкой. Карточка используется для отдельного запроса по системе и комплектности.",
+    positions: "концентрические обсадные системы по запросу",
+    specs: [
+      ["Поставщик", "Бето Инкам"],
+      ["Бренд инструмента", "WONTECH"],
+      ["Система", "Concentric casing system"],
+      ["Характеристики", "уточняются при подборе"],
+      ["Цена", "рассчитывается индивидуально"]
+    ]
+  },
+  {
+    id: "top-hammer-tapered-bits",
+    slug: "top-hammer-tapered-bits",
+    title: "Конические коронки для гидроперфораторного бурения WONTECH",
+    category: "top-hammer",
+    label: "Гидроперфораторное бурение",
+    system: "Tapered bits",
+    image: "/assets/images/official/official-top-hammer-bits.png",
+    summary:
+      "Конические коронки для верхнего ударного бурения. Угол конуса, диаметр и исполнение подтверждаются по оборудованию и задаче.",
+    positions: "tapered bits по запросу",
+    specs: [
+      ["Поставщик", "Бето Инкам"],
+      ["Бренд инструмента", "WONTECH"],
+      ["Тип", "конические коронки"],
+      ["Подбор", "по оборудованию и диаметру"],
+      ["Цена", "по расчету"]
+    ]
+  },
+  {
+    id: "top-hammer-tapered-rods",
+    slug: "top-hammer-tapered-rods",
+    title: "Конические штанги для гидроперфораторного бурения WONTECH",
+    category: "top-hammer",
+    label: "Гидроперфораторное бурение",
+    system: "Tapered rods",
+    image: "/assets/images/official/official-top-hammer-rods.png",
+    summary:
+      "Конические штанги для верхнего ударного бурения. Длина, присоединение и совместимость уточняются по спецификации заказчика.",
+    positions: "tapered rods по запросу",
+    specs: [
+      ["Поставщик", "Бето Инкам"],
+      ["Бренд инструмента", "WONTECH"],
+      ["Тип", "конические штанги"],
+      ["Подбор", "по длине, конусу и оборудованию"],
+      ["Цена", "рассчитывается индивидуально"]
+    ]
+  },
+  {
+    id: "top-hammer-couplings-shanks",
+    slug: "top-hammer-couplings-shanks",
+    title: "Муфты и хвостовики для гидроперфораторного бурения",
+    category: "top-hammer",
+    label: "Гидроперфораторное бурение",
+    system: "R / T / ST / GT по запросу",
+    image: "/assets/images/official/official-top-hammer-rods.png",
+    summary:
+      "Соединительные муфты и хвостовики для резьбовых систем верхнего ударного бурения. Подбор выполняется по резьбе и буровой установке.",
+    positions: "муфты / хвостовики / переходники по запросу",
+    specs: [
+      ["Поставщик", "Бето Инкам"],
+      ["Тип", "муфты и хвостовики"],
+      ["Резьбы", "R / T / ST / GT по запросу"],
+      ["Подбор", "по оборудованию и текущей спецификации"],
+      ["Цена", "по расчету"]
+    ]
+  },
+  {
+    id: "dth-drill-pipes",
+    slug: "dth-drill-pipes",
+    title: "Буровые трубы DTH",
+    category: "accessories",
+    label: "Комплектующие",
+    system: "по длине и резьбе",
+    image: "/assets/images/official/official-top-hammer-rods.png",
+    summary:
+      "Буровые трубы для DTH-направления. Длина, наружный диаметр, стенка и резьбовое соединение уточняются по заявке.",
+    positions: "буровые трубы DTH по запросу",
+    specs: [
+      ["Поставщик", "Бето Инкам"],
+      ["Тип", "буровые трубы DTH"],
+      ["Подбор", "по длине, диаметру и резьбе"],
+      ["Наличие и сроки", "уточняются перед заказом"],
+      ["Цена", "по расчету"]
+    ]
+  },
+  {
+    id: "dth-subs-adapters",
+    slug: "dth-subs-adapters",
+    title: "Переходники и адаптеры DTH",
+    category: "accessories",
+    label: "Комплектующие",
+    system: "API Reg / IF / BECO по запросу",
+    image: "/assets/images/local/workshop-stock.jpg",
+    summary:
+      "Переходники, адаптеры и переводники для DTH-сборки. Присоединение и комплект поставки подтверждаются перед расчетом.",
+    positions: "subs / adapters / переходники DTH",
+    specs: [
+      ["Поставщик", "Бето Инкам"],
+      ["Тип", "переходники и адаптеры DTH"],
+      ["Резьбы", "API Reg / IF / BECO по запросу"],
+      ["Подбор", "по текущей сборке и системе"],
+      ["Цена", "по расчету"]
+    ]
+  }
+];
+
+products.push(...extendedProducts);
+
 const locations = [
   { city: "Санкт-Петербург", coords: [59.9386, 30.3141], note: "точка возможной отгрузки на северо-западе" },
   { city: "Екатеринбург", coords: [56.8389, 60.6057], note: "точка возможной отгрузки на Урале" },
@@ -851,58 +1402,10 @@ const articles = [
         ]
       }
     ]
-  },
-  {
-    id: "b2b-catalog",
-    slug: "pochemu-b2b-katalog-a-ne-internet-magazin",
-    label: "Каталог",
-    title: "Почему сайт сделан как B2B-каталог, а не обычный интернет-магазин",
-    image: "/assets/images/local/yuri-kozlovsky.jpg",
-    summary:
-      "Объяснение логики сайта: заявки, расчет, наличие, спецификация и аккуратные формулировки вместо неподтвержденных цен и характеристик.",
-    lead:
-      "Для бурового инструмента формат обычного интернет-магазина не всегда подходит. Клиенту нужна не только кнопка покупки, а проверка совместимости, наличия и расчет поставки.",
-    sections: [
-      {
-        title: "Главный сценарий - получить расчет",
-        paragraphs: [
-          "В B2B-каталоге пользователь выбирает направление, добавляет позиции в заявку, указывает регион доставки и отправляет запрос. Дальше менеджер проверяет наличие, совместимость и готовит расчет.",
-          "Такой подход честнее, чем показывать неподтвержденные цены и обещать моментальную покупку. Особенно когда не собран полный каталог, нет паспортов по каждой позиции и не синхронизированы складские остатки."
-        ]
-      },
-      {
-        title: "Что делает сайт полноценным",
-        paragraphs: [
-          "Многостраничная структура делает сайт серьезнее: есть главная, каталог, категории, карточки товаров, справочник, карта поставок, галерея, контакты и страница спецификации. Каждая страница решает свою задачу.",
-          "Статьи вынесены отдельно и раскрывают реальные вопросы клиентов. Это лучше, чем маленькие тексты в модальном окне: большие статьи можно отправлять клиентам, индексировать и использовать как справочник."
-        ]
-      },
-      {
-        title: "Почему не нужно скрывать ограничения",
-        paragraphs: [
-          "Если нет цен, сертификатов, расширенных характеристик и полного каталога, сайт должен сказать об этом аккуратно. Не нужно писать «лучшие цены», «полный ассортимент» или «официальный представитель», если это не подтверждено.",
-          "Правильные формулировки не делают сайт слабым. Они показывают, что компания работает с промышленными заявками и не подменяет технический подбор рекламными обещаниями."
-        ],
-        bullets: [
-          "характеристики уточняются при подборе",
-          "наличие и сроки поставки уточняются перед заказом",
-          "цена рассчитывается индивидуально",
-          "подбор выполняется по спецификации заказчика",
-          "фото и технические параметры могут быть добавлены позже"
-        ]
-      },
-      {
-        title: "Что будет следующим этапом",
-        paragraphs: [
-          "Когда появятся подтвержденные фото, цены, паспорта и остатки, сайт можно расширить: добавить больше карточек, фильтры по параметрам, PDF-каталоги и синхронизацию заявок.",
-          "Но уже сейчас сайт должен выглядеть завершенным: он показывает ассортиментные направления, объясняет процесс и ведет клиента к заявке на расчет."
-        ]
-      }
-    ]
   }
 ];
 
-const siteArticles = articles.filter((article) => article.id !== "b2b-catalog");
+const siteArticles = articles;
 
 function esc(value) {
   return String(value)
@@ -926,12 +1429,8 @@ function header(active = "") {
   return `
     <header class="site-header">
       <div class="container header-grid">
-        <a class="brand" href="/index.html" aria-label="WONTECH">
-          <img src="/assets/images/local/wontech-mark.png" alt="">
-          <span>
-            <strong>WONTECH</strong>
-            <small>буровой инструмент</small>
-          </span>
+        <a class="brand brand-image" href="/index.html" aria-label="Бето Инкам">
+          <img class="brand-logo-wide" src="/assets/images/local/beto-incam-logo-header.png" alt="Бето Инкам">
         </a>
         <button class="menu-toggle" type="button" data-menu-toggle aria-label="Открыть меню">
           <span></span><span></span><span></span>
@@ -956,15 +1455,10 @@ function footer() {
     <footer class="site-footer">
       <div class="container footer-grid">
         <div>
-          <a class="brand brand-footer" href="/index.html" aria-label="WONTECH">
-            <img src="/assets/images/local/wontech-mark.png" alt="">
-            <span>
-              <strong>WONTECH</strong>
-              <small>буровой инструмент</small>
-            </span>
+          <a class="brand brand-footer brand-image" href="/index.html" aria-label="Бето Инкам">
+            <img class="brand-logo-footer" src="/assets/images/local/beto-incam-logo-main.png" alt="Бето Инкам">
           </a>
-          <p>Многостраничный B2B-каталог бурового инструмента. Наличие, сроки, совместимость и цена подтверждаются перед заказом.</p>
-          <img class="footer-partner-logo" src="/assets/images/local/beto-inkam-logo.svg" alt="Бето Инкам">
+          <p>Бето Инкам - B2B-каталог бурового инструмента WONTECH и сопутствующих направлений. Наличие, сроки, совместимость и цена подтверждаются перед заказом.</p>
         </div>
         <div>
           <h3>Каталог</h3>
@@ -1164,11 +1658,13 @@ function yandexMapBlock() {
 function homePage() {
   const featuredIds = [
     "hammer-cop44-ql40",
-    "bit-cop54-ql50",
     "wt-series-hammers",
+    "wql-series-hammers",
+    "bits-dhd-series",
     "pdc-request",
-    "casing-systems-request",
-    "tricone-bits-request"
+    "rc-hammers",
+    "casing-wing-system",
+    "cluster-drill-wtc"
   ];
   const featured = featuredIds.map((id) => products.find((product) => product.id === id)).filter(Boolean).map(productCard).join("");
   const articleTeasers = siteArticles.slice(0, 3).map(articleCard).join("");
@@ -1177,8 +1673,8 @@ function homePage() {
       <div class="hero-grid">
         <div class="hero-copy">
           <p class="eyebrow">B2B-каталог бурового инструмента</p>
-          <h1>WONTECH для DTH-бурения, PDC, RC и комплектующих поставок</h1>
-          <p class="lead">Многостраничный каталог для промышленных заявок: выберите направление, добавьте позиции в спецификацию и получите расчет по наличию, срокам и доставке.</p>
+          <h1>Бето Инкам - буровой инструмент для промышленных задач</h1>
+          <p class="lead">Многостраничный B2B-каталог инструмента WONTECH и смежных направлений: выберите серию, добавьте позиции в спецификацию и получите расчет по наличию, срокам и доставке.</p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="/catalog.html">Открыть каталог</a>
             <button class="btn btn-secondary" type="button" data-open-request>Получить расчет</button>
@@ -1189,19 +1685,13 @@ function homePage() {
             <span>Поставки по России и СНГ</span>
           </div>
         </div>
-        <div class="hero-visual hero-video-card" aria-label="Зацикленная анимация поставки бурового инструмента WONTECH">
-          <div class="hero-loop">
-            <img src="/assets/images/local/warehouse-wide.jpg" alt="Склад бурового инструмента WONTECH">
-            <span class="loop-line loop-line-one"></span>
-            <span class="loop-line loop-line-two"></span>
-            <span class="loop-dot loop-dot-one"></span>
-            <span class="loop-dot loop-dot-two"></span>
-            <span class="loop-dot loop-dot-three"></span>
-            <div class="loop-tool">
-              <img src="/assets/images/local/pdc-crowns-studio.png" alt="">
-            </div>
+        <div class="hero-visual hero-brand-card" aria-label="Бето Инкам - буровой инструмент">
+          <img class="hero-brand-logo" src="/assets/images/local/beto-incam-logo-main.png" alt="Бето Инкам">
+          <div class="hero-brand-products">
+            <img src="/assets/images/official/official-wt-hammers.png" alt="Пневмоударники WONTECH">
+            <img src="/assets/images/local/stock-crowns-wrapped.jpg" alt="PDC / PDS-коронки">
+            <img src="/assets/images/official/official-casing-wing.png" alt="Обсадные системы">
           </div>
-          <img class="beto-logo-card" src="/assets/images/local/beto-inkam-logo.svg" alt="Бето Инкам">
         </div>
       </div>
     `)}
@@ -1250,7 +1740,7 @@ function homePage() {
     </section>
     <section class="section gallery-band">
       <div class="container">
-        ${sectionHead("Фото", "Фотографии инструмента и склада", "Использованы переданные изображения. В шапке сайта стоит чистый знак WONTECH без лишних надписей.")}
+        ${sectionHead("Фото", "Фотографии инструмента и склада", "Использованы переданные изображения и официальные продуктовые изображения BETO/WONTECH без водяных знаков.")}
         <div class="gallery-strip">
           <img src="/assets/images/local/workshop-stock.jpg" alt="Склад бурового инструмента">
           <img src="/assets/images/local/stock-crowns-wrapped.jpg" alt="Коронки в упаковке">
@@ -1261,8 +1751,8 @@ function homePage() {
     </section>
   `;
   write("index.html", page({
-    title: "WONTECH - многостраничный B2B-каталог бурового инструмента",
-    description: "Пневмоударники, коронки, PDC, RC и комплектующие WONTECH. Каталог, статьи, карта поставок и заявка на расчет.",
+    title: "Бето Инкам - многостраничный B2B-каталог бурового инструмента",
+    description: "Бето Инкам: пневмоударники, коронки, PDC, RC, обсадные системы и комплектующие WONTECH. Каталог, карта поставок и заявка на расчет.",
     active: "home",
     body
   }));
@@ -1273,7 +1763,7 @@ function catalogPage() {
     ${hero(`
       <div class="page-hero">
         <p class="eyebrow">Каталог</p>
-        <h1>Каталог бурового инструмента WONTECH</h1>
+        <h1>Каталог бурового инструмента Бето Инкам</h1>
         <p class="lead">Выберите категорию или позицию, добавьте ее в заявку и отправьте спецификацию на расчет. Цены, наличие и сроки подтверждаются индивидуально.</p>
       </div>
     `)}
@@ -1299,8 +1789,8 @@ function catalogPage() {
     </section>
   `;
   write("catalog.html", page({
-    title: "Каталог WONTECH - пневмоударники, коронки, PDC, RC",
-    description: "B2B-каталог бурового инструмента WONTECH с заявкой на расчет.",
+    title: "Каталог Бето Инкам - пневмоударники, коронки, PDC, RC",
+    description: "B2B-каталог Бето Инкам: буровой инструмент WONTECH, PDC/PDS, RC, обсадные системы и комплектующие с заявкой на расчет.",
     active: "catalog",
     body
   }));
@@ -1351,7 +1841,7 @@ function categoryPages() {
       </section>
     `;
     write(category.page.replace(/^\//, ""), page({
-      title: `${category.title} - WONTECH`,
+      title: `${category.title} - Бето Инкам`,
       description: `${category.title}. Подбор и расчет по спецификации заказчика.`,
       active: "catalog",
       body
@@ -1419,7 +1909,7 @@ function productPages() {
       </section>
     `;
     write(`products/${product.slug}.html`, page({
-      title: `${product.title} - карточка WONTECH`,
+      title: `${product.title} - карточка Бето Инкам`,
       description: `${product.title}. Характеристики, наличие и цена уточняются при подборе.`,
       active: "catalog",
       body
@@ -1443,7 +1933,7 @@ function articlesPage() {
     </section>
   `;
   write("articles.html", page({
-    title: "Статьи WONTECH - справочник по буровому инструменту",
+    title: "Статьи Бето Инкам - справочник по буровому инструменту",
     description: "Большие статьи о заявках, подборе DTH, коронках, PDC, RC, логистике и B2B-каталоге.",
     active: "articles",
     body
@@ -1481,7 +1971,7 @@ function articlePages() {
       </article>
     `;
     write(`articles/${article.slug}.html`, page({
-      title: `${article.title} - WONTECH`,
+      title: `${article.title} - Бето Инкам`,
       description: article.summary,
       active: "articles",
       body
@@ -1522,8 +2012,8 @@ function logisticsPage() {
     </section>
   `;
   write("logistics.html", page({
-    title: "Поставки WONTECH - Яндекс.Карта и точки отгрузки",
-    description: "Карта поставок WONTECH по России: Санкт-Петербург, Екатеринбург, Красноярск.",
+    title: "Поставки Бето Инкам - Яндекс.Карта и точки отгрузки",
+    description: "Карта поставок Бето Инкам по России: Санкт-Петербург, Екатеринбург, Красноярск.",
     active: "logistics",
     body
   }));
@@ -1535,7 +2025,7 @@ function galleryPage() {
       <div class="page-hero">
         <p class="eyebrow">Фото</p>
         <h1>Фотографии инструмента, склада и каталога</h1>
-        <p class="lead">Галерея использует переданные изображения. В шапке сайта остается чистый знак и текст WONTECH.</p>
+        <p class="lead">Галерея использует переданные изображения, официальные продуктовые изображения и материалы из каталогов.</p>
       </div>
     `)}
     <section class="section">
@@ -1551,9 +2041,17 @@ function galleryPage() {
         <img src="/assets/images/local/casing-system-front.jpg" alt="Обсадная система">
         <img src="/assets/images/local/casing-system-side.jpg" alt="Обсадная система сбоку">
         <img src="/assets/images/local/casing-system-assembled.jpg" alt="Обсадная система в сборе">
-        <img src="/assets/images/local/warehouse-aisle.jpg" alt="Склад бурового инструмента WONTECH">
+        <img src="/assets/images/local/warehouse-aisle.jpg" alt="Склад бурового инструмента Бето Инкам">
         <img src="/assets/images/local/warehouse-hammers.jpg" alt="Пневмоударники на складе">
-        <img src="/assets/images/local/warehouse-wide.jpg" alt="Широкий вид склада WONTECH">
+        <img src="/assets/images/local/warehouse-wide.jpg" alt="Широкий вид склада Бето Инкам">
+        <img src="/assets/images/official/official-wt-hammers.png" alt="Пневмоударники WT-серии WONTECH">
+        <img src="/assets/images/official/official-wql-hammers.png" alt="Пневмоударники WQL-серии WONTECH">
+        <img src="/assets/images/official/official-wbr-hammers.png" alt="Пневмоударники WBR-серии WONTECH">
+        <img src="/assets/images/official/official-bit-dhd.png" alt="Коронка DHD-серии WONTECH">
+        <img src="/assets/images/official/official-bit-mission.png" alt="Коронка MISSION-серии WONTECH">
+        <img src="/assets/images/official/official-casing-wing.png" alt="Крыльевая обсадная система WONTECH">
+        <img src="/assets/images/official/official-cluster-wtc380.png" alt="Кластерный пневмоударник WONTECH">
+        <img src="/assets/images/official/official-top-hammer-bits.png" alt="Коронки для гидроперфораторного бурения">
         <img src="/assets/images/local/li-qichao-china.jpg" alt="LI qichao">
         <img src="/assets/images/local/hero-logistics.jpg" alt="Логистика бурового инструмента">
         <img src="/assets/images/local/hero-product-set.jpg" alt="Набор бурового инструмента">
@@ -1561,8 +2059,8 @@ function galleryPage() {
     </section>
   `;
   write("gallery.html", page({
-    title: "Фото WONTECH - буровой инструмент и склад",
-    description: "Фотографии бурового инструмента, склада и визуальных материалов WONTECH.",
+    title: "Фото Бето Инкам - буровой инструмент и склад",
+    description: "Фотографии бурового инструмента, склада и визуальных материалов Бето Инкам.",
     active: "gallery",
     body
   }));
@@ -1574,28 +2072,56 @@ function contactsPage() {
       <div class="contacts-hero">
         <div>
           <p class="eyebrow">Контакты</p>
-          <h1>Контакт для расчета и подбора</h1>
-          <p class="lead">Отправьте список позиций, спецификацию или описание задачи. После проверки наличия и совместимости будет подготовлен расчет.</p>
+          <h1>Связаться с Бето Инкам</h1>
+          <p class="lead">Отправьте список позиций, спецификацию или описание задачи. После проверки наличия, совместимости и сроков будет подготовлен расчет.</p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="tel:+79631800999">Позвонить</a>
             <button class="btn btn-secondary" type="button" data-open-request>Получить расчет</button>
           </div>
+          <div class="contact-quick-list">
+            <span>Пневмоударники и коронки</span>
+            <span>PDC / PDS, RC и обсадные системы</span>
+            <span>Поставки по России и СНГ</span>
+          </div>
         </div>
-        <div class="contact-people">
-          <article class="contact-person">
-            <img src="/assets/images/local/yuri-kozlovsky.jpg" alt="Юрий Козловский">
-            <h2>Юрий Козловский</h2>
+        <div class="contact-command-card">
+          <img src="/assets/images/local/beto-incam-logo-main.png" alt="Бето Инкам">
+          <div class="contact-command-line">
+            <span>Основной телефон</span>
             <a href="tel:+79631800999">+7 963 180 09 99</a>
-            <span>Расчет бурового инструмента и обработка спецификаций</span>
-          </article>
-          <article class="contact-person">
-            <img src="/assets/images/local/li-qichao-china.jpg" alt="LI qichao">
-            <h2>LI qichao</h2>
-            <span>Представитель в Китае</span>
-          </article>
+          </div>
+          <div class="contact-command-line">
+            <span>Заявка</span>
+            <button class="btn btn-primary" type="button" data-open-request>Получить расчет</button>
+          </div>
+          <p>Для быстрой обработки укажите серию, диаметр, количество, регион доставки и фото старого инструмента, если нужен подбор аналога.</p>
         </div>
       </div>
     `)}
+    <section class="section contact-team-section">
+      <div class="container">
+        ${sectionHead("Команда", "Кто обрабатывает заявки", "Контакты вынесены отдельным блоком, чтобы страница не выглядела как набор случайных карточек.")}
+        <div class="contact-team-grid">
+          <article class="team-card team-card-primary">
+            <img src="/assets/images/local/yuri-kozlovsky.jpg" alt="Юрий Козловский">
+            <div>
+              <p class="eyebrow">Россия / расчет</p>
+              <h2>Юрий Козловский</h2>
+              <a href="tel:+79631800999">+7 963 180 09 99</a>
+              <p>Расчет бурового инструмента, обработка спецификаций, уточнение наличия и сроков поставки.</p>
+            </div>
+          </article>
+          <article class="team-card">
+            <img src="/assets/images/local/li-qichao-china.jpg" alt="LI qichao">
+            <div>
+              <p class="eyebrow">Китай / поставки</p>
+              <h2>LI qichao</h2>
+              <p>Представитель в Китае. Помогает по коммуникации с производством и уточнению данных по позициям.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
     <section class="section">
       <div class="container content-grid">
         <article class="text-card">
@@ -1618,8 +2144,8 @@ function contactsPage() {
     </section>
   `;
   write("contacts.html", page({
-    title: "Контакты WONTECH - расчет бурового инструмента",
-    description: "Контакт для расчета бурового инструмента WONTECH. Телефон +7 963 180 09 99.",
+    title: "Контакты Бето Инкам - расчет бурового инструмента",
+    description: "Контакт для расчета бурового инструмента Бето Инкам. Телефон +7 963 180 09 99.",
     active: "contacts",
     body
   }));
@@ -1663,8 +2189,8 @@ function specificationPage() {
     </section>
   `;
   write("specification.html", page({
-    title: "Отправить спецификацию WONTECH",
-    description: "Форма для отправки спецификации на расчет бурового инструмента WONTECH.",
+    title: "Отправить спецификацию Бето Инкам",
+    description: "Форма для отправки спецификации на расчет бурового инструмента Бето Инкам.",
     active: "specification",
     body
   }));
@@ -1697,11 +2223,11 @@ function legalPage(filename, title, description, sections) {
       </div>
     </section>
   `;
-  write(filename, page({ title: `${title} - WONTECH`, description, active: "", body }));
+  write(filename, page({ title: `${title} - Бето Инкам`, description, active: "", body }));
 }
 
 function legalPages() {
-  legalPage("privacy.html", "Политика конфиденциальности", "Как сайт WONTECH обрабатывает данные, которые пользователь отправляет через формы заявки.", [
+  legalPage("privacy.html", "Политика конфиденциальности", "Как сайт Бето Инкам обрабатывает данные, которые пользователь отправляет через формы заявки.", [
     {
       title: "Какие данные собираются",
       paragraphs: [
@@ -1725,7 +2251,7 @@ function legalPages() {
     }
   ]);
 
-  legalPage("cookies.html", "Политика cookie", "Какие cookie и локальные данные используются на сайте WONTECH.", [
+  legalPage("cookies.html", "Политика cookie", "Какие cookie и локальные данные используются на сайте Бето Инкам.", [
     {
       title: "Технические cookie и localStorage",
       paragraphs: [
@@ -1770,7 +2296,7 @@ function legalPages() {
     }
   ]);
 
-  legalPage("terms.html", "Условия использования сайта", "Правила работы с каталогом WONTECH и заявками на расчет.", [
+  legalPage("terms.html", "Условия использования сайта", "Правила работы с каталогом Бето Инкам и заявками на расчет.", [
     {
       title: "Назначение сайта",
       paragraphs: [
@@ -1920,7 +2446,7 @@ function buildPayload(form) {
 function requestText(payload) {
   const fields = payload.fields || {};
   const lines = [
-    "Заявка WONTECH",
+    "Заявка Бето Инкам",
     "",
     \`Имя: \${fields.name || "-"}\`,
     \`Компания: \${fields.company || "-"}\`,
@@ -2250,9 +2776,12 @@ button, input, textarea, select { font: inherit; }
   display: inline-flex;
   align-items: center;
   gap: 12px;
-  min-width: 220px;
+  min-width: 250px;
 }
 .brand img { width: 52px; height: 52px; object-fit: contain; }
+.brand-image { min-width: 280px; }
+.brand-logo-wide { width: 260px !important; height: 62px !important; border-radius: 14px; object-fit: cover !important; object-position: center; box-shadow: 0 14px 30px rgba(0,0,0,.28); }
+.brand-logo-footer { width: 260px !important; height: auto !important; border-radius: 16px; object-fit: cover !important; box-shadow: 0 16px 34px rgba(0,0,0,.25); }
 .brand strong { display: block; color: #fff; font-size: 25px; letter-spacing: .08em; line-height: 1; }
 .brand small { display: block; margin-top: 4px; color: #d8d0c7; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; }
 .brand-footer { min-width: 0; margin-bottom: 18px; }
@@ -2349,6 +2878,10 @@ h3 { margin-bottom: 10px; font-size: 22px; line-height: 1.16; letter-spacing: -.
 .loop-tool { position: absolute; right: 24px; bottom: 24px; z-index: 4; width: 190px; height: 150px; border-radius: 26px; background: rgba(255,255,255,.9); box-shadow: 0 22px 52px rgba(0,0,0,.28); padding: 14px; animation: floatTool 5.2s ease-in-out infinite; }
 .loop-tool img { width: 100%; height: 100%; min-height: 0; object-fit: contain; }
 .beto-logo-card { position: absolute; left: 28px; bottom: 28px; z-index: 5; width: min(260px, 48%); min-height: 0 !important; border-radius: 20px; box-shadow: 0 18px 44px rgba(0,0,0,.22); }
+.hero-brand-card { display: grid; gap: 18px; min-height: 500px; align-content: center; background: radial-gradient(circle at 70% 18%, rgba(237,116,21,.22), transparent 34%), #15110d; padding: 24px; }
+.hero-brand-logo { width: 100%; min-height: 0 !important; border-radius: 28px; object-fit: cover; box-shadow: 0 24px 58px rgba(0,0,0,.32); }
+.hero-brand-products { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.hero-brand-products img { width: 100%; height: 150px; min-height: 0 !important; border-radius: 22px; background: #fff; object-fit: contain; padding: 12px; }
 @keyframes slowZoom { from { transform: scale(1.02); } to { transform: scale(1.12); } }
 @keyframes linePulse { 0%, 100% { opacity: .28; } 50% { opacity: .95; } }
 @keyframes dotBlink { 0%, 100% { transform: scale(.72); opacity: .45; } 50% { transform: scale(1.1); opacity: 1; } }
@@ -2497,12 +3030,24 @@ input:focus, select:focus, textarea:focus { border-color: var(--accent); box-sha
 .article-content section { margin-bottom: 48px; }
 .article-content p, .article-content li { color: #48413a; }
 .legal-layout .article-content { max-width: 860px; }
-.contacts-hero { grid-template-columns: minmax(0, 1fr) 380px; }
-.contact-people { display: grid; gap: 16px; }
-.contact-person { display: grid; gap: 12px; background: rgba(255,255,255,.08); padding: 22px; }
-.contact-person img { width: 100%; height: 310px; border-radius: 22px; object-fit: cover; object-position: center 18%; }
-.contact-person a { color: #fff; font-size: 22px; font-weight: 900; }
-.contact-person span { color: #d8cfc5; }
+.contacts-hero { grid-template-columns: minmax(0, 1fr) minmax(360px, 480px); }
+.contact-quick-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 30px; }
+.contact-quick-list span { border: 1px solid rgba(255,255,255,.12); border-radius: 18px; background: rgba(255,255,255,.07); color: #f3eadf; padding: 13px; font-weight: 800; }
+.contact-command-card { display: grid; gap: 18px; border: 1px solid rgba(255,255,255,.14); border-radius: 34px; background: rgba(255,255,255,.08); padding: 24px; box-shadow: var(--shadow); }
+.contact-command-card img { width: 100%; border-radius: 24px; box-shadow: 0 22px 52px rgba(0,0,0,.28); }
+.contact-command-card p { color: #e0d6ca; }
+.contact-command-line { display: flex; justify-content: space-between; gap: 18px; align-items: center; border-top: 1px solid rgba(255,255,255,.12); padding-top: 16px; }
+.contact-command-line span { color: #cabfb2; font-size: 13px; font-weight: 900; text-transform: uppercase; letter-spacing: .12em; }
+.contact-command-line a { color: #fff; font-size: 24px; font-weight: 900; }
+.contact-team-section { background: #fff8ee; }
+.contact-team-grid { display: grid; grid-template-columns: 1.2fr .8fr; gap: 22px; }
+.team-card { display: grid; grid-template-columns: 180px 1fr; gap: 22px; align-items: center; border: 1px solid var(--line); border-radius: 30px; background: #fff; padding: 20px; box-shadow: 0 16px 44px rgba(20,16,12,.08); }
+.team-card-primary { background: #111; color: #fff; border-color: rgba(255,255,255,.12); }
+.team-card img { width: 180px; height: 220px; border-radius: 24px; object-fit: cover; object-position: center 18%; }
+.team-card h2 { margin-bottom: 8px; font-size: clamp(28px, 3vw, 42px); }
+.team-card p { color: var(--muted); }
+.team-card-primary p { color: #d8cfc5; }
+.team-card a { color: var(--accent); font-size: 24px; font-weight: 900; }
 .spec-form { display: grid; gap: 16px; padding: 24px; }
 .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
 .request-panel { position: fixed; inset: 0; z-index: 100; display: none; }
@@ -2592,6 +3137,7 @@ input:focus, select:focus, textarea:focus { border-color: var(--accent); box-sha
   .main-nav.is-open { display: flex; }
   .hero-grid, .category-hero, .product-hero, .contacts-hero, .split, .catalog-layout, .content-grid, .product-detail-grid, .specification-layout, .yandex-map-shell, .footer-grid, .article-layout { grid-template-columns: 1fr; }
   .category-grid, .product-grid, .article-grid, .gallery-page-grid, .product-gallery { grid-template-columns: repeat(2, 1fr); }
+  .contact-quick-list, .contact-team-grid { grid-template-columns: 1fr; }
   .catalog-filter, .article-aside { position: static; }
   .yandex-map { min-height: 420px; }
 }
@@ -2601,6 +3147,9 @@ input:focus, select:focus, textarea:focus { border-color: var(--accent); box-sha
   .header-grid { grid-template-columns: 1fr auto; min-height: 70px; gap: 10px; }
   .brand { min-width: 0; }
   .brand img { width: 42px; height: 42px; }
+  .brand-image { min-width: 0; }
+  .brand-logo-wide { width: min(210px, 64vw) !important; height: 50px !important; border-radius: 12px; }
+  .brand-logo-footer { width: min(260px, 100%) !important; }
   .brand strong { font-size: 19px; }
   .brand small { display: none; }
   .header-request { display: none; }
@@ -2630,6 +3179,10 @@ input:focus, select:focus, textarea:focus { border-color: var(--accent); box-sha
   .hero-actions { display: grid; }
   .hero-actions .btn { width: 100%; }
   .hero-visual img, .category-hero img { min-height: 260px; height: 280px; }
+  .hero-brand-card { min-height: auto; padding: 14px; }
+  .hero-brand-logo { height: auto !important; min-height: 0 !important; }
+  .hero-brand-products { grid-template-columns: 1fr; }
+  .hero-brand-products img { height: 160px; min-height: 0 !important; }
   .hero-video-card { min-height: 360px; }
   .hero-loop { min-height: 330px; }
   .hero-loop > img { height: 330px; min-height: 330px; }
@@ -2639,11 +3192,15 @@ input:focus, select:focus, textarea:focus { border-color: var(--accent); box-sha
   .hero-visual .beto-logo-card { height: auto; min-height: 0 !important; }
   .product-gallery img { height: 240px; }
   .product-hero-media { min-height: 260px; }
+  .contact-command-line { display: grid; gap: 8px; }
+  .contact-command-line a { font-size: 21px; }
+  .team-card { grid-template-columns: 1fr; }
+  .team-card img { width: 100%; height: 320px; }
   .card-actions { grid-template-columns: 1fr; }
   .article-hero > img { height: 470px; }
   .article-hero-copy { bottom: 28px; }
   .article-content { font-size: 17px; }
-  .floating-call { right: 12px; bottom: 12px; left: 12px; justify-items: center; padding: 11px 15px; text-align: center; }
+  .floating-call { right: 12px; bottom: 12px; left: auto; justify-items: center; min-width: 190px; padding: 11px 15px; text-align: center; }
   .cookie-widget { right: 12px; bottom: 84px; width: calc(100% - 24px); }
   body:not(.panel-open) .floating-call { transform: translateY(0); }
   .spec-form { padding-bottom: 92px; }
@@ -2653,7 +3210,7 @@ input:focus, select:focus, textarea:focus { border-color: var(--accent); box-sha
 
 function legacyFiles() {
   write("styles.css", '@import url("/assets/css/site.css");');
-  write("app.js", 'console.log("WONTECH multipage site uses /assets/js/main.js");');
+  write("app.js", 'console.log("Beto Inkam multipage site uses /assets/js/main.js");');
 }
 
 function build() {
@@ -2675,4 +3232,4 @@ function build() {
 }
 
 build();
-console.log("WONTECH multipage site built");
+console.log("Beto Inkam multipage site built");

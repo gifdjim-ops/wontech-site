@@ -1,1 +1,1 @@
-console.log("WONTECH multipage site uses /assets/js/main.js");
+console.log("Beto Inkam multipage site uses /assets/js/main.js");

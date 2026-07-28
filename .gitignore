@@ -5,3 +5,4 @@ node_modules/
 _package_wontech-b2b-shop/
 
 .vercel
+tmp/

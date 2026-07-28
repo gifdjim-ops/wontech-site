@@ -1,0 +1,5 @@
+tmp/
+qa-screenshots/
+node_modules/
+telegram.local.json
+*.zip

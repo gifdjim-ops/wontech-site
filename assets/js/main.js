@@ -118,7 +118,7 @@ function buildPayload(form) {
 function requestText(payload) {
   const fields = payload.fields || {};
   const lines = [
-    "Заявка WONTECH",
+    "Заявка Бето Инкам",
     "",
     `Имя: ${fields.name || "-"}`,
     `Компания: ${fields.company || "-"}`,

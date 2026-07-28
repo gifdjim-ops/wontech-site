@@ -687,6 +687,910 @@ window.WONTECH_DATA = {
           "рассчитывается индивидуально"
         ]
       ]
+    },
+    {
+      "id": "hammers-2-3-inch",
+      "slug": "hammers-2-3-inch",
+      "title": "Пневмоударники 2-3 дюйма WONTECH",
+      "category": "hammers",
+      "label": "DTH-пневмоударники",
+      "system": "2-3 inch",
+      "image": "/assets/images/official/official-wd-hammers.png",
+      "summary": "Малая размерная группа DTH-пневмоударников для заявок, где требуется компактная система. Точная модель, присоединение и рабочие параметры уточняются при подборе.",
+      "positions": "2-3 inch DTH hammers",
+      "specs": [
+        [
+          "Поставщик",
+          "Бето Инкам"
+        ],
+        [
+          "Бренд инструмента",
+          "WONTECH"
+        ],
+        [
+          "Группа",
+          "2-3 inch DTH hammers"
+        ],
+        [
+          "Подбор",
+          "по оборудованию, диаметру и условиям бурения"
+        ],
+        [
+          "Цена",
+          "по расчету"
+        ]
+      ]
+    },
+    {
+      "id": "hammers-10-12-inch",
+      "slug": "hammers-10-12-inch",
+      "title": "Пневмоударники 10-12+ дюймов WONTECH",
+      "category": "hammers",
+      "label": "DTH-пневмоударники",
+      "system": "10 / 12+ inch",
+      "image": "/assets/images/official/official-wmsd-hammers.png",
+      "summary": "Крупная размерная группа DTH-пневмоударников для промышленных заявок. Конкретная модель и комплектность согласуются по спецификации заказчика.",
+      "positions": "10 inch / 12+ inch DTH hammers",
+      "specs": [
+        [
+          "Поставщик",
+          "Бето Инкам"
+        ],
+        [
+          "Бренд инструмента",
+          "WONTECH"
+        ],
+        [
+          "Группа",
+          "10 inch / 12+ inch DTH hammers"
+        ],
+        [
+          "Наличие и сроки",
+          "уточняются перед заказом"
+        ],
+        [
+          "Цена",
+          "рассчитывается индивидуально"
+        ]
+      ]
+    },
+    {
+      "id": "wbr-series-hammers",
+      "slug": "wbr-series-hammers",
+      "title": "Пневмоударники WBR-серии WONTECH",
+      "category": "hammers",
+      "label": "DTH-пневмоударники",
+      "system": "WBR series",
+      "image": "/assets/images/official/official-wbr-hammers.png",
+      "summary": "WBR-серия вынесена отдельной карточкой, чтобы не смешивать ее с WT, WQL и другими системами. Совместимость и параметры подтверждаются при подборе.",
+      "positions": "WBR series DTH hammers",
+      "specs": [
+        [
+          "Поставщик",
+          "Бето Инкам"
+        ],
+        [
+          "Бренд инструмента",
+          "WONTECH"
+        ],
+        [
+          "Серия",
+          "WBR"
+        ],
+        [
+          "Подбор",
+          "по системе, оборудованию и задаче"
+        ],
+        [
+          "Цена",
+          "по расчету"
+        ]
+      ]
+    },
+    {
+      "id": "wql-series-hammers",
+      "slug": "wql-series-hammers",
+      "title": "Пневмоударники WQL-серии WONTECH",
+      "category": "hammers",
+      "label": "DTH-пневмоударники",
+      "system": "WQL series",
+      "image": "/assets/images/official/official-wql-hammers.png",
+      "summary": "WQL-серия DTH-пневмоударников. Для расчета нужны система, требуемый диаметр, буровая установка, регион доставки и количество.",
+      "positions": "WQL series DTH hammers",
+      "specs": [
+        [
+          "Поставщик",
+          "Бето Инкам"
+        ],
+        [
+          "Бренд инструмента",
+          "WONTECH"
+        ],
+        [
+          "Серия",
+          "WQL"
+        ],
+        [
+          "Характеристики",
+          "уточняются при подборе"
+        ],
+        [
+          "Цена",
+          "рассчитывается индивидуально"
+        ]
+      ]
+    },
+    {
+      "id": "wd-series-hammers",
+      "slug": "wd-series-hammers",
+      "title": "Пневмоударники WD-серии WONTECH",
+      "category": "hammers",
+      "label": "DTH-пневмоударники",
+      "system": "WD series",
+      "image": "/assets/images/official/official-wd-hammers.png",
+      "summary": "WD-серия добавлена как отдельное направление из каталога. Модель, присоединение и комплект поставки подтверждаются перед заказом.",
+      "positions": "WD series DTH hammers",
+      "specs": [
+        [
+          "Поставщик",
+          "Бето Инкам"
+        ],
+        [
+          "Бренд инструмента",
+          "WONTECH"
+        ],
+        [
+          "Серия",
+          "WD"
+        ],
+        [
+          "Наличие и сроки",
+          "уточняются перед заказом"
+        ],
+        [
+          "Цена",
+          "по расчету"
+        ]
+      ]
+    },
+    {
+      "id": "wmsd-series-hammers",
+      "slug": "wmsd-series-hammers",
+      "title": "Пневмоударники WMSD-серии WONTECH",
+      "category": "hammers",
+      "label": "DTH-пневмоударники",
+      "system": "WMSD series",
+      "image": "/assets/images/official/official-wmsd-hammers.png",
+      "summary": "WMSD-серия DTH-пневмоударников. Карточка нужна для заявок, где клиент указывает именно эту серию или подбирает замену по системе.",
+      "positions": "WMSD series DTH hammers",
+      "specs": [
+        [
+          "Поставщик",
+          "Бето Инкам"
+        ],
+        [
+          "Бренд инструмента",
+          "WONTECH"
+        ],
+        [
+          "Серия",
+          "WMSD"
+        ],
+        [
+          "Подбор",
+          "по спецификации заказчика"
+        ],
+        [
+          "Цена",
+          "по расчету"
+        ]
+      ]
+    },
+    {
+      "id": "large-diameter-hammers",
+      "slug": "large-diameter-hammers",
+      "title": "Пневмоударники большого диаметра WONTECH",
+      "category": "large-diameter",
+      "label": "Большой диаметр",
+      "system": "WT320 / WT370 / WSD12AR / WNM125",
+      "image": "/assets/images/official/official-wt370.png",
+      "summary": "Большие DTH-пневмоударники из каталогов WONTECH. Подбор выполняется по требуемому диаметру скважины, буровой установке и условиям работы.",
+      "positions": "WT320 / WT370 / WSD12AR / WNM125",
+      "specs": [
+        [
+          "Поставщик",
+          "Бето Инкам"
+        ],
+        [
+          "Бренд инструмента",
+          "WONTECH"
+        ],
+        [
+          "Модели из каталогов",
+          "WT320 / WT370 / WSD12AR / WNM125"
+        ],
+        [
+          "Подбор",
+          "по проекту и буровому оборудованию"
+        ],
+        [
+          "Цена",
+          "рассчитывается индивидуально"
+        ]
+      ],
+      "gallery": [
+        "/assets/images/official/official-wt320.png",
+        "/assets/images/official/official-wt370.png",
+        "/assets/images/official/official-wsd12ar.png",
+        "/assets/images/official/official-wnm125.png"
+      ]
+    },
+    {
+      "id": "large-diameter-bits",
+      "slug": "large-diameter-bits",
+      "title": "Коронки большого диаметра WONTECH",
+      "category": "large-diameter",
+      "label": "Большой диаметр",
+      "system": "Large size DTH bits",
+      "image": "/assets/images/QL80_bits_203_219_254_279_305.jpg",
+      "summary": "Коронки большого диаметра для DTH-систем. Диаметр, хвостовик, форма забоя и исполнение уточняются по спецификации и условиям бурения.",
+      "positions": "203 / 219 / 254 / 279 / 305 / 311 / 315 / 330 / 356 / 381 мм по запросу",
+      "specs": [
+        [
+          "Поставщик",
+          "Бето Инкам"
+        ],
+        [
+          "Бренд инструмента",
+          "WONTECH"
+        ],
+        [
+          "Группа",
+          "Large size DTH bits"
+        ],
+        [
+          "Диаметры",
+          "уточняются перед расчетом"
+        ],
+        [
+          "Цена",
+          "по расчету"
+        ]
+      ]
+    },
+    {
+      "id": "cluster-drill-wtc",
+      "slug": "cluster-drill-wtc",
+      "title": "Кластерные пневмоударники WTC WONTECH",
+      "category": "cluster",
+      "label": "Кластерные молоты",
+      "system": "WTC380 / WTC445 / WTC465 / WTC525 / WTC800",
+      "image": "/assets/images/official/official-cluster-wtc380.png",
+      "summary": "Кластерные DTH-системы WTC для задач большого диаметра. Конфигурация подбирается по требуемому диаметру, оборудованию и проектной задаче.",
+      "positions": "WTC380 / WTC445 / WTC465 / WTC525 / WTC800",
+      "specs": [
+        [
+          "Поставщик",
+          "Бето Инкам"
+        ],
+        [
+          "Бренд инструмента",
+          "WONTECH"
+        ],
+        [
+          "Серия",
+          "WTC"
+        ],
+        [
+          "Подбор",
+          "по диаметру, установке и условиям бурения"
+        ],
+        [
+          "Цена",
+          "рассчитывается индивидуально"
+        ]
+      ],
+      "gallery": [
+        "/assets/images/official/official-cluster-wtc380.png",
+        "/assets/images/official/official-cluster-wtc445.png",
+        "/assets/images/official/official-cluster-wtc465.png",
+        "/assets/images/official/official-cluster-wtc525.png",
+        "/assets/images/official/official-cluster-wtc800.png"
+      ]
+    },
+    {
+      "id": "bits-dhd-series",
+      "slug": "bits-dhd-series",
+      "title": "Коронки DHD-серии WONTECH",
+      "category": "bits",
+      "label": "DTH-коронки",
+      "system": "DHD series",
+      "image": "/assets/images/official/official-bit-dhd.png",
+      "summary": "DHD-серия DTH-коронок выделена отдельно от уже добавленных QL/COP-групп. Диаметр и исполнение подтверждаются по заявке.",
+      "positions": "DHD series DTH bits",
+      "specs": [
+        [
+          "Поставщик",
+          "Бето Инкам"
+        ],
+        [
+          "Бренд инструмента",
+          "WONTECH"
+        ],
+        [
+          "Серия",
+          "DHD"
+        ],
+        [
+          "Подбор",
+          "по системе и диаметру"
+        ],
+        [
+          "Цена",
+          "по расчету"
+        ]
+      ]
+    },
+    {
+      "id": "bits-sd-series",
+      "slug": "bits-sd-series",
+      "title": "Коронки SD-серии WONTECH",
+      "category": "bits",
+      "label": "DTH-коронки",
+      "system": "SD series",
+      "image": "/assets/images/official/official-bit-sd.png",
+      "summary": "SD-серия DTH-коронок. Карточка используется для заявок по системе SD без выдумывания неподтвержденных размеров и параметров.",
+      "positions": "SD series DTH bits",
+      "specs": [
+        [
+          "Поставщик",
+          "Бето Инкам"
+        ],
+        [
+          "Бренд инструмента",
+          "WONTECH"
+        ],
+        [
+          "Серия",
+          "SD"
+        ],
+        [
+          "Характеристики",
+          "уточняются при подборе"
+        ],
+        [
+          "Цена",
+          "по расчету"
+        ]
+      ]
+    },
+    {
+      "id": "bits-mission-series",
+      "slug": "bits-mission-series",
+      "title": "Коронки MISSION-серии WONTECH",
+      "category": "bits",
+      "label": "DTH-коронки",
+      "system": "MISSION series",
+      "image": "/assets/images/official/official-bit-mission.png",
+      "summary": "MISSION-серия DTH-коронок. Совместимость, диаметр и форма рабочей части подтверждаются перед расчетом.",
+      "positions": "MISSION series DTH bits",
+      "specs": [
+        [
+          "Поставщик",
+          "Бето Инкам"
+        ],
+        [
+          "Бренд инструмента",
+          "WONTECH"
+        ],
+        [
+          "Серия",
+          "MISSION"
+        ],
+        [
+          "Наличие и сроки",
+          "уточняются перед заказом"
+        ],
+        [
+          "Цена",
+          "по расчету"
+        ]
+      ]
+    },
+    {
+      "id": "bits-numa-series",
+      "slug": "bits-numa-series",
+      "title": "Коронки NUMA-серии WONTECH",
+      "category": "bits",
+      "label": "DTH-коронки",
+      "system": "NUMA series",
+      "image": "/assets/images/official/official-bit-numa.png",
+      "summary": "NUMA-серия DTH-коронок для заявок, где важна совместимость с соответствующей системой. Параметры уточняются при подборе.",
+      "positions": "NUMA series DTH bits",
+      "specs": [
+        [
+          "Поставщик",
+          "Бето Инкам"
+        ],
+        [
+          "Бренд инструмента",
+          "WONTECH"
+        ],
+        [
+          "Серия",
+          "NUMA"
+        ],
+        [
+          "Подбор",
+          "по спецификации заказчика"
+        ],
+        [
+          "Цена",
+          "рассчитывается индивидуально"
+        ]
+      ]
+    },
+    {
+      "id": "bits-br-series",
+      "slug": "bits-br-series",
+      "title": "Коронки BR-серии WONTECH",
+      "category": "bits",
+      "label": "DTH-коронки",
+      "system": "BR series",
+      "image": "/assets/images/official/official-bit-br.png",
+      "summary": "BR-серия DTH-коронок из каталога. Карточка не пересекается с QL/COP-группами и используется для отдельного запроса по BR.",
+      "positions": "BR series DTH bits",
+      "specs": [
+        [
+          "Поставщик",
+          "Бето Инкам"
+        ],
+        [
+          "Бренд инструмента",
+          "WONTECH"
+        ],
+        [
+          "Серия",
+          "BR"
+        ],
+        [
+          "Наличие",
+          "уточняется перед заказом"
+        ],
+        [
+          "Цена",
+          "по расчету"
+        ]
+      ]
+    },
+    {
+      "id": "rc-hammers",
+      "slug": "rc-hammers",
+      "title": "RC-молоты WONTECH",
+      "category": "rc",
+      "label": "RC",
+      "system": "CIR / RE по спецификации",
+      "image": "/assets/images/local/warehouse-wide.jpg",
+      "summary": "RC-молоты для бурения с обратной циркуляцией. Серия, хвостовик, диаметр и комплект поставки уточняются по спецификации заказчика.",
+      "positions": "RC hammers: CIR50 / CIR60 / CIR65 / CIR70 / CIR90 / CIR110 / CIR130 / CIR150 / CIR170 по запросу",
+      "specs": [
+        [
+          "Поставщик",
+          "Бето Инкам"
+        ],
+        [
+          "Бренд инструмента",
+          "WONTECH"
+        ],
+        [
+          "Тип",
+          "RC-молоты"
+        ],
+        [
+          "Подбор",
+          "по системе и оборудованию"
+        ],
+        [
+          "Цена",
+          "рассчитывается индивидуально"
+        ]
+      ]
+    },
+    {
+      "id": "rc-bits",
+      "slug": "rc-bits",
+      "title": "RC-коронки WONTECH",
+      "category": "rc",
+      "label": "RC",
+      "system": "RE543 / RE040 / RE052 / RE054 / RE140",
+      "image": "/assets/images/local/stock-grey-bits.jpg",
+      "summary": "RC-коронки выделены отдельно от DTH-коронок, чтобы не смешивать разные системы бурения. Диаметр и хвостовик уточняются перед расчетом.",
+      "positions": "RE543 / RE040 / RE052 / RE054 / RE140 по запросу",
+      "specs": [
+        [
+          "Поставщик",
+          "Бето Инкам"
+        ],
+        [
+          "Бренд инструмента",
+          "WONTECH"
+        ],
+        [
+          "Тип",
+          "RC-коронки"
+        ],
+        [
+          "Подбор",
+          "по хвостовику, диаметру и системе"
+        ],
+        [
+          "Цена",
+          "по расчету"
+        ]
+      ]
+    },
+    {
+      "id": "rc-accessories",
+      "slug": "rc-accessories",
+      "title": "Комплектующие для RC-бурения",
+      "category": "rc",
+      "label": "RC",
+      "system": "по спецификации",
+      "image": "/assets/images/local/stock-small-bits-box.jpg",
+      "summary": "Комплектующие для RC-направления: переходники, элементы сборки и сопутствующие позиции по спецификации заказчика.",
+      "positions": "комплектующие RC по запросу",
+      "specs": [
+        [
+          "Поставщик",
+          "Бето Инкам"
+        ],
+        [
+          "Тип",
+          "комплектующие RC"
+        ],
+        [
+          "Подбор",
+          "по спецификации заказчика"
+        ],
+        [
+          "Наличие и сроки",
+          "уточняются перед заказом"
+        ],
+        [
+          "Цена",
+          "по расчету"
+        ]
+      ]
+    },
+    {
+      "id": "casing-odex-system",
+      "slug": "casing-odex-system",
+      "title": "ODEX-системы WONTECH",
+      "category": "casing",
+      "label": "Обсадные системы",
+      "system": "ODEX",
+      "image": "/assets/images/local/casing-system-front.jpg",
+      "summary": "ODEX-системы для бурения с обсадной колонной. Размер, комплектность и совместимость подбираются по наружному диаметру трубы и условиям работы.",
+      "positions": "ODEX85 / ODEX90 / ODEX115 / ODEX140 / ODEX165 / ODEX190 / ODEX240 / ODEX280 по запросу",
+      "specs": [
+        [
+          "Поставщик",
+          "Бето Инкам"
+        ],
+        [
+          "Бренд инструмента",
+          "WONTECH"
+        ],
+        [
+          "Система",
+          "ODEX"
+        ],
+        [
+          "Подбор",
+          "по трубе, диаметру и задаче"
+        ],
+        [
+          "Цена",
+          "по расчету"
+        ]
+      ]
+    },
+    {
+      "id": "casing-wing-system",
+      "slug": "casing-wing-system",
+      "title": "Крыльевые обсадные системы WONTECH",
+      "category": "casing",
+      "label": "Обсадные системы",
+      "system": "Wing system",
+      "image": "/assets/images/official/official-casing-wing.png",
+      "summary": "Крыльевые системы для бурения с обсадкой. Подбор выполняется по диаметру обсадной трубы, грунтам и требуемой схеме бурения.",
+      "positions": "Wing system W90 / W117 / W136 / W142 / W160 по запросу",
+      "specs": [
+        [
+          "Поставщик",
+          "Бето Инкам"
+        ],
+        [
+          "Бренд инструмента",
+          "WONTECH"
+        ],
+        [
+          "Система",
+          "Wing system"
+        ],
+        [
+          "Подбор",
+          "по обсадной трубе и проекту"
+        ],
+        [
+          "Цена",
+          "рассчитывается индивидуально"
+        ]
+      ]
+    },
+    {
+      "id": "casing-block-system",
+      "slug": "casing-block-system",
+      "title": "Блочные обсадные системы WONTECH",
+      "category": "casing",
+      "label": "Обсадные системы",
+      "system": "Block system",
+      "image": "/assets/images/official/official-casing-block.png",
+      "summary": "Блочные обсадные системы из каталога. Комплектность, диаметр и совместимость уточняются перед расчетом.",
+      "positions": "Block system по запросу",
+      "specs": [
+        [
+          "Поставщик",
+          "Бето Инкам"
+        ],
+        [
+          "Бренд инструмента",
+          "WONTECH"
+        ],
+        [
+          "Система",
+          "Block system"
+        ],
+        [
+          "Наличие",
+          "уточняется перед заказом"
+        ],
+        [
+          "Цена",
+          "по расчету"
+        ]
+      ]
+    },
+    {
+      "id": "casing-eccentric-system",
+      "slug": "casing-eccentric-system",
+      "title": "Эксцентриковые обсадные системы WONTECH",
+      "category": "casing",
+      "label": "Обсадные системы",
+      "system": "Eccentric casing system",
+      "image": "/assets/images/official/official-casing-eccentric.png",
+      "summary": "Эксцентриковые системы для продвижения обсадной колонны. Диаметр и состав комплекта подтверждаются по спецификации.",
+      "positions": "эксцентриковые обсадные системы по запросу",
+      "specs": [
+        [
+          "Поставщик",
+          "Бето Инкам"
+        ],
+        [
+          "Бренд инструмента",
+          "WONTECH"
+        ],
+        [
+          "Система",
+          "Eccentric casing system"
+        ],
+        [
+          "Подбор",
+          "по обсадной трубе и задаче"
+        ],
+        [
+          "Цена",
+          "по расчету"
+        ]
+      ]
+    },
+    {
+      "id": "casing-concentric-system",
+      "slug": "casing-concentric-system",
+      "title": "Концентрические обсадные системы WONTECH",
+      "category": "casing",
+      "label": "Обсадные системы",
+      "system": "Concentric casing system",
+      "image": "/assets/images/official/official-casing-concentric.png",
+      "summary": "Концентрические системы бурения с обсадкой. Карточка используется для отдельного запроса по системе и комплектности.",
+      "positions": "концентрические обсадные системы по запросу",
+      "specs": [
+        [
+          "Поставщик",
+          "Бето Инкам"
+        ],
+        [
+          "Бренд инструмента",
+          "WONTECH"
+        ],
+        [
+          "Система",
+          "Concentric casing system"
+        ],
+        [
+          "Характеристики",
+          "уточняются при подборе"
+        ],
+        [
+          "Цена",
+          "рассчитывается индивидуально"
+        ]
+      ]
+    },
+    {
+      "id": "top-hammer-tapered-bits",
+      "slug": "top-hammer-tapered-bits",
+      "title": "Конические коронки для гидроперфораторного бурения WONTECH",
+      "category": "top-hammer",
+      "label": "Гидроперфораторное бурение",
+      "system": "Tapered bits",
+      "image": "/assets/images/official/official-top-hammer-bits.png",
+      "summary": "Конические коронки для верхнего ударного бурения. Угол конуса, диаметр и исполнение подтверждаются по оборудованию и задаче.",
+      "positions": "tapered bits по запросу",
+      "specs": [
+        [
+          "Поставщик",
+          "Бето Инкам"
+        ],
+        [
+          "Бренд инструмента",
+          "WONTECH"
+        ],
+        [
+          "Тип",
+          "конические коронки"
+        ],
+        [
+          "Подбор",
+          "по оборудованию и диаметру"
+        ],
+        [
+          "Цена",
+          "по расчету"
+        ]
+      ]
+    },
+    {
+      "id": "top-hammer-tapered-rods",
+      "slug": "top-hammer-tapered-rods",
+      "title": "Конические штанги для гидроперфораторного бурения WONTECH",
+      "category": "top-hammer",
+      "label": "Гидроперфораторное бурение",
+      "system": "Tapered rods",
+      "image": "/assets/images/official/official-top-hammer-rods.png",
+      "summary": "Конические штанги для верхнего ударного бурения. Длина, присоединение и совместимость уточняются по спецификации заказчика.",
+      "positions": "tapered rods по запросу",
+      "specs": [
+        [
+          "Поставщик",
+          "Бето Инкам"
+        ],
+        [
+          "Бренд инструмента",
+          "WONTECH"
+        ],
+        [
+          "Тип",
+          "конические штанги"
+        ],
+        [
+          "Подбор",
+          "по длине, конусу и оборудованию"
+        ],
+        [
+          "Цена",
+          "рассчитывается индивидуально"
+        ]
+      ]
+    },
+    {
+      "id": "top-hammer-couplings-shanks",
+      "slug": "top-hammer-couplings-shanks",
+      "title": "Муфты и хвостовики для гидроперфораторного бурения",
+      "category": "top-hammer",
+      "label": "Гидроперфораторное бурение",
+      "system": "R / T / ST / GT по запросу",
+      "image": "/assets/images/official/official-top-hammer-rods.png",
+      "summary": "Соединительные муфты и хвостовики для резьбовых систем верхнего ударного бурения. Подбор выполняется по резьбе и буровой установке.",
+      "positions": "муфты / хвостовики / переходники по запросу",
+      "specs": [
+        [
+          "Поставщик",
+          "Бето Инкам"
+        ],
+        [
+          "Тип",
+          "муфты и хвостовики"
+        ],
+        [
+          "Резьбы",
+          "R / T / ST / GT по запросу"
+        ],
+        [
+          "Подбор",
+          "по оборудованию и текущей спецификации"
+        ],
+        [
+          "Цена",
+          "по расчету"
+        ]
+      ]
+    },
+    {
+      "id": "dth-drill-pipes",
+      "slug": "dth-drill-pipes",
+      "title": "Буровые трубы DTH",
+      "category": "accessories",
+      "label": "Комплектующие",
+      "system": "по длине и резьбе",
+      "image": "/assets/images/official/official-top-hammer-rods.png",
+      "summary": "Буровые трубы для DTH-направления. Длина, наружный диаметр, стенка и резьбовое соединение уточняются по заявке.",
+      "positions": "буровые трубы DTH по запросу",
+      "specs": [
+        [
+          "Поставщик",
+          "Бето Инкам"
+        ],
+        [
+          "Тип",
+          "буровые трубы DTH"
+        ],
+        [
+          "Подбор",
+          "по длине, диаметру и резьбе"
+        ],
+        [
+          "Наличие и сроки",
+          "уточняются перед заказом"
+        ],
+        [
+          "Цена",
+          "по расчету"
+        ]
+      ]
+    },
+    {
+      "id": "dth-subs-adapters",
+      "slug": "dth-subs-adapters",
+      "title": "Переходники и адаптеры DTH",
+      "category": "accessories",
+      "label": "Комплектующие",
+      "system": "API Reg / IF / BECO по запросу",
+      "image": "/assets/images/local/workshop-stock.jpg",
+      "summary": "Переходники, адаптеры и переводники для DTH-сборки. Присоединение и комплект поставки подтверждаются перед расчетом.",
+      "positions": "subs / adapters / переходники DTH",
+      "specs": [
+        [
+          "Поставщик",
+          "Бето Инкам"
+        ],
+        [
+          "Тип",
+          "переходники и адаптеры DTH"
+        ],
+        [
+          "Резьбы",
+          "API Reg / IF / BECO по запросу"
+        ],
+        [
+          "Подбор",
+          "по текущей сборке и системе"
+        ],
+        [
+          "Цена",
+          "по расчету"
+        ]
+      ]
     }
   ],
   "categories": [
@@ -743,6 +1647,24 @@ window.WONTECH_DATA = {
       "image": "/assets/images/local/pdc-bit-146.jpg",
       "intro": "Резьбовые и конические коронки, штанги, муфты и хвостовики для верхнего гидроударного бурения. Подбор выполняется по резьбе и диаметру.",
       "cta": "Подобрать резьбу"
+    },
+    {
+      "id": "large-diameter",
+      "nav": "Большой диаметр",
+      "title": "Инструмент большого диаметра WONTECH",
+      "page": "/category-large-diameter.html",
+      "image": "/assets/images/official/official-wt370.png",
+      "intro": "Пневмоударники, коронки и комплектующие большого диаметра из каталогов WONTECH. Конкретная система, диаметр и комплектность уточняются по проекту и буровой установке.",
+      "cta": "Запросить большой диаметр"
+    },
+    {
+      "id": "cluster",
+      "nav": "Кластерные молоты",
+      "title": "Кластерные пневмоударники WONTECH",
+      "page": "/category-cluster.html",
+      "image": "/assets/images/official/official-cluster-wtc380.png",
+      "intro": "Кластерные DTH-системы для задач большого диаметра. Модельный ряд и конфигурация подбираются по требуемому диаметру, оборудованию и условиям бурения.",
+      "cta": "Запросить кластерный молот"
     },
     {
       "id": "casing",
