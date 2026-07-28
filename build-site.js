@@ -1554,7 +1554,7 @@ function galleryPage() {
         <img src="/assets/images/local/warehouse-aisle.jpg" alt="Склад бурового инструмента WONTECH">
         <img src="/assets/images/local/warehouse-hammers.jpg" alt="Пневмоударники на складе">
         <img src="/assets/images/local/warehouse-wide.jpg" alt="Широкий вид склада WONTECH">
-        <img src="/assets/images/local/li-qichao-china.jpg" alt="Li qichao">
+        <img src="/assets/images/local/li-qichao-china.jpg" alt="LI qichao">
         <img src="/assets/images/local/hero-logistics.jpg" alt="Логистика бурового инструмента">
         <img src="/assets/images/local/hero-product-set.jpg" alt="Набор бурового инструмента">
       </div>
@@ -1589,8 +1589,8 @@ function contactsPage() {
             <span>Расчет бурового инструмента и обработка спецификаций</span>
           </article>
           <article class="contact-person">
-            <img src="/assets/images/local/li-qichao-china.jpg" alt="Li qichao">
-            <h2>Li qichao</h2>
+            <img src="/assets/images/local/li-qichao-china.jpg" alt="LI qichao">
+            <h2>LI qichao</h2>
             <span>Представитель в Китае</span>
           </article>
         </div>
