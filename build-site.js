@@ -15,6 +15,16 @@ const categories = [
     cta: "Подобрать пневмоударник"
   },
   {
+    id: "wt-series",
+    nav: "WT-серия",
+    title: "WT-серия WONTECH",
+    page: "/category-wt-series.html",
+    image: "/assets/images/local/warehouse-hammers.jpg",
+    intro:
+      "Пневмоударники и коронки WT-серии. Модели и совместимость уточняются по системе, диаметру и оборудованию заказчика.",
+    cta: "Запросить WT-серию"
+  },
+  {
     id: "bits",
     nav: "Коронки",
     title: "Буровые коронки WONTECH",
@@ -26,12 +36,12 @@ const categories = [
   },
   {
     id: "pdc",
-    nav: "PDC",
-    title: "PDC-коронки и долота",
+    nav: "PDC / PDS",
+    title: "PDC / PDS-коронки и долота",
     page: "/category-pdc.html",
-    image: "/assets/images/local/hero-product-set.jpg",
+    image: "/assets/images/local/pdc-crowns-studio.png",
     intro:
-      "Отдельное направление поставки. Модели и характеристики уточняются по спецификации заказчика, без неподтвержденных параметров.",
+      "Коронки и долота PDC / PDS. Конкретная модель, резьба, диаметр и исполнение подтверждаются по спецификации заказчика.",
     cta: "Отправить спецификацию"
   },
   {
@@ -43,6 +53,36 @@ const categories = [
     intro:
       "Направление для заявок на инструмент обратной циркуляции. Совместимость и комплект поставки подтверждаются при подборе.",
     cta: "Запросить подбор"
+  },
+  {
+    id: "top-hammer",
+    nav: "Гидроперфораторное бурение",
+    title: "Гидроперфораторное бурение WONTECH",
+    page: "/category-top-hammer.html",
+    image: "/assets/images/local/pdc-bit-146.jpg",
+    intro:
+      "Резьбовые и конические коронки, штанги, муфты и хвостовики для верхнего гидроударного бурения. Подбор выполняется по резьбе и диаметру.",
+    cta: "Подобрать резьбу"
+  },
+  {
+    id: "casing",
+    nav: "Обсадные системы",
+    title: "Обсадные системы WONTECH",
+    page: "/category-casing.html",
+    image: "/assets/images/local/casing-system-front.jpg",
+    intro:
+      "Эксцентриковые, концентрические и крыльевые системы для бурения с обсадной колонной. Размер и комплектность уточняются перед расчетом.",
+    cta: "Запросить обсадную систему"
+  },
+  {
+    id: "tricone",
+    nav: "Шарошечные долота",
+    title: "Шарошечные долота WONTECH",
+    page: "/category-tricone.html",
+    image: "/assets/images/local/pdc-bits-group.jpg",
+    intro:
+      "Шарошечные долота как отдельное направление поставки. Тип, диаметр и присоединение подбираются по задаче и спецификации.",
+    cta: "Запросить долото"
   },
   {
     id: "accessories",
@@ -210,22 +250,116 @@ const products = [
     ]
   },
   {
-    id: "pdc-request",
-    slug: "pdc-request",
-    title: "PDC-коронки и долота WONTECH",
-    category: "pdc",
-    label: "PDC",
-    system: "По спецификации",
-    image: "/assets/images/local/hero-product-set.jpg",
+    id: "wt-series-hammers",
+    slug: "wt-series-hammers",
+    title: "Пневмоударники WONTECH WT-серии",
+    category: "wt-series",
+    label: "WT-серия",
+    system: "WT3 / WT4 / WT5 / WT6 / WT8",
+    image: "/assets/images/local/warehouse-hammers.jpg",
     summary:
-      "Отдельное направление поставки. Модели, технические параметры и сроки уточняются по спецификации заказчика.",
-    positions: "подбор по спецификации",
+      "Высокоскоростная WT-серия пневмоударников. В каталоге WONTECH указаны группы WT3, WT4, WT5, WT6 и WT8; конкретная модель подбирается по диаметру и задаче.",
+    positions: "WT3 / WT4 / WT5 / WT6 / WT8",
     specs: [
       ["Бренд", "WONTECH"],
-      ["Направление", "PDC-коронки и долота"],
-      ["Подбор", "по спецификации заказчика"],
-      ["Фото и параметры", "могут быть добавлены позже"],
+      ["Серия", "WT"],
+      ["Модели из каталога", "WT3 / WT4 / WT5 / WT6 / WT8"],
+      ["Подбор", "по диаметру скважины, системе и оборудованию"],
       ["Цена", "рассчитывается индивидуально"]
+    ]
+  },
+  {
+    id: "wt-series-bits",
+    slug: "wt-series-bits",
+    title: "Коронки WONTECH WT-серии",
+    category: "wt-series",
+    label: "WT-серия",
+    system: "BWT3 / BWT4 / BWT5 / BWT6 / BWT8",
+    image: "/assets/images/local/pdc-crowns-studio.png",
+    summary:
+      "Коронки для WT-серии. Диаметр, форма фронтальной части и совместимость подтверждаются по спецификации заказчика.",
+    positions: "BWT3 / BWT4 / BWT5 / BWT6 / BWT8",
+    specs: [
+      ["Бренд", "WONTECH"],
+      ["Серия", "WT"],
+      ["Группы из каталога", "BWT3 / BWT4 / BWT5 / BWT6 / BWT8"],
+      ["Характеристики", "уточняются при подборе"],
+      ["Цена", "по расчету"]
+    ]
+  },
+  {
+    id: "pdc-request",
+    slug: "pdc-request",
+    title: "PDC / PDS-коронки и долота WONTECH",
+    category: "pdc",
+    label: "PDC / PDS",
+    system: "По спецификации",
+    image: "/assets/images/local/pdc-crowns-studio.png",
+    summary:
+      "Направление PDC / PDS-коронок и долот. Конкретная модель, резьба, диаметр и исполнение уточняются по задаче и спецификации.",
+    positions: "PDC / PDS-коронки и долота",
+    specs: [
+      ["Бренд", "WONTECH"],
+      ["Направление", "PDC / PDS-коронки и долота"],
+      ["Подбор", "по спецификации заказчика"],
+      ["Фото", "коронки и долота добавлены в карточку"],
+      ["Цена", "рассчитывается индивидуально"]
+    ],
+    gallery: [
+      "/assets/images/local/pdc-crowns-studio.png",
+      "/assets/images/local/stock-crowns-wrapped.jpg",
+      "/assets/images/local/stock-grey-bits.jpg",
+      "/assets/images/local/pdc-bit-146.jpg",
+      "/assets/images/local/pdc-bit-gold.jpg",
+      "/assets/images/local/pdc-bits-group.jpg"
+    ]
+  },
+  {
+    id: "pdc-crowns-request",
+    slug: "pdc-crowns-request",
+    title: "PDC / PDS-коронки WONTECH",
+    category: "pdc",
+    label: "PDC / PDS",
+    system: "Коронки",
+    image: "/assets/images/local/stock-crowns-wrapped.jpg",
+    summary:
+      "Коронки PDC / PDS как отдельная позиция для запроса. Диаметр, резьба и исполнение подтверждаются перед расчетом.",
+    positions: "PDC / PDS-коронки",
+    specs: [
+      ["Бренд", "WONTECH"],
+      ["Тип", "PDC / PDS-коронки"],
+      ["Подбор", "по спецификации заказчика"],
+      ["Наличие", "уточняется перед заказом"],
+      ["Цена", "по расчету"]
+    ],
+    gallery: [
+      "/assets/images/local/stock-crowns-wrapped.jpg",
+      "/assets/images/local/pdc-crowns-studio.png"
+    ]
+  },
+  {
+    id: "pdc-bits-request",
+    slug: "pdc-bits-request",
+    title: "PDC / PDS-долота WONTECH",
+    category: "pdc",
+    label: "PDC / PDS",
+    system: "Долота",
+    image: "/assets/images/local/stock-grey-bits.jpg",
+    summary:
+      "Долота PDC / PDS для заявок по спецификации. Модель и присоединение уточняются по оборудованию и условиям бурения.",
+    positions: "PDC / PDS-долота",
+    specs: [
+      ["Бренд", "WONTECH"],
+      ["Тип", "PDC / PDS-долота"],
+      ["Подбор", "по задаче и спецификации"],
+      ["Параметры", "уточняются при подборе"],
+      ["Цена", "по расчету"]
+    ],
+    gallery: [
+      "/assets/images/local/stock-grey-bits.jpg",
+      "/assets/images/local/pdc-bit-146.jpg",
+      "/assets/images/local/pdc-bit-gold.jpg",
+      "/assets/images/local/pdc-bits-group.jpg"
     ]
   },
   {
@@ -235,7 +369,7 @@ const products = [
     category: "rc",
     label: "RC",
     system: "По спецификации",
-    image: "/assets/images/local/stock-grey-bits.jpg",
+    image: "/assets/images/local/warehouse-wide.jpg",
     summary:
       "Направление для заявок на RC-инструмент. Состав поставки и совместимость уточняются при подборе.",
     positions: "подбор по спецификации",
@@ -245,6 +379,111 @@ const products = [
       ["Подбор", "по спецификации заказчика"],
       ["Наличие", "уточняется перед заказом"],
       ["Цена", "рассчитывается индивидуально"]
+    ],
+    gallery: [
+      "/assets/images/local/warehouse-wide.jpg",
+      "/assets/images/local/warehouse-aisle.jpg",
+      "/assets/images/local/warehouse-hammers.jpg"
+    ]
+  },
+  {
+    id: "top-hammer-threaded-bits",
+    slug: "top-hammer-threaded-bits",
+    title: "Резьбовые кнопочные коронки для гидроперфораторного бурения",
+    category: "top-hammer",
+    label: "Гидроперфораторное бурение",
+    system: "R28 / R32 / R38 / T38 / T45 / T51 / ST58 / GT60",
+    image: "/assets/images/local/pdc-bit-146.jpg",
+    summary:
+      "Резьбовые кнопочные коронки для верхнего гидроударного бурения. В каталоге указаны резьбы R28, R32, R38, T38, T45, T51, ST58 и GT60.",
+    positions: "43 / 51 / 76 / 89 / 102 / 110 / 115 / 127 / 140 / 152 мм",
+    specs: [
+      ["Бренд", "WONTECH"],
+      ["Тип", "резьбовая кнопочная коронка"],
+      ["Резьбы", "R28 / R32 / R38 / T38 / T45 / T51 / ST58 / GT60"],
+      ["Диаметры из каталога", "43-152 мм"],
+      ["Цена", "по расчету"]
+    ]
+  },
+  {
+    id: "top-hammer-rods-adapters",
+    slug: "top-hammer-rods-adapters",
+    title: "Штанги, муфты и хвостовики для гидроперфораторного бурения",
+    category: "top-hammer",
+    label: "Гидроперфораторное бурение",
+    system: "По резьбе и установке",
+    image: "/assets/images/local/pdc-bits-group.jpg",
+    summary:
+      "Штанги, соединительные муфты и хвостовики. Подбор выполняется по резьбе, буровой установке и текущей спецификации.",
+    positions: "штанги / муфты / хвостовики",
+    specs: [
+      ["Бренд", "WONTECH"],
+      ["Тип", "комплектующие для верхнего гидроударного бурения"],
+      ["Подбор", "по резьбе и оборудованию"],
+      ["Наличие", "уточняется перед заказом"],
+      ["Цена", "по расчету"]
+    ]
+  },
+  {
+    id: "casing-systems-request",
+    slug: "casing-systems-request",
+    title: "Обсадные системы WONTECH",
+    category: "casing",
+    label: "Обсадные системы",
+    system: "ODEX / концентрические / крыльевые",
+    image: "/assets/images/local/casing-system-front.jpg",
+    summary:
+      "Системы бурения с продвижением обсадной колонны: эксцентриковые, концентрические и крыльевые решения. Комплектность уточняется по задаче.",
+    positions: "ODEX / концентрические / крыльевые системы",
+    specs: [
+      ["Бренд", "WONTECH"],
+      ["Тип", "обсадные системы"],
+      ["Системы", "ODEX, концентрические, крыльевые"],
+      ["Подбор", "по наружному диаметру трубы и задаче"],
+      ["Цена", "по расчету"]
+    ],
+    gallery: [
+      "/assets/images/local/casing-system-front.jpg",
+      "/assets/images/local/casing-system-side.jpg",
+      "/assets/images/local/casing-system-assembled.jpg"
+    ]
+  },
+  {
+    id: "tricone-bits-request",
+    slug: "tricone-bits-request",
+    title: "Шарошечные долота WONTECH",
+    category: "tricone",
+    label: "Шарошечные долота",
+    system: "По спецификации",
+    image: "/assets/images/local/pdc-bits-group.jpg",
+    summary:
+      "Шарошечные долота вынесены отдельным направлением, чтобы не смешивать их с PDC/PDS и DTH-коронками. Диаметр и присоединение уточняются по заявке.",
+    positions: "подбор по спецификации",
+    specs: [
+      ["Бренд", "WONTECH"],
+      ["Тип", "шарошечное долото"],
+      ["Подбор", "по диаметру, породе и присоединению"],
+      ["Наличие", "уточняется перед заказом"],
+      ["Цена", "по расчету"]
+    ]
+  },
+  {
+    id: "dth-pipes-adapters",
+    slug: "dth-pipes-adapters",
+    title: "Буровые трубы и адаптеры DTH WONTECH",
+    category: "accessories",
+    label: "Комплектующие",
+    system: "API Reg / IF / BECO по запросу",
+    image: "/assets/images/local/workshop-stock.jpg",
+    summary:
+      "Буровые трубы, переходники и адаптеры DTH. Длина, диаметр и резьбовое соединение уточняются по спецификации.",
+    positions: "трубы / адаптеры / переходники",
+    specs: [
+      ["Бренд", "WONTECH"],
+      ["Тип", "буровые трубы и адаптеры DTH"],
+      ["Резьбы", "API Reg / IF / BECO по запросу"],
+      ["Подбор", "по системе и длине"],
+      ["Цена", "по расчету"]
     ]
   },
   {
@@ -663,6 +902,8 @@ const articles = [
   }
 ];
 
+const siteArticles = articles.filter((article) => article.id !== "b2b-catalog");
+
 function esc(value) {
   return String(value)
     .replaceAll("&", "&amp;")
@@ -723,6 +964,7 @@ function footer() {
             </span>
           </a>
           <p>Многостраничный B2B-каталог бурового инструмента. Наличие, сроки, совместимость и цена подтверждаются перед заказом.</p>
+          <img class="footer-partner-logo" src="/assets/images/local/beto-inkam-logo.svg" alt="Бето Инкам">
         </div>
         <div>
           <h3>Каталог</h3>
@@ -733,6 +975,10 @@ function footer() {
           <a href="/specification.html">Отправить спецификацию</a>
           <a href="/assets/docs/beto-inkam-wontech.pdf" target="_blank" rel="noreferrer">PDF-каталог</a>
           <a href="/articles.html">Справочник</a>
+          <a href="/privacy.html">Политика конфиденциальности</a>
+          <a href="/cookies.html">Cookie</a>
+          <a href="/personal-data.html">Персональные данные</a>
+          <a href="/terms.html">Условия использования</a>
         </div>
         <div>
           <h3>Контакт</h3>
@@ -766,7 +1012,7 @@ function requestDrawer() {
         <form class="request-form" id="requestForm">
           <label>Имя<input name="name" type="text" placeholder="Как к вам обращаться"></label>
           <label>Компания<input name="company" type="text" placeholder="Название компании"></label>
-          <label>Телефон / Telegram / e-mail<input name="contact" type="text" placeholder="+7... или @username" required></label>
+          <label>Телефон / Telegram / e-mail<input name="contact" type="text" inputmode="tel" autocomplete="tel" data-contact-field placeholder="+7 (___) ___-__-__ или @username" required></label>
           <label>Регион доставки<input name="region" type="text" placeholder="Город или регион"></label>
           <label>Комментарий / спецификация<textarea name="comment" rows="5" placeholder="Позиции, количество, оборудование, сроки, условия работы"></textarea></label>
           <div class="drawer-actions">
@@ -776,6 +1022,21 @@ function requestDrawer() {
           <p class="form-status" id="formStatus" role="status"></p>
         </form>
       </aside>
+    </div>
+  `;
+}
+
+function cookieWidget() {
+  return `
+    <div class="cookie-widget" data-cookie-widget hidden>
+      <div>
+        <strong>Cookie</strong>
+        <p>Сайт использует технические cookie для работы формы, спецификации и сохранения выбранных позиций. Продолжая пользоваться сайтом, вы соглашаетесь с обработкой этих данных.</p>
+      </div>
+      <div class="cookie-actions">
+        <a class="text-link" href="/cookies.html">Подробнее</a>
+        <button class="btn btn-primary btn-small" type="button" data-cookie-accept>Понятно</button>
+      </div>
     </div>
   `;
 }
@@ -795,6 +1056,7 @@ function page({ title, description, active, body }) {
   <main>${body}</main>
   ${footer()}
   ${requestDrawer()}
+  ${cookieWidget()}
   <script src="/assets/js/data.js"></script>
   <script src="/assets/js/main.js"></script>
 </body>
@@ -885,7 +1147,7 @@ function yandexMapBlock() {
   const yandexOpenUrl = "https://yandex.ru/maps/?mode=routes&rtext=59.938600%2C30.314100~56.838900%2C60.605700~56.015300%2C92.893200&rtt=auto";
   return `
     <div class="yandex-map-shell">
-      <div class="yandex-map">
+      <div class="yandex-map" data-yandex-map>
         <img src="${staticMapUrl}" alt="Яндекс.Карта: Санкт-Петербург, Екатеринбург, Красноярск" loading="lazy">
         <a class="map-open-link" href="${yandexOpenUrl}" target="_blank" rel="noreferrer">Открыть в Яндекс.Картах</a>
       </div>
@@ -900,8 +1162,16 @@ function yandexMapBlock() {
 }
 
 function homePage() {
-  const featured = products.slice(0, 6).map(productCard).join("");
-  const articleTeasers = articles.slice(0, 3).map(articleCard).join("");
+  const featuredIds = [
+    "hammer-cop44-ql40",
+    "bit-cop54-ql50",
+    "wt-series-hammers",
+    "pdc-request",
+    "casing-systems-request",
+    "tricone-bits-request"
+  ];
+  const featured = featuredIds.map((id) => products.find((product) => product.id === id)).filter(Boolean).map(productCard).join("");
+  const articleTeasers = siteArticles.slice(0, 3).map(articleCard).join("");
   const body = `
     ${hero(`
       <div class="hero-grid">
@@ -919,8 +1189,19 @@ function homePage() {
             <span>Поставки по России и СНГ</span>
           </div>
         </div>
-        <div class="hero-visual">
-          <img src="/assets/images/local/hero-logistics.jpg" alt="Поставка бурового инструмента WONTECH">
+        <div class="hero-visual hero-video-card" aria-label="Зацикленная анимация поставки бурового инструмента WONTECH">
+          <div class="hero-loop">
+            <img src="/assets/images/local/warehouse-wide.jpg" alt="Склад бурового инструмента WONTECH">
+            <span class="loop-line loop-line-one"></span>
+            <span class="loop-line loop-line-two"></span>
+            <span class="loop-dot loop-dot-one"></span>
+            <span class="loop-dot loop-dot-two"></span>
+            <span class="loop-dot loop-dot-three"></span>
+            <div class="loop-tool">
+              <img src="/assets/images/local/pdc-crowns-studio.png" alt="">
+            </div>
+          </div>
+          <img class="beto-logo-card" src="/assets/images/local/beto-inkam-logo.svg" alt="Бето Инкам">
         </div>
       </div>
     `)}
@@ -1082,6 +1363,16 @@ function productPages() {
   products.forEach((product) => {
     const related = products.filter((item) => item.category === product.category && item.id !== product.id).slice(0, 3);
     const specRows = product.specs.map(([key, value]) => `<tr><th>${key}</th><td>${value}</td></tr>`).join("");
+    const gallery = product.gallery?.length
+      ? `<section class="section muted">
+          <div class="container">
+            ${sectionHead("Фото", "Фотографии позиции", "Изображения помогают быстрее сопоставить направление, но точные параметры все равно подтверждаются при подборе.")}
+            <div class="product-gallery">
+              ${product.gallery.map((image) => `<img src="${image}" alt="${esc(product.title)}" loading="lazy">`).join("")}
+            </div>
+          </div>
+        </section>`
+      : "";
     const body = `
       ${hero(`
         <div class="product-hero">
@@ -1119,6 +1410,7 @@ function productPages() {
           </article>
         </div>
       </section>
+      ${gallery}
       <section class="section muted">
         <div class="container">
           ${sectionHead("Похожие позиции", "Связанные карточки", "Можно добавить несколько позиций в одну заявку.")}
@@ -1146,7 +1438,7 @@ function articlesPage() {
     `)}
     <section class="section">
       <div class="container">
-        <div class="article-grid article-grid-large">${articles.map(articleCard).join("")}</div>
+        <div class="article-grid article-grid-large">${siteArticles.map(articleCard).join("")}</div>
       </div>
     </section>
   `;
@@ -1159,7 +1451,7 @@ function articlesPage() {
 }
 
 function articlePages() {
-  articles.forEach((article) => {
+  siteArticles.forEach((article) => {
     const sections = article.sections.map((section) => `
       <section>
         <h2>${section.title}</h2>
@@ -1252,6 +1544,17 @@ function galleryPage() {
         <img src="/assets/images/local/stock-crowns-wrapped.jpg" alt="Коронки в упаковке">
         <img src="/assets/images/local/stock-small-bits-box.jpg" alt="Коронки в коробе">
         <img src="/assets/images/local/stock-grey-bits.jpg" alt="Серые коронки">
+        <img src="/assets/images/local/pdc-crowns-studio.png" alt="PDC / PDS коронки">
+        <img src="/assets/images/local/pdc-bit-146.jpg" alt="PDC / PDS долото 146 мм">
+        <img src="/assets/images/local/pdc-bit-gold.jpg" alt="PDC / PDS долото">
+        <img src="/assets/images/local/pdc-bits-group.jpg" alt="PDC / PDS долота">
+        <img src="/assets/images/local/casing-system-front.jpg" alt="Обсадная система">
+        <img src="/assets/images/local/casing-system-side.jpg" alt="Обсадная система сбоку">
+        <img src="/assets/images/local/casing-system-assembled.jpg" alt="Обсадная система в сборе">
+        <img src="/assets/images/local/warehouse-aisle.jpg" alt="Склад бурового инструмента WONTECH">
+        <img src="/assets/images/local/warehouse-hammers.jpg" alt="Пневмоударники на складе">
+        <img src="/assets/images/local/warehouse-wide.jpg" alt="Широкий вид склада WONTECH">
+        <img src="/assets/images/local/li-qichao-china.jpg" alt="Li qichao">
         <img src="/assets/images/local/hero-logistics.jpg" alt="Логистика бурового инструмента">
         <img src="/assets/images/local/hero-product-set.jpg" alt="Набор бурового инструмента">
       </div>
@@ -1278,12 +1581,19 @@ function contactsPage() {
             <button class="btn btn-secondary" type="button" data-open-request>Получить расчет</button>
           </div>
         </div>
-        <article class="contact-person">
-          <img src="/assets/images/local/yuri-kozlovsky.jpg" alt="Юрий Козловский">
-          <h2>Юрий Козловский</h2>
-          <a href="tel:+79631800999">+7 963 180 09 99</a>
-          <span>Расчет бурового инструмента и обработка спецификаций</span>
-        </article>
+        <div class="contact-people">
+          <article class="contact-person">
+            <img src="/assets/images/local/yuri-kozlovsky.jpg" alt="Юрий Козловский">
+            <h2>Юрий Козловский</h2>
+            <a href="tel:+79631800999">+7 963 180 09 99</a>
+            <span>Расчет бурового инструмента и обработка спецификаций</span>
+          </article>
+          <article class="contact-person">
+            <img src="/assets/images/local/li-qichao-china.jpg" alt="Li qichao">
+            <h2>Li qichao</h2>
+            <span>Представитель в Китае</span>
+          </article>
+        </div>
       </div>
     `)}
     <section class="section">
@@ -1330,7 +1640,7 @@ function specificationPage() {
           <div class="form-grid">
             <label>Имя<input name="name" type="text" placeholder="Как к вам обращаться"></label>
             <label>Компания<input name="company" type="text" placeholder="Название компании"></label>
-            <label>Телефон / Telegram / e-mail<input name="contact" type="text" placeholder="+7... или @username" required></label>
+            <label>Телефон / Telegram / e-mail<input name="contact" type="text" inputmode="tel" autocomplete="tel" data-contact-field placeholder="+7 (___) ___-__-__ или @username" required></label>
             <label>Регион доставки<input name="region" type="text" placeholder="Город или регион"></label>
           </div>
           <label>Спецификация<textarea name="specification" rows="12" placeholder="Пример: QL80, коронки 219 мм - 6 шт.; регион доставки Красноярский край; нужна проверка наличия и сроков"></textarea></label>
@@ -1360,8 +1670,132 @@ function specificationPage() {
   }));
 }
 
+function legalPage(filename, title, description, sections) {
+  const body = `
+    ${hero(`
+      <div class="page-hero">
+        <p class="eyebrow">Документы</p>
+        <h1>${title}</h1>
+        <p class="lead">${description}</p>
+      </div>
+    `)}
+    <section class="section">
+      <div class="container article-layout legal-layout">
+        <aside class="article-aside">
+          <strong>Разделы</strong>
+          ${sections.map((section) => `<span>${section.title}</span>`).join("")}
+        </aside>
+        <div class="article-content">
+          ${sections.map((section) => `
+            <section>
+              <h2>${section.title}</h2>
+              ${section.paragraphs.map((paragraph) => `<p>${paragraph}</p>`).join("")}
+              ${section.bullets ? `<ul>${section.bullets.map((bullet) => `<li>${bullet}</li>`).join("")}</ul>` : ""}
+            </section>
+          `).join("")}
+        </div>
+      </div>
+    </section>
+  `;
+  write(filename, page({ title: `${title} - WONTECH`, description, active: "", body }));
+}
+
+function legalPages() {
+  legalPage("privacy.html", "Политика конфиденциальности", "Как сайт WONTECH обрабатывает данные, которые пользователь отправляет через формы заявки.", [
+    {
+      title: "Какие данные собираются",
+      paragraphs: [
+        "Сайт получает только те данные, которые пользователь сам указывает в форме: имя, компанию, телефон или другой контакт, регион доставки, комментарий и спецификацию.",
+        "Также сайт может сохранять выбранные позиции в браузере пользователя, чтобы спецификация не пропадала при переходе между страницами."
+      ]
+    },
+    {
+      title: "Зачем нужны данные",
+      paragraphs: [
+        "Данные используются для подготовки расчета, уточнения наличия, проверки совместимости инструмента и связи по заявке.",
+        "Сайт не выполняет онлайн-оплату и не собирает платежные данные."
+      ]
+    },
+    {
+      title: "Передача данных",
+      paragraphs: [
+        "Заявки отправляются в Telegram-бот компании для оперативной обработки. Доступ к заявкам должен быть ограничен ответственными сотрудниками.",
+        "Если пользователь не хочет отправлять форму, он может позвонить по номеру, указанному на сайте."
+      ]
+    }
+  ]);
+
+  legalPage("cookies.html", "Политика cookie", "Какие cookie и локальные данные используются на сайте WONTECH.", [
+    {
+      title: "Технические cookie и localStorage",
+      paragraphs: [
+        "Сайт использует техническое хранение в браузере для выбранных позиций каталога, статуса cookie-уведомления и удобной работы формы.",
+        "Эти данные нужны для работы интерфейса и не являются платежными или банковскими данными."
+      ]
+    },
+    {
+      title: "Cookie-виджет",
+      paragraphs: [
+        "Уведомление о cookie появляется через 10 секунд после открытия сайта, если пользователь еще не принял его.",
+        "После нажатия кнопки согласие сохраняется в браузере, и виджет больше не показывается на этом устройстве."
+      ]
+    },
+    {
+      title: "Как отключить",
+      paragraphs: [
+        "Пользователь может очистить cookie и localStorage в настройках браузера. После очистки выбранные позиции и статус уведомления будут сброшены."
+      ]
+    }
+  ]);
+
+  legalPage("personal-data.html", "Согласие на обработку персональных данных", "Текст согласия для отправки заявки через формы сайта.", [
+    {
+      title: "Согласие",
+      paragraphs: [
+        "Отправляя форму на сайте, пользователь подтверждает, что указал данные добровольно и согласен на их обработку для подготовки ответа по заявке.",
+        "Обработка включает получение, хранение, уточнение и использование данных для связи с пользователем и подготовки расчета."
+      ]
+    },
+    {
+      title: "Состав данных",
+      paragraphs: [
+        "Могут обрабатываться имя, компания, телефон, Telegram, e-mail, регион доставки, комментарий и текст спецификации."
+      ]
+    },
+    {
+      title: "Отзыв согласия",
+      paragraphs: [
+        "Пользователь может запросить прекращение обработки данных, связавшись по телефону, указанному на сайте."
+      ]
+    }
+  ]);
+
+  legalPage("terms.html", "Условия использования сайта", "Правила работы с каталогом WONTECH и заявками на расчет.", [
+    {
+      title: "Назначение сайта",
+      paragraphs: [
+        "Сайт является B2B-каталогом для предварительного выбора направления и отправки заявки на расчет.",
+        "Карточки не являются публичной офертой. Цена, наличие, сроки, совместимость и комплектность подтверждаются индивидуально."
+      ]
+    },
+    {
+      title: "Каталог и характеристики",
+      paragraphs: [
+        "Если в карточке нет точных параметров, они уточняются при подборе. Неуказанные характеристики не считаются подтвержденными.",
+        "Фотографии используются для визуальной ориентации и могут отличаться от конкретной поставки."
+      ]
+    },
+    {
+      title: "Заявки",
+      paragraphs: [
+        "Отправка заявки не создает обязательства покупки или поставки. Итоговые условия фиксируются после расчета и согласования."
+      ]
+    }
+  ]);
+}
+
 function dataFile() {
-  write("assets/js/data.js", `window.WONTECH_DATA = ${JSON.stringify({ products, categories, locations, articles: articles.map(({ sections, ...rest }) => rest) }, null, 2)};`);
+  write("assets/js/data.js", `window.WONTECH_DATA = ${JSON.stringify({ products, categories, locations, articles: siteArticles.map(({ sections, ...rest }) => rest) }, null, 2)};`);
 }
 
 function mainJs() {
@@ -1678,6 +2112,58 @@ function initYandexMap() {
   }, 4500);
 }
 
+function formatPhoneInput(value) {
+  const raw = String(value || "").trim();
+  if (!raw || raw.startsWith("@") || raw.includes("@")) return value;
+
+  let digits = raw.replace(/\D/g, "");
+  if (!digits) return value;
+  if (digits.startsWith("8")) digits = "7" + digits.slice(1);
+  if (!digits.startsWith("7")) digits = "7" + digits;
+  digits = digits.slice(0, 11);
+
+  const p1 = digits.slice(1, 4);
+  const p2 = digits.slice(4, 7);
+  const p3 = digits.slice(7, 9);
+  const p4 = digits.slice(9, 11);
+
+  let result = "+7";
+  if (p1) result += " (" + p1;
+  if (p1.length === 3) result += ")";
+  if (p2) result += " " + p2;
+  if (p3) result += "-" + p3;
+  if (p4) result += "-" + p4;
+  return result;
+}
+
+function initPhoneMask() {
+  document.querySelectorAll("[data-contact-field]").forEach((input) => {
+    input.addEventListener("input", () => {
+      const cursorAtEnd = input.selectionStart === input.value.length;
+      input.value = formatPhoneInput(input.value);
+      if (cursorAtEnd) input.setSelectionRange(input.value.length, input.value.length);
+    });
+  });
+}
+
+function initCookieWidget() {
+  const widget = document.querySelector("[data-cookie-widget]");
+  if (!widget || localStorage.getItem("wontechCookieAccepted") === "yes") return;
+
+  window.setTimeout(() => {
+    widget.hidden = false;
+    widget.classList.add("is-visible");
+  }, 10000);
+
+  widget.querySelector("[data-cookie-accept]")?.addEventListener("click", () => {
+    localStorage.setItem("wontechCookieAccepted", "yes");
+    widget.classList.remove("is-visible");
+    window.setTimeout(() => {
+      widget.hidden = true;
+    }, 250);
+  });
+}
+
 document.addEventListener("click", (event) => {
   const add = event.target.closest("[data-add-product]");
   if (add) {
@@ -1703,6 +2189,8 @@ initRequestForm();
 initSpecificationForm();
 initCatalogFilter();
 initYandexMap();
+initPhoneMask();
+initCookieWidget();
 checkTelegramStatus();
   `);
 }
@@ -1840,9 +2328,38 @@ h3 { margin-bottom: 10px; font-size: 22px; line-height: 1.16; letter-spacing: -.
   box-shadow: var(--shadow);
 }
 .hero-visual img { width: 100%; min-height: 430px; object-fit: cover; }
+.hero-video-card { position: relative; min-height: 500px; background: #15110d; padding: 14px; }
+.hero-loop { position: relative; height: 100%; min-height: 470px; overflow: hidden; border-radius: 26px; background: #120f0c; }
+.hero-loop::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 72% 28%, rgba(237,116,21,.55), transparent 22%),
+    linear-gradient(110deg, rgba(0,0,0,.72), rgba(15,12,9,.25) 48%, rgba(237,116,21,.18));
+}
+.hero-loop > img { width: 100%; height: 100%; min-height: 470px; object-fit: cover; transform: scale(1.06); animation: slowZoom 13s ease-in-out infinite alternate; }
+.loop-line { position: absolute; z-index: 2; height: 2px; border-radius: 999px; background: linear-gradient(90deg, transparent, rgba(255,255,255,.65), var(--accent)); opacity: .9; transform-origin: left center; }
+.loop-line-one { left: 11%; right: 16%; top: 38%; transform: rotate(-7deg); animation: linePulse 3.6s ease-in-out infinite; }
+.loop-line-two { left: 18%; right: 22%; top: 62%; transform: rotate(8deg); animation: linePulse 4.2s ease-in-out infinite .6s; }
+.loop-dot { position: absolute; z-index: 3; width: 13px; height: 13px; border-radius: 50%; background: #fff; box-shadow: 0 0 0 8px rgba(237,116,21,.24), 0 0 22px rgba(237,116,21,.85); }
+.loop-dot-one { left: 19%; top: 34%; animation: dotMoveOne 5.4s linear infinite; }
+.loop-dot-two { left: 52%; top: 58%; animation: dotMoveTwo 6.2s linear infinite; }
+.loop-dot-three { left: 78%; top: 29%; animation: dotBlink 2.8s ease-in-out infinite; }
+.loop-tool { position: absolute; right: 24px; bottom: 24px; z-index: 4; width: 190px; height: 150px; border-radius: 26px; background: rgba(255,255,255,.9); box-shadow: 0 22px 52px rgba(0,0,0,.28); padding: 14px; animation: floatTool 5.2s ease-in-out infinite; }
+.loop-tool img { width: 100%; height: 100%; min-height: 0; object-fit: contain; }
+.beto-logo-card { position: absolute; left: 28px; bottom: 28px; z-index: 5; width: min(260px, 48%); min-height: 0 !important; border-radius: 20px; box-shadow: 0 18px 44px rgba(0,0,0,.22); }
+@keyframes slowZoom { from { transform: scale(1.02); } to { transform: scale(1.12); } }
+@keyframes linePulse { 0%, 100% { opacity: .28; } 50% { opacity: .95; } }
+@keyframes dotBlink { 0%, 100% { transform: scale(.72); opacity: .45; } 50% { transform: scale(1.1); opacity: 1; } }
+@keyframes dotMoveOne { 0% { transform: translate(0,0); } 50% { transform: translate(250px, -24px); } 100% { transform: translate(0,0); } }
+@keyframes dotMoveTwo { 0% { transform: translate(0,0); } 50% { transform: translate(160px, 22px); } 100% { transform: translate(0,0); } }
+@keyframes floatTool { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
 .category-hero img { width: 100%; height: 420px; object-fit: cover; }
 .product-hero-media { display: grid; min-height: 420px; place-items: center; background: #fff; padding: 28px; }
 .product-hero-media img { max-height: 360px; object-fit: contain; }
+.product-gallery { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.product-gallery img { width: 100%; height: 260px; border-radius: 24px; background: #fff; object-fit: cover; box-shadow: 0 16px 34px rgba(20,16,12,.08); }
 .hero-facts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 30px; }
 .hero-facts span { border: 1px solid rgba(255,255,255,.12); border-radius: 18px; background: rgba(255,255,255,.07); color: #f3eadf; padding: 14px; font-weight: 800; }
 .btn {
@@ -1944,6 +2461,7 @@ h3 { margin-bottom: 10px; font-size: 22px; line-height: 1.16; letter-spacing: -.
 .footer-grid p { color: #cfc7bf; }
 .footer-grid h3 { font-size: 16px; }
 .footer-grid a, .footer-button { display: block; margin: 10px 0; color: #e9ded2; text-align: left; }
+.footer-partner-logo { width: 210px; max-width: 100%; margin-top: 16px; border-radius: 16px; background: #fff; }
 .catalog-layout { display: grid; grid-template-columns: 300px minmax(0, 1fr); gap: 24px; align-items: start; }
 .catalog-filter { position: sticky; top: 106px; display: grid; gap: 15px; padding: 20px; }
 label { display: grid; gap: 8px; color: var(--muted); font-size: 13px; font-weight: 900; }
@@ -1978,7 +2496,9 @@ input:focus, select:focus, textarea:focus { border-color: var(--accent); box-sha
 .article-content { font-size: 19px; }
 .article-content section { margin-bottom: 48px; }
 .article-content p, .article-content li { color: #48413a; }
+.legal-layout .article-content { max-width: 860px; }
 .contacts-hero { grid-template-columns: minmax(0, 1fr) 380px; }
+.contact-people { display: grid; gap: 16px; }
 .contact-person { display: grid; gap: 12px; background: rgba(255,255,255,.08); padding: 22px; }
 .contact-person img { width: 100%; height: 310px; border-radius: 22px; object-fit: cover; object-position: center 18%; }
 .contact-person a { color: #fff; font-size: 22px; font-weight: 900; }
@@ -2031,6 +2551,29 @@ input:focus, select:focus, textarea:focus { border-color: var(--accent); box-sha
 }
 .floating-call span { font-size: 12px; opacity: .86; }
 .floating-call strong { font-size: 15px; }
+.cookie-widget {
+  position: fixed;
+  right: 22px;
+  bottom: 98px;
+  z-index: 90;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 18px;
+  width: min(680px, calc(100% - 44px));
+  border: 1px solid rgba(255,255,255,.24);
+  border-radius: 26px;
+  background: rgba(18, 14, 10, .94);
+  color: #fff;
+  box-shadow: var(--shadow);
+  padding: 18px;
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity .25s ease, transform .25s ease;
+}
+.cookie-widget.is-visible { opacity: 1; transform: translateY(0); }
+.cookie-widget p { margin: 5px 0 0; color: #e1d7cb; font-size: 14px; }
+.cookie-actions { display: flex; align-items: center; gap: 12px; }
+.cookie-actions .text-link { color: #fff; }
 @media (max-width: 1080px) {
   .header-grid { grid-template-columns: auto auto auto; }
   .menu-toggle { display: block; justify-self: center; }
@@ -2048,7 +2591,7 @@ input:focus, select:focus, textarea:focus { border-color: var(--accent); box-sha
   }
   .main-nav.is-open { display: flex; }
   .hero-grid, .category-hero, .product-hero, .contacts-hero, .split, .catalog-layout, .content-grid, .product-detail-grid, .specification-layout, .yandex-map-shell, .footer-grid, .article-layout { grid-template-columns: 1fr; }
-  .category-grid, .product-grid, .article-grid, .gallery-page-grid { grid-template-columns: repeat(2, 1fr); }
+  .category-grid, .product-grid, .article-grid, .gallery-page-grid, .product-gallery { grid-template-columns: repeat(2, 1fr); }
   .catalog-filter, .article-aside { position: static; }
   .yandex-map { min-height: 420px; }
 }
@@ -2083,16 +2626,25 @@ input:focus, select:focus, textarea:focus { border-color: var(--accent); box-sha
     letter-spacing: -.025em;
   }
   .lead { width: 100%; max-width: 320px; overflow-wrap: anywhere; word-break: break-word; font-size: 16px; }
-  .category-grid, .product-grid, .article-grid, .process-grid, .gallery-strip, .gallery-page-grid, .form-grid, .hero-facts { grid-template-columns: 1fr; }
+  .category-grid, .product-grid, .article-grid, .process-grid, .gallery-strip, .gallery-page-grid, .form-grid, .hero-facts, .product-gallery, .cookie-widget { grid-template-columns: 1fr; }
   .hero-actions { display: grid; }
   .hero-actions .btn { width: 100%; }
   .hero-visual img, .category-hero img { min-height: 260px; height: 280px; }
+  .hero-video-card { min-height: 360px; }
+  .hero-loop { min-height: 330px; }
+  .hero-loop > img { height: 330px; min-height: 330px; }
+  .loop-tool { width: 130px; height: 105px; right: 14px; bottom: 14px; }
+  .loop-tool img { height: 100%; min-height: 0; }
+  .beto-logo-card { width: 190px; left: 16px; bottom: 16px; }
+  .hero-visual .beto-logo-card { height: auto; min-height: 0 !important; }
+  .product-gallery img { height: 240px; }
   .product-hero-media { min-height: 260px; }
   .card-actions { grid-template-columns: 1fr; }
   .article-hero > img { height: 470px; }
   .article-hero-copy { bottom: 28px; }
   .article-content { font-size: 17px; }
   .floating-call { right: 12px; bottom: 12px; left: 12px; justify-items: center; padding: 11px 15px; text-align: center; }
+  .cookie-widget { right: 12px; bottom: 84px; width: calc(100% - 24px); }
   body:not(.panel-open) .floating-call { transform: translateY(0); }
   .spec-form { padding-bottom: 92px; }
 }
@@ -2119,6 +2671,7 @@ function build() {
   galleryPage();
   contactsPage();
   specificationPage();
+  legalPages();
 }
 
 build();

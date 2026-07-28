@@ -310,6 +310,58 @@ function initYandexMap() {
   }, 4500);
 }
 
+function formatPhoneInput(value) {
+  const raw = String(value || "").trim();
+  if (!raw || raw.startsWith("@") || raw.includes("@")) return value;
+
+  let digits = raw.replace(/D/g, "");
+  if (!digits) return value;
+  if (digits.startsWith("8")) digits = "7" + digits.slice(1);
+  if (!digits.startsWith("7")) digits = "7" + digits;
+  digits = digits.slice(0, 11);
+
+  const p1 = digits.slice(1, 4);
+  const p2 = digits.slice(4, 7);
+  const p3 = digits.slice(7, 9);
+  const p4 = digits.slice(9, 11);
+
+  let result = "+7";
+  if (p1) result += " (" + p1;
+  if (p1.length === 3) result += ")";
+  if (p2) result += " " + p2;
+  if (p3) result += "-" + p3;
+  if (p4) result += "-" + p4;
+  return result;
+}
+
+function initPhoneMask() {
+  document.querySelectorAll("[data-contact-field]").forEach((input) => {
+    input.addEventListener("input", () => {
+      const cursorAtEnd = input.selectionStart === input.value.length;
+      input.value = formatPhoneInput(input.value);
+      if (cursorAtEnd) input.setSelectionRange(input.value.length, input.value.length);
+    });
+  });
+}
+
+function initCookieWidget() {
+  const widget = document.querySelector("[data-cookie-widget]");
+  if (!widget || localStorage.getItem("wontechCookieAccepted") === "yes") return;
+
+  window.setTimeout(() => {
+    widget.hidden = false;
+    widget.classList.add("is-visible");
+  }, 10000);
+
+  widget.querySelector("[data-cookie-accept]")?.addEventListener("click", () => {
+    localStorage.setItem("wontechCookieAccepted", "yes");
+    widget.classList.remove("is-visible");
+    window.setTimeout(() => {
+      widget.hidden = true;
+    }, 250);
+  });
+}
+
 document.addEventListener("click", (event) => {
   const add = event.target.closest("[data-add-product]");
   if (add) {
@@ -335,4 +387,6 @@ initRequestForm();
 initSpecificationForm();
 initCatalogFilter();
 initYandexMap();
+initPhoneMask();
+initCookieWidget();
 checkTelegramStatus();

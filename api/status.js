@@ -1,4 +1,4 @@
-const { getTelegramToken, resolveChatId } = require("../lib/telegram");
+const { getTelegramToken, resolveChatIds } = require("../lib/telegram");
 
 module.exports = async function status(req, res) {
   if (req.method !== "GET") {
@@ -18,12 +18,13 @@ module.exports = async function status(req, res) {
   }
 
   try {
-    const chatId = await resolveChatId(token);
+    const chatIds = await resolveChatIds(token);
     res.status(200).json({
       ok: true,
       telegramConfigured: true,
-      telegramReady: Boolean(chatId),
-      chatId: chatId ? "configured" : ""
+      telegramReady: Boolean(chatIds.length),
+      chatId: chatIds.length ? "configured" : "",
+      recipients: chatIds.length
     });
   } catch (error) {
     res.status(200).json({

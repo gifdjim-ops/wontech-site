@@ -265,15 +265,81 @@ window.WONTECH_DATA = {
       ]
     },
     {
+      "id": "wt-series-hammers",
+      "slug": "wt-series-hammers",
+      "title": "Пневмоударники WONTECH WT-серии",
+      "category": "wt-series",
+      "label": "WT-серия",
+      "system": "WT3 / WT4 / WT5 / WT6 / WT8",
+      "image": "/assets/images/local/warehouse-hammers.jpg",
+      "summary": "Высокоскоростная WT-серия пневмоударников. В каталоге WONTECH указаны группы WT3, WT4, WT5, WT6 и WT8; конкретная модель подбирается по диаметру и задаче.",
+      "positions": "WT3 / WT4 / WT5 / WT6 / WT8",
+      "specs": [
+        [
+          "Бренд",
+          "WONTECH"
+        ],
+        [
+          "Серия",
+          "WT"
+        ],
+        [
+          "Модели из каталога",
+          "WT3 / WT4 / WT5 / WT6 / WT8"
+        ],
+        [
+          "Подбор",
+          "по диаметру скважины, системе и оборудованию"
+        ],
+        [
+          "Цена",
+          "рассчитывается индивидуально"
+        ]
+      ]
+    },
+    {
+      "id": "wt-series-bits",
+      "slug": "wt-series-bits",
+      "title": "Коронки WONTECH WT-серии",
+      "category": "wt-series",
+      "label": "WT-серия",
+      "system": "BWT3 / BWT4 / BWT5 / BWT6 / BWT8",
+      "image": "/assets/images/local/pdc-crowns-studio.png",
+      "summary": "Коронки для WT-серии. Диаметр, форма фронтальной части и совместимость подтверждаются по спецификации заказчика.",
+      "positions": "BWT3 / BWT4 / BWT5 / BWT6 / BWT8",
+      "specs": [
+        [
+          "Бренд",
+          "WONTECH"
+        ],
+        [
+          "Серия",
+          "WT"
+        ],
+        [
+          "Группы из каталога",
+          "BWT3 / BWT4 / BWT5 / BWT6 / BWT8"
+        ],
+        [
+          "Характеристики",
+          "уточняются при подборе"
+        ],
+        [
+          "Цена",
+          "по расчету"
+        ]
+      ]
+    },
+    {
       "id": "pdc-request",
       "slug": "pdc-request",
-      "title": "PDC-коронки и долота WONTECH",
+      "title": "PDC / PDS-коронки и долота WONTECH",
       "category": "pdc",
-      "label": "PDC",
+      "label": "PDC / PDS",
       "system": "По спецификации",
-      "image": "/assets/images/local/hero-product-set.jpg",
-      "summary": "Отдельное направление поставки. Модели, технические параметры и сроки уточняются по спецификации заказчика.",
-      "positions": "подбор по спецификации",
+      "image": "/assets/images/local/pdc-crowns-studio.png",
+      "summary": "Направление PDC / PDS-коронок и долот. Конкретная модель, резьба, диаметр и исполнение уточняются по задаче и спецификации.",
+      "positions": "PDC / PDS-коронки и долота",
       "specs": [
         [
           "Бренд",
@@ -281,20 +347,104 @@ window.WONTECH_DATA = {
         ],
         [
           "Направление",
-          "PDC-коронки и долота"
+          "PDC / PDS-коронки и долота"
         ],
         [
           "Подбор",
           "по спецификации заказчика"
         ],
         [
-          "Фото и параметры",
-          "могут быть добавлены позже"
+          "Фото",
+          "коронки и долота добавлены в карточку"
         ],
         [
           "Цена",
           "рассчитывается индивидуально"
         ]
+      ],
+      "gallery": [
+        "/assets/images/local/pdc-crowns-studio.png",
+        "/assets/images/local/stock-crowns-wrapped.jpg",
+        "/assets/images/local/stock-grey-bits.jpg",
+        "/assets/images/local/pdc-bit-146.jpg",
+        "/assets/images/local/pdc-bit-gold.jpg",
+        "/assets/images/local/pdc-bits-group.jpg"
+      ]
+    },
+    {
+      "id": "pdc-crowns-request",
+      "slug": "pdc-crowns-request",
+      "title": "PDC / PDS-коронки WONTECH",
+      "category": "pdc",
+      "label": "PDC / PDS",
+      "system": "Коронки",
+      "image": "/assets/images/local/stock-crowns-wrapped.jpg",
+      "summary": "Коронки PDC / PDS как отдельная позиция для запроса. Диаметр, резьба и исполнение подтверждаются перед расчетом.",
+      "positions": "PDC / PDS-коронки",
+      "specs": [
+        [
+          "Бренд",
+          "WONTECH"
+        ],
+        [
+          "Тип",
+          "PDC / PDS-коронки"
+        ],
+        [
+          "Подбор",
+          "по спецификации заказчика"
+        ],
+        [
+          "Наличие",
+          "уточняется перед заказом"
+        ],
+        [
+          "Цена",
+          "по расчету"
+        ]
+      ],
+      "gallery": [
+        "/assets/images/local/stock-crowns-wrapped.jpg",
+        "/assets/images/local/pdc-crowns-studio.png"
+      ]
+    },
+    {
+      "id": "pdc-bits-request",
+      "slug": "pdc-bits-request",
+      "title": "PDC / PDS-долота WONTECH",
+      "category": "pdc",
+      "label": "PDC / PDS",
+      "system": "Долота",
+      "image": "/assets/images/local/stock-grey-bits.jpg",
+      "summary": "Долота PDC / PDS для заявок по спецификации. Модель и присоединение уточняются по оборудованию и условиям бурения.",
+      "positions": "PDC / PDS-долота",
+      "specs": [
+        [
+          "Бренд",
+          "WONTECH"
+        ],
+        [
+          "Тип",
+          "PDC / PDS-долота"
+        ],
+        [
+          "Подбор",
+          "по задаче и спецификации"
+        ],
+        [
+          "Параметры",
+          "уточняются при подборе"
+        ],
+        [
+          "Цена",
+          "по расчету"
+        ]
+      ],
+      "gallery": [
+        "/assets/images/local/stock-grey-bits.jpg",
+        "/assets/images/local/pdc-bit-146.jpg",
+        "/assets/images/local/pdc-bit-gold.jpg",
+        "/assets/images/local/pdc-bits-group.jpg"
       ]
     },
     {
@@ -304,7 +454,7 @@ window.WONTECH_DATA = {
       "category": "rc",
       "label": "RC",
       "system": "По спецификации",
-      "image": "/assets/images/local/stock-grey-bits.jpg",
+      "image": "/assets/images/local/warehouse-wide.jpg",
       "summary": "Направление для заявок на RC-инструмент. Состав поставки и совместимость уточняются при подборе.",
       "positions": "подбор по спецификации",
       "specs": [
@@ -327,6 +477,181 @@ window.WONTECH_DATA = {
         [
           "Цена",
           "рассчитывается индивидуально"
+        ]
+      ],
+      "gallery": [
+        "/assets/images/local/warehouse-wide.jpg",
+        "/assets/images/local/warehouse-aisle.jpg",
+        "/assets/images/local/warehouse-hammers.jpg"
+      ]
+    },
+    {
+      "id": "top-hammer-threaded-bits",
+      "slug": "top-hammer-threaded-bits",
+      "title": "Резьбовые кнопочные коронки для гидроперфораторного бурения",
+      "category": "top-hammer",
+      "label": "Гидроперфораторное бурение",
+      "system": "R28 / R32 / R38 / T38 / T45 / T51 / ST58 / GT60",
+      "image": "/assets/images/local/pdc-bit-146.jpg",
+      "summary": "Резьбовые кнопочные коронки для верхнего гидроударного бурения. В каталоге указаны резьбы R28, R32, R38, T38, T45, T51, ST58 и GT60.",
+      "positions": "43 / 51 / 76 / 89 / 102 / 110 / 115 / 127 / 140 / 152 мм",
+      "specs": [
+        [
+          "Бренд",
+          "WONTECH"
+        ],
+        [
+          "Тип",
+          "резьбовая кнопочная коронка"
+        ],
+        [
+          "Резьбы",
+          "R28 / R32 / R38 / T38 / T45 / T51 / ST58 / GT60"
+        ],
+        [
+          "Диаметры из каталога",
+          "43-152 мм"
+        ],
+        [
+          "Цена",
+          "по расчету"
+        ]
+      ]
+    },
+    {
+      "id": "top-hammer-rods-adapters",
+      "slug": "top-hammer-rods-adapters",
+      "title": "Штанги, муфты и хвостовики для гидроперфораторного бурения",
+      "category": "top-hammer",
+      "label": "Гидроперфораторное бурение",
+      "system": "По резьбе и установке",
+      "image": "/assets/images/local/pdc-bits-group.jpg",
+      "summary": "Штанги, соединительные муфты и хвостовики. Подбор выполняется по резьбе, буровой установке и текущей спецификации.",
+      "positions": "штанги / муфты / хвостовики",
+      "specs": [
+        [
+          "Бренд",
+          "WONTECH"
+        ],
+        [
+          "Тип",
+          "комплектующие для верхнего гидроударного бурения"
+        ],
+        [
+          "Подбор",
+          "по резьбе и оборудованию"
+        ],
+        [
+          "Наличие",
+          "уточняется перед заказом"
+        ],
+        [
+          "Цена",
+          "по расчету"
+        ]
+      ]
+    },
+    {
+      "id": "casing-systems-request",
+      "slug": "casing-systems-request",
+      "title": "Обсадные системы WONTECH",
+      "category": "casing",
+      "label": "Обсадные системы",
+      "system": "ODEX / концентрические / крыльевые",
+      "image": "/assets/images/local/casing-system-front.jpg",
+      "summary": "Системы бурения с продвижением обсадной колонны: эксцентриковые, концентрические и крыльевые решения. Комплектность уточняется по задаче.",
+      "positions": "ODEX / концентрические / крыльевые системы",
+      "specs": [
+        [
+          "Бренд",
+          "WONTECH"
+        ],
+        [
+          "Тип",
+          "обсадные системы"
+        ],
+        [
+          "Системы",
+          "ODEX, концентрические, крыльевые"
+        ],
+        [
+          "Подбор",
+          "по наружному диаметру трубы и задаче"
+        ],
+        [
+          "Цена",
+          "по расчету"
+        ]
+      ],
+      "gallery": [
+        "/assets/images/local/casing-system-front.jpg",
+        "/assets/images/local/casing-system-side.jpg",
+        "/assets/images/local/casing-system-assembled.jpg"
+      ]
+    },
+    {
+      "id": "tricone-bits-request",
+      "slug": "tricone-bits-request",
+      "title": "Шарошечные долота WONTECH",
+      "category": "tricone",
+      "label": "Шарошечные долота",
+      "system": "По спецификации",
+      "image": "/assets/images/local/pdc-bits-group.jpg",
+      "summary": "Шарошечные долота вынесены отдельным направлением, чтобы не смешивать их с PDC/PDS и DTH-коронками. Диаметр и присоединение уточняются по заявке.",
+      "positions": "подбор по спецификации",
+      "specs": [
+        [
+          "Бренд",
+          "WONTECH"
+        ],
+        [
+          "Тип",
+          "шарошечное долото"
+        ],
+        [
+          "Подбор",
+          "по диаметру, породе и присоединению"
+        ],
+        [
+          "Наличие",
+          "уточняется перед заказом"
+        ],
+        [
+          "Цена",
+          "по расчету"
+        ]
+      ]
+    },
+    {
+      "id": "dth-pipes-adapters",
+      "slug": "dth-pipes-adapters",
+      "title": "Буровые трубы и адаптеры DTH WONTECH",
+      "category": "accessories",
+      "label": "Комплектующие",
+      "system": "API Reg / IF / BECO по запросу",
+      "image": "/assets/images/local/workshop-stock.jpg",
+      "summary": "Буровые трубы, переходники и адаптеры DTH. Длина, диаметр и резьбовое соединение уточняются по спецификации.",
+      "positions": "трубы / адаптеры / переходники",
+      "specs": [
+        [
+          "Бренд",
+          "WONTECH"
+        ],
+        [
+          "Тип",
+          "буровые трубы и адаптеры DTH"
+        ],
+        [
+          "Резьбы",
+          "API Reg / IF / BECO по запросу"
+        ],
+        [
+          "Подбор",
+          "по системе и длине"
+        ],
+        [
+          "Цена",
+          "по расчету"
         ]
       ]
     },
@@ -375,6 +700,15 @@ window.WONTECH_DATA = {
       "cta": "Подобрать пневмоударник"
     },
     {
+      "id": "wt-series",
+      "nav": "WT-серия",
+      "title": "WT-серия WONTECH",
+      "page": "/category-wt-series.html",
+      "image": "/assets/images/local/warehouse-hammers.jpg",
+      "intro": "Пневмоударники и коронки WT-серии. Модели и совместимость уточняются по системе, диаметру и оборудованию заказчика.",
+      "cta": "Запросить WT-серию"
+    },
+    {
       "id": "bits",
       "nav": "Коронки",
       "title": "Буровые коронки WONTECH",
@@ -385,11 +719,11 @@ window.WONTECH_DATA = {
     },
     {
       "id": "pdc",
-      "nav": "PDC",
-      "title": "PDC-коронки и долота",
+      "nav": "PDC / PDS",
+      "title": "PDC / PDS-коронки и долота",
       "page": "/category-pdc.html",
-      "image": "/assets/images/local/hero-product-set.jpg",
-      "intro": "Отдельное направление поставки. Модели и характеристики уточняются по спецификации заказчика, без неподтвержденных параметров.",
+      "image": "/assets/images/local/pdc-crowns-studio.png",
+      "intro": "Коронки и долота PDC / PDS. Конкретная модель, резьба, диаметр и исполнение подтверждаются по спецификации заказчика.",
       "cta": "Отправить спецификацию"
     },
     {
@@ -400,6 +734,33 @@ window.WONTECH_DATA = {
       "image": "/assets/images/local/stock-grey-bits.jpg",
       "intro": "Направление для заявок на инструмент обратной циркуляции. Совместимость и комплект поставки подтверждаются при подборе.",
       "cta": "Запросить подбор"
+    },
+    {
+      "id": "top-hammer",
+      "nav": "Гидроперфораторное бурение",
+      "title": "Гидроперфораторное бурение WONTECH",
+      "page": "/category-top-hammer.html",
+      "image": "/assets/images/local/pdc-bit-146.jpg",
+      "intro": "Резьбовые и конические коронки, штанги, муфты и хвостовики для верхнего гидроударного бурения. Подбор выполняется по резьбе и диаметру.",
+      "cta": "Подобрать резьбу"
+    },
+    {
+      "id": "casing",
+      "nav": "Обсадные системы",
+      "title": "Обсадные системы WONTECH",
+      "page": "/category-casing.html",
+      "image": "/assets/images/local/casing-system-front.jpg",
+      "intro": "Эксцентриковые, концентрические и крыльевые системы для бурения с обсадной колонной. Размер и комплектность уточняются перед расчетом.",
+      "cta": "Запросить обсадную систему"
+    },
+    {
+      "id": "tricone",
+      "nav": "Шарошечные долота",
+      "title": "Шарошечные долота WONTECH",
+      "page": "/category-tricone.html",
+      "image": "/assets/images/local/pdc-bits-group.jpg",
+      "intro": "Шарошечные долота как отдельное направление поставки. Тип, диаметр и присоединение подбираются по задаче и спецификации.",
+      "cta": "Запросить долото"
     },
     {
       "id": "accessories",
@@ -500,15 +861,6 @@ window.WONTECH_DATA = {
       "image": "/assets/images/local/stock-small-bits-box.jpg",
       "summary": "Памятка для снабжения и склада: что проверить при получении партии и какие фото лучше сохранить до запуска в работу.",
       "lead": "Приемка промышленного инструмента должна быть простой и документируемой. Даже если поставка согласована, при получении нужно проверить комплектность, маркировку и внешнее состояние."
-    },
-    {
-      "id": "b2b-catalog",
-      "slug": "pochemu-b2b-katalog-a-ne-internet-magazin",
-      "label": "Каталог",
-      "title": "Почему сайт сделан как B2B-каталог, а не обычный интернет-магазин",
-      "image": "/assets/images/local/yuri-kozlovsky.jpg",
-      "summary": "Объяснение логики сайта: заявки, расчет, наличие, спецификация и аккуратные формулировки вместо неподтвержденных цен и характеристик.",
-      "lead": "Для бурового инструмента формат обычного интернет-магазина не всегда подходит. Клиенту нужна не только кнопка покупки, а проверка совместимости, наличия и расчет поставки."
     }
   ]
 };
