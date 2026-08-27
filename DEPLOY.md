@@ -1,16 +1,18 @@
-# Размещение WONTECH на GitHub и Vercel
+# Размещение Бето Инкам на GitHub и Vercel
 
 ## Что загружать на GitHub
 
-Загружать нужно содержимое папки `wontech-b2b-shop`, не ZIP-архив.
+Загружать нужно содержимое папки `wontech-site-github-ready`, не ZIP-архив.
 
 В корне репозитория должны лежать:
 
 - `index.html`
 - `catalog.html`
+- `availability.html`
 - `contacts.html`
 - `logistics.html`
 - `specification.html`
+- `documents.html`
 - `articles/`
 - `products/`
 - `assets/`
@@ -30,12 +32,12 @@
 
 ## Переменные окружения Vercel
 
-В настройках проекта Vercel открыть `Settings -> Environment Variables` и добавить:
+В настройках проекта Vercel нужны:
 
-- `TELEGRAM_BOT_TOKEN` - новый токен бота из BotFather
-- `TELEGRAM_CHAT_ID` - chat_id получателя заявок
+- `TELEGRAM_BOT_TOKEN` - токен бота из BotFather
+- `TELEGRAM_CHAT_IDS` - chat_id получателей заявок через запятую или пробел
 
-Если `TELEGRAM_CHAT_ID` не указан, backend попробует взять его через `getUpdates`, но надежнее задать явно.
+Если `TELEGRAM_CHAT_IDS` не указан, серверный обработчик попробует взять получателей через `getUpdates`, но надежнее задать явно.
 
 После изменения переменных окружения нужно сделать redeploy.
 

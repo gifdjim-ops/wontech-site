@@ -1,4 +1,4 @@
-window.WONTECH_DATA = {
+window.BETO_INCAM_DATA = {
   "products": [
     {
       "id": "hammer-cop44-ql40",
@@ -271,7 +271,7 @@ window.WONTECH_DATA = {
       "category": "wt-series",
       "label": "WT-серия",
       "system": "WT3 / WT4 / WT5 / WT6 / WT8",
-      "image": "/assets/images/local/warehouse-hammers.jpg",
+      "image": "/assets/images/official/official-wt-hammers.png",
       "summary": "Высокоскоростная WT-серия пневмоударников. В каталоге WONTECH указаны группы WT3, WT4, WT5, WT6 и WT8; конкретная модель подбирается по диаметру и задаче.",
       "positions": "WT3 / WT4 / WT5 / WT6 / WT8",
       "specs": [
@@ -304,7 +304,7 @@ window.WONTECH_DATA = {
       "category": "wt-series",
       "label": "WT-серия",
       "system": "BWT3 / BWT4 / BWT5 / BWT6 / BWT8",
-      "image": "/assets/images/local/pdc-crowns-studio.png",
+      "image": "/assets/images/official/official-bit-wt.png",
       "summary": "Коронки для WT-серии. Диаметр, форма фронтальной части и совместимость подтверждаются по спецификации заказчика.",
       "positions": "BWT3 / BWT4 / BWT5 / BWT6 / BWT8",
       "specs": [
@@ -492,7 +492,7 @@ window.WONTECH_DATA = {
       "category": "top-hammer",
       "label": "Гидроперфораторное бурение",
       "system": "R28 / R32 / R38 / T38 / T45 / T51 / ST58 / GT60",
-      "image": "/assets/images/local/pdc-bit-146.jpg",
+      "image": "/assets/images/official/official-top-hammer-bits.png",
       "summary": "Резьбовые кнопочные коронки для верхнего гидроударного бурения. В каталоге указаны резьбы R28, R32, R38, T38, T45, T51, ST58 и GT60.",
       "positions": "43 / 51 / 76 / 89 / 102 / 110 / 115 / 127 / 140 / 152 мм",
       "specs": [
@@ -525,7 +525,7 @@ window.WONTECH_DATA = {
       "category": "top-hammer",
       "label": "Гидроперфораторное бурение",
       "system": "По резьбе и установке",
-      "image": "/assets/images/local/pdc-bits-group.jpg",
+      "image": "/assets/images/official/official-top-hammer-rods.png",
       "summary": "Штанги, соединительные муфты и хвостовики. Подбор выполняется по резьбе, буровой установке и текущей спецификации.",
       "positions": "штанги / муфты / хвостовики",
       "specs": [
@@ -596,7 +596,7 @@ window.WONTECH_DATA = {
       "category": "tricone",
       "label": "Шарошечные долота",
       "system": "По спецификации",
-      "image": "/assets/images/local/pdc-bits-group.jpg",
+      "image": "/assets/images/external/tricone-drill-bit-usgs-public-domain.jpg",
       "summary": "Шарошечные долота вынесены отдельным направлением, чтобы не смешивать их с PDC/PDS и DTH-коронками. Диаметр и присоединение уточняются по заявке.",
       "positions": "подбор по спецификации",
       "specs": [
@@ -620,6 +620,9 @@ window.WONTECH_DATA = {
           "Цена",
           "по расчету"
         ]
+      ],
+      "gallery": [
+        "/assets/images/external/tricone-drill-bit-usgs-public-domain.jpg"
       ]
     },
     {
@@ -1608,7 +1611,7 @@ window.WONTECH_DATA = {
       "nav": "WT-серия",
       "title": "WT-серия WONTECH",
       "page": "/category-wt-series.html",
-      "image": "/assets/images/local/warehouse-hammers.jpg",
+      "image": "/assets/images/official/official-wt-hammers.png",
       "intro": "Пневмоударники и коронки WT-серии. Модели и совместимость уточняются по системе, диаметру и оборудованию заказчика.",
       "cta": "Запросить WT-серию"
     },
@@ -1644,7 +1647,7 @@ window.WONTECH_DATA = {
       "nav": "Гидроперфораторное бурение",
       "title": "Гидроперфораторное бурение WONTECH",
       "page": "/category-top-hammer.html",
-      "image": "/assets/images/local/pdc-bit-146.jpg",
+      "image": "/assets/images/official/official-top-hammer-bits.png",
       "intro": "Резьбовые и конические коронки, штанги, муфты и хвостовики для верхнего гидроударного бурения. Подбор выполняется по резьбе и диаметру.",
       "cta": "Подобрать резьбу"
     },
@@ -1680,7 +1683,7 @@ window.WONTECH_DATA = {
       "nav": "Шарошечные долота",
       "title": "Шарошечные долота WONTECH",
       "page": "/category-tricone.html",
-      "image": "/assets/images/local/pdc-bits-group.jpg",
+      "image": "/assets/images/external/tricone-drill-bit-usgs-public-domain.jpg",
       "intro": "Шарошечные долота как отдельное направление поставки. Тип, диаметр и присоединение подбираются по задаче и спецификации.",
       "cta": "Запросить долото"
     },
@@ -1786,3 +1789,4 @@ window.WONTECH_DATA = {
     }
   ]
 };
+window.WONTECH_DATA = window.BETO_INCAM_DATA;

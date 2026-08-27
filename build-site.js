@@ -19,7 +19,7 @@ const categories = [
     nav: "WT-серия",
     title: "WT-серия WONTECH",
     page: "/category-wt-series.html",
-    image: "/assets/images/local/warehouse-hammers.jpg",
+    image: "/assets/images/official/official-wt-hammers.png",
     intro:
       "Пневмоударники и коронки WT-серии. Модели и совместимость уточняются по системе, диаметру и оборудованию заказчика.",
     cta: "Запросить WT-серию"
@@ -59,7 +59,7 @@ const categories = [
     nav: "Гидроперфораторное бурение",
     title: "Гидроперфораторное бурение WONTECH",
     page: "/category-top-hammer.html",
-    image: "/assets/images/local/pdc-bit-146.jpg",
+    image: "/assets/images/official/official-top-hammer-bits.png",
     intro:
       "Резьбовые и конические коронки, штанги, муфты и хвостовики для верхнего гидроударного бурения. Подбор выполняется по резьбе и диаметру.",
     cta: "Подобрать резьбу"
@@ -99,7 +99,7 @@ const categories = [
     nav: "Шарошечные долота",
     title: "Шарошечные долота WONTECH",
     page: "/category-tricone.html",
-    image: "/assets/images/local/pdc-bits-group.jpg",
+    image: "/assets/images/external/tricone-drill-bit-usgs-public-domain.jpg",
     intro:
       "Шарошечные долота как отдельное направление поставки. Тип, диаметр и присоединение подбираются по задаче и спецификации.",
     cta: "Запросить долото"
@@ -276,7 +276,7 @@ const products = [
     category: "wt-series",
     label: "WT-серия",
     system: "WT3 / WT4 / WT5 / WT6 / WT8",
-    image: "/assets/images/local/warehouse-hammers.jpg",
+    image: "/assets/images/official/official-wt-hammers.png",
     summary:
       "Высокоскоростная WT-серия пневмоударников. В каталоге WONTECH указаны группы WT3, WT4, WT5, WT6 и WT8; конкретная модель подбирается по диаметру и задаче.",
     positions: "WT3 / WT4 / WT5 / WT6 / WT8",
@@ -295,7 +295,7 @@ const products = [
     category: "wt-series",
     label: "WT-серия",
     system: "BWT3 / BWT4 / BWT5 / BWT6 / BWT8",
-    image: "/assets/images/local/pdc-crowns-studio.png",
+    image: "/assets/images/official/official-bit-wt.png",
     summary:
       "Коронки для WT-серии. Диаметр, форма фронтальной части и совместимость подтверждаются по спецификации заказчика.",
     positions: "BWT3 / BWT4 / BWT5 / BWT6 / BWT8",
@@ -413,7 +413,7 @@ const products = [
     category: "top-hammer",
     label: "Гидроперфораторное бурение",
     system: "R28 / R32 / R38 / T38 / T45 / T51 / ST58 / GT60",
-    image: "/assets/images/local/pdc-bit-146.jpg",
+    image: "/assets/images/official/official-top-hammer-bits.png",
     summary:
       "Резьбовые кнопочные коронки для верхнего гидроударного бурения. В каталоге указаны резьбы R28, R32, R38, T38, T45, T51, ST58 и GT60.",
     positions: "43 / 51 / 76 / 89 / 102 / 110 / 115 / 127 / 140 / 152 мм",
@@ -432,7 +432,7 @@ const products = [
     category: "top-hammer",
     label: "Гидроперфораторное бурение",
     system: "По резьбе и установке",
-    image: "/assets/images/local/pdc-bits-group.jpg",
+    image: "/assets/images/official/official-top-hammer-rods.png",
     summary:
       "Штанги, соединительные муфты и хвостовики. Подбор выполняется по резьбе, буровой установке и текущей спецификации.",
     positions: "штанги / муфты / хвостовики",
@@ -475,7 +475,7 @@ const products = [
     category: "tricone",
     label: "Шарошечные долота",
     system: "По спецификации",
-    image: "/assets/images/local/pdc-bits-group.jpg",
+    image: "/assets/images/external/tricone-drill-bit-usgs-public-domain.jpg",
     summary:
       "Шарошечные долота вынесены отдельным направлением, чтобы не смешивать их с PDC/PDS и DTH-коронками. Диаметр и присоединение уточняются по заявке.",
     positions: "подбор по спецификации",
@@ -485,6 +485,9 @@ const products = [
       ["Подбор", "по диаметру, породе и присоединению"],
       ["Наличие", "уточняется перед заказом"],
       ["Цена", "по расчету"]
+    ],
+    gallery: [
+      "/assets/images/external/tricone-drill-bit-usgs-public-domain.jpg"
     ]
   },
   {
@@ -1229,10 +1232,10 @@ const articles = [
         ]
       },
       {
-        title: "Как не усложнять каталог",
+        title: "Как сайт разделяет системы",
         paragraphs: [
-          "На первом этапе сайт не обязан содержать все возможные системы и модели. Достаточно вынести известные позиции, а остальные направления оставить как заявки по спецификации. Это честный способ запустить B2B-каталог без выдуманного ассортимента.",
-          "В текущей структуре основные карточки построены вокруг COP44 / QL40, COP54 / QL50, COP64 / QL60 и QL80. Остальные системы могут обрабатываться через форму «Отправить спецификацию»."
+          "В каталоге разделены основные DTH-системы, WT/WBR/WQL/WD/WMSD-серии, коронки DHD, SD, Mission, NUMA и BR, RC-инструмент, обсадные системы, гидроперфораторное бурение и инструмент большого диаметра. Это помогает клиенту выбрать направление без смешения разных типов бурения.",
+          "Если точной модели или подтвержденной характеристики нет, карточка не выдает ее за готовый параметр. Клиент отправляет спецификацию, а расчет готовится после проверки совместимости, наличия и сроков."
         ]
       },
       {
@@ -1437,8 +1440,9 @@ function header(active = "") {
         </button>
         <nav class="main-nav" data-main-nav aria-label="Главное меню">
           ${navLink("/catalog.html", "Каталог", active, "catalog")}
+          ${navLink("/availability.html", "В наличии", active, "availability")}
           ${navLink("/logistics.html", "Поставки", active, "logistics")}
-          ${navLink("/articles.html", "Статьи", active, "articles")}
+          ${navLink("/articles.html", "Справочник", active, "articles")}
           ${navLink("/specification.html", "Спецификация", active, "specification")}
           ${navLink("/contacts.html", "Контакты", active, "contacts")}
         </nav>
@@ -1466,7 +1470,9 @@ function footer() {
         </div>
         <div>
           <h3>Документы</h3>
+          <a href="/availability.html">В наличии в России</a>
           <a href="/specification.html">Отправить спецификацию</a>
+          <a href="/documents.html">Документы сайта</a>
           <a href="/assets/docs/beto-inkam-wontech.pdf" target="_blank" rel="noreferrer">PDF-каталог</a>
           <a href="/articles.html">Справочник</a>
           <a href="/privacy.html">Политика конфиденциальности</a>
@@ -1543,6 +1549,11 @@ function page({ title, description, active, body }) {
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>${esc(title)}</title>
   <meta name="description" content="${esc(description)}">
+  <meta property="og:title" content="${esc(title)}">
+  <meta property="og:description" content="${esc(description)}">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/assets/images/local/beto-incam-logo-main.png">
+  <link rel="icon" href="/assets/images/local/beto-inkam-logo.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/assets/css/site.css">
 </head>
 <body>
@@ -1676,8 +1687,8 @@ function homePage() {
           <h1>Бето Инкам - буровой инструмент для промышленных задач</h1>
           <p class="lead">Многостраничный B2B-каталог инструмента WONTECH и смежных направлений: выберите серию, добавьте позиции в спецификацию и получите расчет по наличию, срокам и доставке.</p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="/catalog.html">Открыть каталог</a>
-            <button class="btn btn-secondary" type="button" data-open-request>Получить расчет</button>
+            <button class="btn btn-primary" type="button" data-open-request>Получить расчет</button>
+            <a class="btn btn-secondary" href="/catalog.html">Открыть каталог</a>
           </div>
           <div class="hero-facts">
             <span>Пневмоударники и коронки</span>
@@ -1722,7 +1733,10 @@ function homePage() {
       <div class="container">
         ${sectionHead("Популярные позиции", "Популярные позиции", "Все характеристики, наличие и сроки поставки уточняются перед заказом.")}
         <div class="product-grid">${featured}</div>
-        <div class="center-line"><a class="btn btn-secondary" href="/catalog.html">Смотреть весь каталог</a></div>
+        <div class="center-line center-actions">
+          <a class="btn btn-secondary" href="/catalog.html">Смотреть весь каталог</a>
+          <a class="btn btn-light" href="/availability.html">Проверить наличие</a>
+        </div>
       </div>
     </section>
     <section class="section muted">
@@ -1781,7 +1795,10 @@ function catalogPage() {
         <div>
           <div class="catalog-topline">
             <strong data-catalog-count>${products.length} позиций</strong>
-            <a class="btn btn-secondary btn-small" href="/specification.html">Отправить спецификацию</a>
+            <div class="catalog-topline-actions">
+              <a class="btn btn-light btn-small" href="/availability.html">В наличии</a>
+              <a class="btn btn-secondary btn-small" href="/specification.html">Отправить спецификацию</a>
+            </div>
           </div>
           <div class="product-grid">${products.map(productCard).join("")}</div>
         </div>
@@ -1792,6 +1809,106 @@ function catalogPage() {
     title: "Каталог Бето Инкам - пневмоударники, коронки, PDC, RC",
     description: "B2B-каталог Бето Инкам: буровой инструмент WONTECH, PDC/PDS, RC, обсадные системы и комплектующие с заявкой на расчет.",
     active: "catalog",
+    body
+  }));
+}
+
+function availabilityPage() {
+  const groups = [
+    {
+      title: "COP44 / QL40",
+      diameters: "110 / 115 / 130 мм",
+      hammer: "Пневмоударник COP44 / QL40",
+      links: [
+        ["/products/hammer-cop44-ql40.html", "Пневмоударник"],
+        ["/products/bits-cop44-ql40.html", "Коронки"]
+      ]
+    },
+    {
+      title: "COP54 / QL50",
+      diameters: "140 / 146 / 152 мм",
+      hammer: "Пневмоударник COP54 / QL50",
+      links: [
+        ["/products/hammer-cop54-ql50.html", "Пневмоударник"],
+        ["/products/bits-cop54-ql50.html", "Коронки"]
+      ]
+    },
+    {
+      title: "COP64 / QL60",
+      diameters: "165 / 171 / 178 / 190 мм",
+      hammer: "Пневмоударник COP64 / QL60",
+      links: [
+        ["/products/hammer-cop64-ql60.html", "Пневмоударник"],
+        ["/products/bits-cop64-ql60.html", "Коронки"]
+      ]
+    },
+    {
+      title: "QL80",
+      diameters: "203 / 219 / 254 / 279 / 305 мм",
+      hammer: "Пневмоударник QL80",
+      links: [
+        ["/products/hammer-ql80.html", "Пневмоударник"],
+        ["/products/bits-ql80.html", "Коронки"]
+      ]
+    }
+  ];
+
+  const cards = groups.map((group) => `
+    <article class="availability-card">
+      <div>
+        <p class="stock-badge">Проверка перед счетом</p>
+        <h2>${group.title}</h2>
+        <p>${group.hammer}. Коронки: ${group.diameters}. Наличие, склад и срок отгрузки подтверждаются на момент заявки.</p>
+      </div>
+      <div class="availability-links">
+        ${group.links.map(([href, label]) => `<a class="btn btn-light btn-small" href="${href}">${label}</a>`).join("")}
+      </div>
+    </article>
+  `).join("");
+
+  const body = `
+    ${hero(`
+      <div class="page-hero">
+        <p class="eyebrow">В наличии в России</p>
+        <h1>Популярные позиции для быстрой проверки наличия</h1>
+        <p class="lead">Здесь собраны основные группы для первого расчета. Точный остаток, склад, срок отгрузки и цена подтверждаются перед выставлением счета.</p>
+        <div class="hero-actions">
+          <button class="btn btn-primary" type="button" data-open-request>Уточнить наличие</button>
+          <a class="btn btn-secondary" href="/specification.html">Отправить спецификацию</a>
+        </div>
+      </div>
+    `)}
+    <section class="section">
+      <div class="container">
+        ${sectionHead("Наличие", "Основные DTH-группы", "Страница не обещает фиксированные остатки. Она помогает быстро выбрать систему и отправить запрос на проверку.")}
+        <div class="availability-grid">${cards}</div>
+      </div>
+    </section>
+    <section class="section muted">
+      <div class="container content-grid">
+        <article class="text-card">
+          <h2>Как подтвердить наличие</h2>
+          <p>Добавьте нужную карточку в заявку или напишите систему и диаметр вручную. Для точного ответа укажите количество, регион доставки и желаемый срок.</p>
+          <ul>
+            <li>наличие и сроки поставки уточняются перед заказом;</li>
+            <li>цена рассчитывается индивидуально;</li>
+            <li>подбор выполняется по спецификации заказчика;</li>
+            <li>при отсутствии позиции на складе может считаться поставка под заказ.</li>
+          </ul>
+        </article>
+        <article class="text-card accent-card">
+          <h2>Большая заявка</h2>
+          <p>Если в списке несколько позиций, удобнее отправить спецификацию одной формой.</p>
+          <a class="btn btn-primary" href="/specification.html">Отправить спецификацию</a>
+        </article>
+      </div>
+    </section>
+  `;
+
+  write("availability.html", page({
+    title: "В наличии в России - Бето Инкам",
+    description: "Популярные позиции бурового инструмента Бето Инкам для проверки наличия: COP44, COP54, COP64, QL80 и коронки.",
+    active: "availability",
     body
   }));
 }
@@ -1954,7 +2071,7 @@ function articlePages() {
         <div class="article-hero">
           <img src="${article.image}" alt="${article.title}">
           <div class="container article-hero-copy">
-            <p class="breadcrumbs"><a href="/articles.html">Статьи</a> / ${article.label}</p>
+            <p class="breadcrumbs"><a href="/articles.html">Справочник</a> / ${article.label}</p>
             <p class="eyebrow">${article.label}</p>
             <h1>${article.title}</h1>
             <p class="lead">${article.lead}</p>
@@ -2047,11 +2164,13 @@ function galleryPage() {
         <img src="/assets/images/official/official-wt-hammers.png" alt="Пневмоударники WT-серии WONTECH">
         <img src="/assets/images/official/official-wql-hammers.png" alt="Пневмоударники WQL-серии WONTECH">
         <img src="/assets/images/official/official-wbr-hammers.png" alt="Пневмоударники WBR-серии WONTECH">
+        <img src="/assets/images/official/official-bit-wt.png" alt="Коронка WT-серии WONTECH">
         <img src="/assets/images/official/official-bit-dhd.png" alt="Коронка DHD-серии WONTECH">
         <img src="/assets/images/official/official-bit-mission.png" alt="Коронка MISSION-серии WONTECH">
         <img src="/assets/images/official/official-casing-wing.png" alt="Крыльевая обсадная система WONTECH">
         <img src="/assets/images/official/official-cluster-wtc380.png" alt="Кластерный пневмоударник WONTECH">
         <img src="/assets/images/official/official-top-hammer-bits.png" alt="Коронки для гидроперфораторного бурения">
+        <img src="/assets/images/external/tricone-drill-bit-usgs-public-domain.jpg" alt="Шарошечное долото">
         <img src="/assets/images/local/li-qichao-china.jpg" alt="LI qichao">
         <img src="/assets/images/local/hero-logistics.jpg" alt="Логистика бурового инструмента">
         <img src="/assets/images/local/hero-product-set.jpg" alt="Набор бурового инструмента">
@@ -2100,7 +2219,7 @@ function contactsPage() {
     `)}
     <section class="section contact-team-section">
       <div class="container">
-        ${sectionHead("Команда", "Кто обрабатывает заявки", "Контакты вынесены отдельным блоком, чтобы страница не выглядела как набор случайных карточек.")}
+        ${sectionHead("Команда", "Контакты и представитель", "Основной контакт принимает заявки на расчет в России. Представитель в Китае помогает уточнять данные по производству и поставке.")}
         <div class="contact-team-grid">
           <article class="team-card team-card-primary">
             <img src="/assets/images/local/yuri-kozlovsky.jpg" alt="Юрий Козловский">
@@ -2196,6 +2315,72 @@ function specificationPage() {
   }));
 }
 
+function documentsPage() {
+  const docs = [
+    {
+      title: "Отправить спецификацию",
+      text: "Форма для больших заявок, PDC, RC, комплектующих и подбора аналога.",
+      href: "/specification.html"
+    },
+    {
+      title: "PDF-каталог",
+      text: "Сводный каталог Бето Инкам / WONTECH в PDF для скачивания и отправки.",
+      href: "/assets/docs/beto-inkam-wontech.pdf",
+      external: true
+    },
+    {
+      title: "Политика конфиденциальности",
+      text: "Как обрабатываются данные, отправленные через формы сайта.",
+      href: "/privacy.html"
+    },
+    {
+      title: "Политика cookie",
+      text: "Какие технические данные сохраняются в браузере.",
+      href: "/cookies.html"
+    },
+    {
+      title: "Согласие на обработку персональных данных",
+      text: "Текст согласия для отправки формы заявки.",
+      href: "/personal-data.html"
+    },
+    {
+      title: "Условия использования",
+      text: "Каталог не является публичной офертой: цена, наличие и сроки подтверждаются отдельно.",
+      href: "/terms.html"
+    }
+  ];
+
+  const body = `
+    ${hero(`
+      <div class="page-hero">
+        <p class="eyebrow">Документы</p>
+        <h1>Документы и условия работы сайта</h1>
+        <p class="lead">Здесь собраны страницы, которые нужны для B2B-каталога: спецификация, PDF-каталог, политика конфиденциальности, cookie, согласие на обработку данных и условия использования.</p>
+      </div>
+    `)}
+    <section class="section">
+      <div class="container">
+        <div class="document-grid">
+          ${docs.map((doc) => `
+            <article class="document-card">
+              <h2>${doc.title}</h2>
+              <p>${doc.text}</p>
+              <a class="btn btn-light" href="${doc.href}" ${doc.external ? 'target="_blank" rel="noreferrer"' : ""}>Открыть</a>
+            </article>
+          `).join("")}
+        </div>
+      </div>
+    </section>
+  `;
+
+  write("documents.html", page({
+    title: "Документы Бето Инкам",
+    description: "Документы сайта Бето Инкам: спецификация, PDF-каталог, политика конфиденциальности, cookie, персональные данные и условия использования.",
+    active: "documents",
+    body
+  }));
+}
+
 function legalPage(filename, title, description, sections) {
   const body = `
     ${hero(`
@@ -2223,7 +2408,7 @@ function legalPage(filename, title, description, sections) {
       </div>
     </section>
   `;
-  write(filename, page({ title: `${title} - Бето Инкам`, description, active: "", body }));
+  write(filename, page({ title: `${title} - Бето Инкам`, description, active: "documents", body }));
 }
 
 function legalPages() {
@@ -2321,18 +2506,24 @@ function legalPages() {
 }
 
 function dataFile() {
-  write("assets/js/data.js", `window.WONTECH_DATA = ${JSON.stringify({ products, categories, locations, articles: siteArticles.map(({ sections, ...rest }) => rest) }, null, 2)};`);
+  write("assets/js/data.js", `
+window.BETO_INCAM_DATA = ${JSON.stringify({ products, categories, locations, articles: siteArticles.map(({ sections, ...rest }) => rest) }, null, 2)};
+window.WONTECH_DATA = window.BETO_INCAM_DATA;
+  `);
 }
 
 function mainJs() {
   write("assets/js/main.js", `
-const DATA = window.WONTECH_DATA || { products: [], locations: [] };
-const requestKey = "wontechRequestV2";
+const DATA = window.BETO_INCAM_DATA || window.WONTECH_DATA || { products: [], locations: [] };
+const requestKey = "betoIncamRequestV1";
+const legacyRequestKey = "wontechRequestV2";
+const cookieKey = "betoIncamCookieAccepted";
+const legacyCookieKey = "wontechCookieAccepted";
 let requestItems = loadRequest();
 
 function loadRequest() {
   try {
-    return JSON.parse(localStorage.getItem(requestKey) || "[]");
+    return JSON.parse(localStorage.getItem(requestKey) || localStorage.getItem(legacyRequestKey) || "[]");
   } catch {
     return [];
   }
@@ -2495,11 +2686,11 @@ async function checkTelegramStatus() {
     const ready = Boolean(result.ok && result.telegramReady);
     status.className = \`telegram-status \${ready ? "ok" : "warning"}\`;
     status.textContent = ready
-      ? "Telegram подключен. Заявка отправится через backend сайта."
+      ? "Telegram подключен. Заявка отправится через сайт."
       : "Telegram пока не готов. Заявку можно скопировать и отправить вручную.";
   } catch {
     status.className = "telegram-status warning";
-    status.textContent = "Backend не отвечает. Для заявок нужен запуск через Node-сервер.";
+    status.textContent = "Сервер заявок не отвечает. Заявку можно скопировать или отправить по телефону.";
   }
 }
 
@@ -2642,7 +2833,7 @@ function formatPhoneInput(value) {
   const raw = String(value || "").trim();
   if (!raw || raw.startsWith("@") || raw.includes("@")) return value;
 
-  let digits = raw.replace(/\D/g, "");
+  let digits = raw.replace(/\\D/g, "");
   if (!digits) return value;
   if (digits.startsWith("8")) digits = "7" + digits.slice(1);
   if (!digits.startsWith("7")) digits = "7" + digits;
@@ -2674,7 +2865,7 @@ function initPhoneMask() {
 
 function initCookieWidget() {
   const widget = document.querySelector("[data-cookie-widget]");
-  if (!widget || localStorage.getItem("wontechCookieAccepted") === "yes") return;
+  if (!widget || localStorage.getItem(cookieKey) === "yes" || localStorage.getItem(legacyCookieKey) === "yes") return;
 
   window.setTimeout(() => {
     widget.hidden = false;
@@ -2682,7 +2873,7 @@ function initCookieWidget() {
   }, 10000);
 
   widget.querySelector("[data-cookie-accept]")?.addEventListener("click", () => {
-    localStorage.setItem("wontechCookieAccepted", "yes");
+    localStorage.setItem(cookieKey, "yes");
     widget.classList.remove("is-visible");
     window.setTimeout(() => {
       widget.hidden = true;
@@ -2742,6 +2933,7 @@ function cssFile() {
   --shadow: 0 24px 80px rgba(20, 16, 12, .16);
 }
 * { box-sizing: border-box; }
+[hidden] { display: none !important; }
 html { scroll-behavior: smooth; }
 body {
   margin: 0;
@@ -2770,7 +2962,7 @@ button, input, textarea, select { font: inherit; }
   grid-template-columns: auto 1fr auto;
   min-height: 82px;
   align-items: center;
-  gap: 22px;
+  gap: 16px;
 }
 .brand {
   display: inline-flex;
@@ -2779,17 +2971,17 @@ button, input, textarea, select { font: inherit; }
   min-width: 250px;
 }
 .brand img { width: 52px; height: 52px; object-fit: contain; }
-.brand-image { min-width: 280px; }
-.brand-logo-wide { width: 260px !important; height: 62px !important; border-radius: 14px; object-fit: cover !important; object-position: center; box-shadow: 0 14px 30px rgba(0,0,0,.28); }
+.brand-image { min-width: 250px; }
+.brand-logo-wide { width: 236px !important; height: 58px !important; border-radius: 14px; object-fit: cover !important; object-position: center; box-shadow: 0 14px 30px rgba(0,0,0,.28); }
 .brand-logo-footer { width: 260px !important; height: auto !important; border-radius: 16px; object-fit: cover !important; box-shadow: 0 16px 34px rgba(0,0,0,.25); }
 .brand strong { display: block; color: #fff; font-size: 25px; letter-spacing: .08em; line-height: 1; }
 .brand small { display: block; margin-top: 4px; color: #d8d0c7; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; }
 .brand-footer { min-width: 0; margin-bottom: 18px; }
-.main-nav { display: flex; justify-content: center; gap: 6px; }
+.main-nav { display: flex; justify-content: center; gap: 4px; }
 .main-nav a {
   border-radius: 999px;
   color: #eee3d7;
-  padding: 10px 14px;
+  padding: 10px 11px;
   font-size: 14px;
   font-weight: 800;
 }
@@ -2888,7 +3080,7 @@ h3 { margin-bottom: 10px; font-size: 22px; line-height: 1.16; letter-spacing: -.
 @keyframes dotMoveOne { 0% { transform: translate(0,0); } 50% { transform: translate(250px, -24px); } 100% { transform: translate(0,0); } }
 @keyframes dotMoveTwo { 0% { transform: translate(0,0); } 50% { transform: translate(160px, 22px); } 100% { transform: translate(0,0); } }
 @keyframes floatTool { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
-.category-hero img { width: 100%; height: 420px; object-fit: cover; }
+.category-hero img { width: 100%; height: 420px; background: #fff; object-fit: contain; padding: 24px; }
 .product-hero-media { display: grid; min-height: 420px; place-items: center; background: #fff; padding: 28px; }
 .product-hero-media img { max-height: 360px; object-fit: contain; }
 .product-gallery { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
@@ -2962,6 +3154,7 @@ h3 { margin-bottom: 10px; font-size: 22px; line-height: 1.16; letter-spacing: -.
 .process-grid article { border: 1px solid rgba(255,255,255,.12); border-radius: 24px; background: rgba(255,255,255,.07); padding: 20px; }
 .process-grid span { display: inline-grid; width: 42px; height: 42px; margin-bottom: 18px; place-items: center; border-radius: 14px; background: var(--accent); font-weight: 900; }
 .center-line { display: flex; justify-content: center; margin-top: 28px; }
+.center-actions { flex-wrap: wrap; gap: 12px; }
 .yandex-map-shell { display: grid; grid-template-columns: minmax(0, 1.25fr) 360px; overflow: hidden; border-radius: 34px; background: #111; box-shadow: var(--shadow); }
 .yandex-map { position: relative; min-height: 520px; background: #1a1714; }
 .yandex-map img { width: 100%; height: 100%; min-height: 520px; object-fit: cover; }
@@ -3010,8 +3203,36 @@ input, select, textarea {
 textarea { resize: vertical; }
 input:focus, select:focus, textarea:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(237,116,21,.14); }
 .catalog-topline { display: flex; align-items: center; justify-content: space-between; gap: 14px; margin-bottom: 18px; }
+.catalog-topline-actions { display: flex; flex-wrap: wrap; gap: 10px; justify-content: flex-end; }
 .content-grid, .product-detail-grid, .specification-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; align-items: start; }
 .text-card, .spec-card, .spec-aside { padding: 26px; }
+.availability-grid, .document-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.availability-card, .document-card {
+  display: grid;
+  gap: 18px;
+  align-content: space-between;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface-strong);
+  box-shadow: 0 18px 44px rgba(20,16,12,.08);
+  padding: 26px;
+}
+.availability-card h2, .document-card h2 { font-size: clamp(28px, 3vw, 42px); }
+.availability-card p, .document-card p { color: var(--muted); }
+.stock-badge {
+  display: inline-flex;
+  width: fit-content;
+  margin-bottom: 14px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent-2);
+  padding: 7px 11px;
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+.availability-links { display: flex; flex-wrap: wrap; gap: 10px; }
 .accent-card { background: var(--dark); color: #fff; }
 .accent-card p, .accent-card li { color: #ddd1c5; }
 .text-card ul, .spec-aside ul, .article-content ul { padding-left: 20px; color: var(--muted); }
@@ -3137,6 +3358,7 @@ input:focus, select:focus, textarea:focus { border-color: var(--accent); box-sha
   .main-nav.is-open { display: flex; }
   .hero-grid, .category-hero, .product-hero, .contacts-hero, .split, .catalog-layout, .content-grid, .product-detail-grid, .specification-layout, .yandex-map-shell, .footer-grid, .article-layout { grid-template-columns: 1fr; }
   .category-grid, .product-grid, .article-grid, .gallery-page-grid, .product-gallery { grid-template-columns: repeat(2, 1fr); }
+  .availability-grid, .document-grid { grid-template-columns: 1fr; }
   .contact-quick-list, .contact-team-grid { grid-template-columns: 1fr; }
   .catalog-filter, .article-aside { position: static; }
   .yandex-map { min-height: 420px; }
@@ -3175,7 +3397,9 @@ input:focus, select:focus, textarea:focus { border-color: var(--accent); box-sha
     letter-spacing: -.025em;
   }
   .lead { width: 100%; max-width: 320px; overflow-wrap: anywhere; word-break: break-word; font-size: 16px; }
-  .category-grid, .product-grid, .article-grid, .process-grid, .gallery-strip, .gallery-page-grid, .form-grid, .hero-facts, .product-gallery, .cookie-widget { grid-template-columns: 1fr; }
+  .category-grid, .product-grid, .article-grid, .process-grid, .gallery-strip, .gallery-page-grid, .form-grid, .product-gallery, .availability-grid, .document-grid, .cookie-widget { grid-template-columns: 1fr; }
+  .hero-facts { display: flex; gap: 10px; overflow-x: auto; padding-bottom: 4px; }
+  .hero-facts span { min-width: 215px; }
   .hero-actions { display: grid; }
   .hero-actions .btn { width: 100%; }
   .hero-visual img, .category-hero img { min-height: 260px; height: 280px; }
@@ -3220,6 +3444,7 @@ function build() {
   legacyFiles();
   homePage();
   catalogPage();
+  availabilityPage();
   categoryPages();
   productPages();
   articlesPage();
@@ -3228,6 +3453,7 @@ function build() {
   galleryPage();
   contactsPage();
   specificationPage();
+  documentsPage();
   legalPages();
 }
 

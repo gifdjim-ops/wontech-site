@@ -35,8 +35,20 @@ function readLocalConfig() {
 
 const config = readLocalConfig();
 const rawTelegramBotToken = process.env.TELEGRAM_BOT_TOKEN || config.telegramBotToken || "";
-const telegramBotToken = rawTelegramBotToken.includes("PASTE_") ? "" : rawTelegramBotToken;
-let telegramChatId = process.env.TELEGRAM_CHAT_ID || config.telegramChatId || "";
+const telegramBotToken = rawTelegramBotToken.includes("PASTE_") ? "" : rawTelegramBotToken.trim();
+let telegramChatIds = parseChatIds(
+  process.env.TELEGRAM_CHAT_IDS ||
+  process.env.TELEGRAM_CHAT_ID ||
+  config.telegramChatIds ||
+  config.telegramChatId
+);
+
+function parseChatIds(value) {
+  return String(value || "")
+    .split(/[,\s;]+/)
+    .map((item) => item.trim())
+    .filter(Boolean);
+}
 
 function sendJson(res, statusCode, payload) {
   const body = JSON.stringify(payload);
@@ -104,23 +116,26 @@ function telegramApi(method, payload) {
   });
 }
 
-async function resolveChatId() {
-  if (telegramChatId) return telegramChatId;
-  if (!telegramBotToken) return "";
+async function resolveChatIds() {
+  if (telegramChatIds.length) return telegramChatIds;
+  if (!telegramBotToken) return [];
 
-  const updates = await telegramApi("getUpdates", { limit: 20, timeout: 0 });
-  const lastMessage = [...updates].reverse().find((update) => update.message?.chat?.id);
-  if (!lastMessage) return "";
+  const updates = await telegramApi("getUpdates", { limit: 50, timeout: 0 });
+  const ids = [];
+  for (const update of updates) {
+    const id = update.message?.chat?.id || update.channel_post?.chat?.id;
+    if (id) ids.push(String(id));
+  }
 
-  telegramChatId = String(lastMessage.message.chat.id);
-  return telegramChatId;
+  telegramChatIds = [...new Set(ids)];
+  return telegramChatIds;
 }
 
 function formatRequestMessage(payload) {
   const fields = payload.fields || {};
   const items = Array.isArray(payload.items) ? payload.items : [];
   const lines = [
-    "[WONTECH] Новая заявка на расчет",
+    "[Бето Инкам] Новая заявка на расчет",
     "",
     `Имя: ${fields.name || "-"}`,
     `Компания: ${fields.company || "-"}`,
@@ -157,12 +172,13 @@ function formatRequestMessage(payload) {
 
 async function handleStatus(req, res) {
   try {
-    const chatId = await resolveChatId();
+    const chatIds = await resolveChatIds();
     sendJson(res, 200, {
       ok: true,
       telegramConfigured: Boolean(telegramBotToken),
-      telegramReady: Boolean(telegramBotToken && chatId),
-      chatId: chatId ? "configured" : ""
+      telegramReady: Boolean(telegramBotToken && chatIds.length),
+      chatId: chatIds.length ? "configured" : "",
+      recipients: chatIds.length
     });
   } catch (error) {
     sendJson(res, 200, {
@@ -178,9 +194,9 @@ async function handleRequest(req, res) {
   try {
     const rawBody = await readRequestBody(req);
     const payload = JSON.parse(rawBody || "{}");
-    const chatId = await resolveChatId();
+    const chatIds = await resolveChatIds();
 
-    if (!chatId) {
+    if (!chatIds.length) {
       sendJson(res, 400, {
         ok: false,
         error: "Telegram chat_id is not configured. Send any message to the bot first."
@@ -188,13 +204,14 @@ async function handleRequest(req, res) {
       return;
     }
 
-    await telegramApi("sendMessage", {
+    const text = formatRequestMessage(payload);
+    await Promise.all(chatIds.map((chatId) => telegramApi("sendMessage", {
       chat_id: chatId,
-      text: formatRequestMessage(payload),
+      text,
       disable_web_page_preview: true
-    });
+    })));
 
-    sendJson(res, 200, { ok: true });
+    sendJson(res, 200, { ok: true, recipients: chatIds.length });
   } catch (error) {
     sendJson(res, 500, { ok: false, error: error.message });
   }
@@ -250,6 +267,6 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(port, "127.0.0.1", () => {
-  console.log(`WONTECH site: http://127.0.0.1:${port}`);
+  console.log(`Beto Inkam site: http://127.0.0.1:${port}`);
   console.log(telegramBotToken ? "Telegram token: configured" : "Telegram token: missing");
 });

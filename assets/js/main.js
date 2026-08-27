@@ -1,10 +1,13 @@
-const DATA = window.WONTECH_DATA || { products: [], locations: [] };
-const requestKey = "wontechRequestV2";
+const DATA = window.BETO_INCAM_DATA || window.WONTECH_DATA || { products: [], locations: [] };
+const requestKey = "betoIncamRequestV1";
+const legacyRequestKey = "wontechRequestV2";
+const cookieKey = "betoIncamCookieAccepted";
+const legacyCookieKey = "wontechCookieAccepted";
 let requestItems = loadRequest();
 
 function loadRequest() {
   try {
-    return JSON.parse(localStorage.getItem(requestKey) || "[]");
+    return JSON.parse(localStorage.getItem(requestKey) || localStorage.getItem(legacyRequestKey) || "[]");
   } catch {
     return [];
   }
@@ -167,11 +170,11 @@ async function checkTelegramStatus() {
     const ready = Boolean(result.ok && result.telegramReady);
     status.className = `telegram-status ${ready ? "ok" : "warning"}`;
     status.textContent = ready
-      ? "Telegram подключен. Заявка отправится через backend сайта."
+      ? "Telegram подключен. Заявка отправится через сайт."
       : "Telegram пока не готов. Заявку можно скопировать и отправить вручную.";
   } catch {
     status.className = "telegram-status warning";
-    status.textContent = "Backend не отвечает. Для заявок нужен запуск через Node-сервер.";
+    status.textContent = "Сервер заявок не отвечает. Заявку можно скопировать или отправить по телефону.";
   }
 }
 
@@ -314,7 +317,7 @@ function formatPhoneInput(value) {
   const raw = String(value || "").trim();
   if (!raw || raw.startsWith("@") || raw.includes("@")) return value;
 
-  let digits = raw.replace(/D/g, "");
+  let digits = raw.replace(/\D/g, "");
   if (!digits) return value;
   if (digits.startsWith("8")) digits = "7" + digits.slice(1);
   if (!digits.startsWith("7")) digits = "7" + digits;
@@ -346,7 +349,7 @@ function initPhoneMask() {
 
 function initCookieWidget() {
   const widget = document.querySelector("[data-cookie-widget]");
-  if (!widget || localStorage.getItem("wontechCookieAccepted") === "yes") return;
+  if (!widget || localStorage.getItem(cookieKey) === "yes" || localStorage.getItem(legacyCookieKey) === "yes") return;
 
   window.setTimeout(() => {
     widget.hidden = false;
@@ -354,7 +357,7 @@ function initCookieWidget() {
   }, 10000);
 
   widget.querySelector("[data-cookie-accept]")?.addEventListener("click", () => {
-    localStorage.setItem("wontechCookieAccepted", "yes");
+    localStorage.setItem(cookieKey, "yes");
     widget.classList.remove("is-visible");
     window.setTimeout(() => {
       widget.hidden = true;
