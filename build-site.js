@@ -29,7 +29,7 @@ const categories = [
     nav: "Коронки",
     title: "Буровые коронки WONTECH",
     page: "/category-bits.html",
-    image: "/assets/images/local/stock-crowns-wrapped.jpg",
+    image: "/assets/images/official/official-bit-ql.png",
     intro:
       "Коронки для DTH-систем с известными группами диаметров. Точный размер, наличие и сроки поставки уточняются перед расчетом.",
     cta: "Уточнить наличие"
@@ -49,7 +49,7 @@ const categories = [
     nav: "RC",
     title: "RC-инструмент",
     page: "/category-rc.html",
-    image: "/assets/images/local/stock-grey-bits.jpg",
+    image: "/assets/images/catalog/rc-tools-catalog.jpg",
     intro:
       "Направление для заявок на инструмент обратной циркуляции. Совместимость и комплект поставки подтверждаются при подборе.",
     cta: "Запросить подбор"
@@ -389,7 +389,7 @@ const products = [
     category: "rc",
     label: "RC",
     system: "По спецификации",
-    image: "/assets/images/local/warehouse-wide.jpg",
+    image: "/assets/images/catalog/rc-tools-catalog.jpg",
     summary:
       "Направление для заявок на RC-инструмент. Состав поставки и совместимость уточняются при подборе.",
     positions: "подбор по спецификации",
@@ -401,9 +401,11 @@ const products = [
       ["Цена", "рассчитывается индивидуально"]
     ],
     gallery: [
-      "/assets/images/local/warehouse-wide.jpg",
-      "/assets/images/local/warehouse-aisle.jpg",
-      "/assets/images/local/warehouse-hammers.jpg"
+      "/assets/images/catalog/rc-tools-catalog.jpg",
+      "/assets/images/catalog/rc-hammers-catalog.jpg",
+      "/assets/images/catalog/rc-bit-catalog.jpg",
+      "/assets/images/catalog/rc-bit-in-work.jpg",
+      "/assets/images/catalog/rc-filters.jpg"
     ]
   },
   {
@@ -817,7 +819,7 @@ const extendedProducts = [
     category: "rc",
     label: "RC",
     system: "CIR / RE по спецификации",
-    image: "/assets/images/local/warehouse-wide.jpg",
+    image: "/assets/images/catalog/rc-hammers-catalog.jpg",
     summary:
       "RC-молоты для бурения с обратной циркуляцией. Серия, хвостовик, диаметр и комплект поставки уточняются по спецификации заказчика.",
     positions: "RC hammers: CIR50 / CIR60 / CIR65 / CIR70 / CIR90 / CIR110 / CIR130 / CIR150 / CIR170 по запросу",
@@ -836,7 +838,7 @@ const extendedProducts = [
     category: "rc",
     label: "RC",
     system: "RE543 / RE040 / RE052 / RE054 / RE140",
-    image: "/assets/images/local/stock-grey-bits.jpg",
+    image: "/assets/images/catalog/rc-bit-in-work.jpg",
     summary:
       "RC-коронки выделены отдельно от DTH-коронок, чтобы не смешивать разные системы бурения. Диаметр и хвостовик уточняются перед расчетом.",
     positions: "RE543 / RE040 / RE052 / RE054 / RE140 по запросу",
@@ -851,17 +853,17 @@ const extendedProducts = [
   {
     id: "rc-accessories",
     slug: "rc-accessories",
-    title: "Комплектующие для RC-бурения",
+    title: "Фильтры и комплектующие для RC-бурения",
     category: "rc",
     label: "RC",
     system: "по спецификации",
-    image: "/assets/images/local/stock-small-bits-box.jpg",
+    image: "/assets/images/catalog/rc-filters.jpg",
     summary:
-      "Комплектующие для RC-направления: переходники, элементы сборки и сопутствующие позиции по спецификации заказчика.",
-    positions: "комплектующие RC по запросу",
+      "Фильтры и комплектующие для RC-направления: переходники, элементы сборки и сопутствующие позиции по спецификации заказчика.",
+    positions: "фильтры / переходники / комплектующие RC по запросу",
     specs: [
       ["Поставщик", "Бето Инкам"],
-      ["Тип", "комплектующие RC"],
+      ["Тип", "фильтры и комплектующие RC"],
       ["Подбор", "по спецификации заказчика"],
       ["Наличие и сроки", "уточняются перед заказом"],
       ["Цена", "по расчету"]
@@ -1170,7 +1172,7 @@ const articles = [
     slug: "kak-vybrat-diametr-burovoy-koronki",
     label: "Коронки",
     title: "Как выбрать диаметр буровой коронки и не ошибиться с системой",
-    image: "/assets/images/local/stock-crowns-wrapped.jpg",
+    image: "/assets/images/COP64_QL60_bits_165_171_178_190.jpg",
     summary:
       "Почему диаметр коронки нужно рассматривать вместе с системой, пневмоударником и задачей, а не отдельно от остальной спецификации.",
     lead:
@@ -1218,7 +1220,7 @@ const articles = [
     slug: "cop-ql-dhd-sd-td-mission-numa-cir",
     label: "Системы",
     title: "COP, QL, DHD, SD, TD, Mission, NUMA, CIR: что писать в заявке",
-    image: "/assets/images/local/stock-small-bits-box.jpg",
+    image: "/assets/images/official/official-bit-ql.png",
     summary:
       "Справочник по тому, как аккуратно указывать систему инструмента в заявке и что делать, если точная система неизвестна.",
     lead:
@@ -1313,7 +1315,7 @@ const articles = [
     slug: "pdc-i-rc-kak-otpravit-specifikaciyu",
     label: "PDC и RC",
     title: "PDC и RC: как отправить спецификацию, если моделей нет в каталоге",
-    image: "/assets/images/local/hero-product-set.jpg",
+    image: "/assets/images/catalog/pdc-rc-spec.jpg",
     summary:
       "Почему PDC и RC лучше вести через спецификацию, а не через выдуманные карточки, и что клиенту нужно приложить к заявке.",
     lead:
@@ -1362,7 +1364,7 @@ const articles = [
     slug: "kak-proveryat-instrument-pri-poluchenii",
     label: "Приемка",
     title: "Как проверять буровой инструмент при получении партии",
-    image: "/assets/images/local/stock-small-bits-box.jpg",
+    image: "/assets/images/local/warehouse-aisle.jpg",
     summary:
       "Памятка для снабжения и склада: что проверить при получении партии и какие фото лучше сохранить до запуска в работу.",
     lead:
@@ -1757,9 +1759,9 @@ function homePage() {
         ${sectionHead("Фото", "Фотографии инструмента и склада", "Использованы переданные изображения и официальные продуктовые изображения BETO/WONTECH без водяных знаков.")}
         <div class="gallery-strip">
           <img src="/assets/images/local/workshop-stock.jpg" alt="Склад бурового инструмента">
-          <img src="/assets/images/local/stock-crowns-wrapped.jpg" alt="Коронки в упаковке">
-          <img src="/assets/images/local/stock-small-bits-box.jpg" alt="Буровые коронки в коробе">
-          <img src="/assets/images/local/stock-grey-bits.jpg" alt="Серые буровые коронки">
+          <img src="/assets/images/local/stock-crowns-wrapped.jpg" alt="PDC / PDS-коронки в упаковке">
+          <img src="/assets/images/local/stock-small-bits-box.jpg" alt="PDC / PDS-долота в коробе">
+          <img src="/assets/images/local/stock-grey-bits.jpg" alt="PDC / PDS-долота">
         </div>
       </div>
     </section>
@@ -2148,9 +2150,12 @@ function galleryPage() {
     <section class="section">
       <div class="container gallery-page-grid">
         <img src="/assets/images/local/workshop-stock.jpg" alt="Склад бурового инструмента">
-        <img src="/assets/images/local/stock-crowns-wrapped.jpg" alt="Коронки в упаковке">
-        <img src="/assets/images/local/stock-small-bits-box.jpg" alt="Коронки в коробе">
-        <img src="/assets/images/local/stock-grey-bits.jpg" alt="Серые коронки">
+        <img src="/assets/images/local/stock-crowns-wrapped.jpg" alt="PDC / PDS-коронки в упаковке">
+        <img src="/assets/images/local/stock-small-bits-box.jpg" alt="PDC / PDS-долота в коробе">
+        <img src="/assets/images/local/stock-grey-bits.jpg" alt="PDC / PDS-долота">
+        <img src="/assets/images/catalog/rc-equipment-and-filters.jpg" alt="RC-инструмент и оборудование из каталога">
+        <img src="/assets/images/catalog/rc-filters.jpg" alt="Фильтры для RC-направления">
+        <img src="/assets/images/catalog/rc-drill-rig.jpg" alt="Буровая установка для RC-направления">
         <img src="/assets/images/local/pdc-crowns-studio.png" alt="PDC / PDS коронки">
         <img src="/assets/images/local/pdc-bit-146.jpg" alt="PDC / PDS долото 146 мм">
         <img src="/assets/images/local/pdc-bit-gold.jpg" alt="PDC / PDS долото">

@@ -454,7 +454,7 @@ window.BETO_INCAM_DATA = {
       "category": "rc",
       "label": "RC",
       "system": "По спецификации",
-      "image": "/assets/images/local/warehouse-wide.jpg",
+      "image": "/assets/images/catalog/rc-tools-catalog.jpg",
       "summary": "Направление для заявок на RC-инструмент. Состав поставки и совместимость уточняются при подборе.",
       "positions": "подбор по спецификации",
       "specs": [
@@ -480,9 +480,11 @@ window.BETO_INCAM_DATA = {
         ]
       ],
       "gallery": [
-        "/assets/images/local/warehouse-wide.jpg",
-        "/assets/images/local/warehouse-aisle.jpg",
-        "/assets/images/local/warehouse-hammers.jpg"
+        "/assets/images/catalog/rc-tools-catalog.jpg",
+        "/assets/images/catalog/rc-hammers-catalog.jpg",
+        "/assets/images/catalog/rc-bit-catalog.jpg",
+        "/assets/images/catalog/rc-bit-in-work.jpg",
+        "/assets/images/catalog/rc-filters.jpg"
       ]
     },
     {
@@ -1173,7 +1175,7 @@ window.BETO_INCAM_DATA = {
       "category": "rc",
       "label": "RC",
       "system": "CIR / RE по спецификации",
-      "image": "/assets/images/local/warehouse-wide.jpg",
+      "image": "/assets/images/catalog/rc-hammers-catalog.jpg",
       "summary": "RC-молоты для бурения с обратной циркуляцией. Серия, хвостовик, диаметр и комплект поставки уточняются по спецификации заказчика.",
       "positions": "RC hammers: CIR50 / CIR60 / CIR65 / CIR70 / CIR90 / CIR110 / CIR130 / CIR150 / CIR170 по запросу",
       "specs": [
@@ -1206,7 +1208,7 @@ window.BETO_INCAM_DATA = {
       "category": "rc",
       "label": "RC",
       "system": "RE543 / RE040 / RE052 / RE054 / RE140",
-      "image": "/assets/images/local/stock-grey-bits.jpg",
+      "image": "/assets/images/catalog/rc-bit-in-work.jpg",
       "summary": "RC-коронки выделены отдельно от DTH-коронок, чтобы не смешивать разные системы бурения. Диаметр и хвостовик уточняются перед расчетом.",
       "positions": "RE543 / RE040 / RE052 / RE054 / RE140 по запросу",
       "specs": [
@@ -1235,13 +1237,13 @@ window.BETO_INCAM_DATA = {
     {
       "id": "rc-accessories",
       "slug": "rc-accessories",
-      "title": "Комплектующие для RC-бурения",
+      "title": "Фильтры и комплектующие для RC-бурения",
       "category": "rc",
       "label": "RC",
       "system": "по спецификации",
-      "image": "/assets/images/local/stock-small-bits-box.jpg",
-      "summary": "Комплектующие для RC-направления: переходники, элементы сборки и сопутствующие позиции по спецификации заказчика.",
-      "positions": "комплектующие RC по запросу",
+      "image": "/assets/images/catalog/rc-filters.jpg",
+      "summary": "Фильтры и комплектующие для RC-направления: переходники, элементы сборки и сопутствующие позиции по спецификации заказчика.",
+      "positions": "фильтры / переходники / комплектующие RC по запросу",
       "specs": [
         [
           "Поставщик",
@@ -1249,7 +1251,7 @@ window.BETO_INCAM_DATA = {
         ],
         [
           "Тип",
-          "комплектующие RC"
+          "фильтры и комплектующие RC"
         ],
         [
           "Подбор",
@@ -1620,7 +1622,7 @@ window.BETO_INCAM_DATA = {
       "nav": "Коронки",
       "title": "Буровые коронки WONTECH",
       "page": "/category-bits.html",
-      "image": "/assets/images/local/stock-crowns-wrapped.jpg",
+      "image": "/assets/images/official/official-bit-ql.png",
       "intro": "Коронки для DTH-систем с известными группами диаметров. Точный размер, наличие и сроки поставки уточняются перед расчетом.",
       "cta": "Уточнить наличие"
     },
@@ -1638,7 +1640,7 @@ window.BETO_INCAM_DATA = {
       "nav": "RC",
       "title": "RC-инструмент",
       "page": "/category-rc.html",
-      "image": "/assets/images/local/stock-grey-bits.jpg",
+      "image": "/assets/images/catalog/rc-tools-catalog.jpg",
       "intro": "Направление для заявок на инструмент обратной циркуляции. Совместимость и комплект поставки подтверждаются при подборе.",
       "cta": "Запросить подбор"
     },
@@ -1747,7 +1749,7 @@ window.BETO_INCAM_DATA = {
       "slug": "kak-vybrat-diametr-burovoy-koronki",
       "label": "Коронки",
       "title": "Как выбрать диаметр буровой коронки и не ошибиться с системой",
-      "image": "/assets/images/local/stock-crowns-wrapped.jpg",
+      "image": "/assets/images/COP64_QL60_bits_165_171_178_190.jpg",
       "summary": "Почему диаметр коронки нужно рассматривать вместе с системой, пневмоударником и задачей, а не отдельно от остальной спецификации.",
       "lead": "Диаметр коронки - один из самых заметных параметров в заявке, но он не работает отдельно от системы. Для расчета нужно понимать, к какому пневмоударнику и задаче относится эта коронка."
     },
@@ -1756,7 +1758,7 @@ window.BETO_INCAM_DATA = {
       "slug": "cop-ql-dhd-sd-td-mission-numa-cir",
       "label": "Системы",
       "title": "COP, QL, DHD, SD, TD, Mission, NUMA, CIR: что писать в заявке",
-      "image": "/assets/images/local/stock-small-bits-box.jpg",
+      "image": "/assets/images/official/official-bit-ql.png",
       "summary": "Справочник по тому, как аккуратно указывать систему инструмента в заявке и что делать, если точная система неизвестна.",
       "lead": "В буровом инструменте названия систем помогают быстрее перейти от общего запроса к реальному расчету. Но если система указана неверно, это может привести к ошибке в подборе."
     },
@@ -1774,7 +1776,7 @@ window.BETO_INCAM_DATA = {
       "slug": "pdc-i-rc-kak-otpravit-specifikaciyu",
       "label": "PDC и RC",
       "title": "PDC и RC: как отправить спецификацию, если моделей нет в каталоге",
-      "image": "/assets/images/local/hero-product-set.jpg",
+      "image": "/assets/images/catalog/pdc-rc-spec.jpg",
       "summary": "Почему PDC и RC лучше вести через спецификацию, а не через выдуманные карточки, и что клиенту нужно приложить к заявке.",
       "lead": "PDC и RC оставлены на сайте как отдельные направления поставки. Это правильный подход, если нет полного списка моделей, паспортов, фотографий и подтвержденных характеристик."
     },
@@ -1783,7 +1785,7 @@ window.BETO_INCAM_DATA = {
       "slug": "kak-proveryat-instrument-pri-poluchenii",
       "label": "Приемка",
       "title": "Как проверять буровой инструмент при получении партии",
-      "image": "/assets/images/local/stock-small-bits-box.jpg",
+      "image": "/assets/images/local/warehouse-aisle.jpg",
       "summary": "Памятка для снабжения и склада: что проверить при получении партии и какие фото лучше сохранить до запуска в работу.",
       "lead": "Приемка промышленного инструмента должна быть простой и документируемой. Даже если поставка согласована, при получении нужно проверить комплектность, маркировку и внешнее состояние."
     }
